@@ -1,0 +1,46 @@
+# ---------------------------------------------------------------
+# Environment, caches and scratch space
+# ---------------------------------------------------------------
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.test-work/
+
+# Superseded copies (Git history replaces these)
+backups/
+behavior_v1_previous_files/
+
+# Live URL list: contains real phishing URLs from a feed whose terms
+# do not allow republication. Share privately if needed.
+inputs/live_test_urls.csv
+
+# ---------------------------------------------------------------
+# reports/: datasets, features and captures stay local (4.7 GB).
+# Only the frozen runtime artifacts and small summaries are kept.
+# ---------------------------------------------------------------
+/reports/**
+!/reports/**/
+
+# Frozen model used by detector_runtime (hash-checked at startup)
+!/reports/form_context_training_v2/lightgbm_context_all_features/model_bundle.joblib
+
+# Small JSON/Markdown run reports (metrics, configs, schemas, freeze)
+!/reports/**/*.json
+!/reports/**/*.md
+
+# ...except reports that list real phishing sites or live/user URLs
+/reports/archived_browser_pilot_v1/
+/reports/capture_candidates_v1/
+/reports/capture_quality_v1/
+/reports/context_error_review_v2/
+/reports/error_review_v1/
+/reports/html_fingerprints/
+/reports/html_error_review_v1/
+/reports/live_error_review_v1/
+/reports/live_evaluation_local_20261011/evaluation_protocol.json
+/reports/metadata_review/
+/reports/similarity/
+/reports/webpage_analysis_v1/
+/reports/**/*checkpoint*.json

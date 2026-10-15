@@ -1,0 +1,620 @@
+{
+  "before_dummy_probe_snapshot": {
+    "document_ms": 1007.0999999940395,
+    "document_url": "http://127.0.0.1:50999/fixtures/mocked_external_script_form",
+    "entry_control_count": 2,
+    "fields": [
+      {
+        "aria_labelledby_texts": [],
+        "attributes": {
+          "aria-label": "",
+          "autocomplete": "",
+          "id": "user",
+          "name": "user",
+          "placeholder": "",
+          "title": ""
+        },
+        "disabled": false,
+        "dom_index": 0,
+        "form_index": 0,
+        "identitylike": true,
+        "label_texts": [
+          "Email"
+        ],
+        "native_password": false,
+        "password_cue_evidence": [],
+        "passwordlike": false,
+        "rendered_visible": true,
+        "tag": "input",
+        "type": "email"
+      },
+      {
+        "aria_labelledby_texts": [],
+        "attributes": {
+          "aria-label": "",
+          "autocomplete": "",
+          "id": "secret",
+          "name": "secret",
+          "placeholder": "",
+          "title": ""
+        },
+        "disabled": false,
+        "dom_index": 1,
+        "form_index": 0,
+        "identitylike": false,
+        "label_texts": [
+          "Mot de pase"
+        ],
+        "native_password": false,
+        "password_cue_evidence": [
+          {
+            "associated_text": "Mot de pase",
+            "cue": "password_word_or_phrase"
+          }
+        ],
+        "passwordlike": true,
+        "rendered_visible": true,
+        "tag": "input",
+        "type": "text"
+      }
+    ],
+    "form_count": 1,
+    "forms": [
+      {
+        "action": "http://127.0.0.1:50999/collect",
+        "cross_origin": false,
+        "id": "login",
+        "index": 0,
+        "method": "post"
+      }
+    ],
+    "identitylike_count": 1,
+    "native_password_count": 0,
+    "nonnative_passwordlike_count": 1,
+    "passwordlike_count": 1,
+    "storage_cut": false,
+    "trace_events_dropped": 0
+  },
+  "behaviour_features": {
+    "aborted_unknown_requests": 0,
+    "captured_external_script_response_count": 1,
+    "committed_main_frame_navigations_after_initial": 0,
+    "controls_added_after_dom_ready": 2,
+    "cross_origin_requests_containing_dummy_password": 1,
+    "final_native_password_controls": 0,
+    "final_passwordlike_controls": 1,
+    "forms_added_after_dom_ready": 1,
+    "initial_passwordlike_controls": 0,
+    "maximum_passwordlike_controls": 1,
+    "navigation_attempts_after_initial_load": 0,
+    "observed_attribute_changes": 0,
+    "observed_beacon_calls": 0,
+    "observed_fetch_calls": 1,
+    "observed_input_events": 2,
+    "observed_submit_events": 1,
+    "observed_submit_method_calls": 0,
+    "observed_timer_callbacks": 1,
+    "observed_xhr_send_calls": 0,
+    "requests_containing_dummy_identity": 1,
+    "requests_containing_dummy_password": 1
+  },
+  "captured_utc": "2026-10-08T16:04:14.929292+00:00",
+  "case_elapsed_seconds": 1.9690000000118744,
+  "case_id": "mocked_external_script_form",
+  "checks": [
+    {
+      "comparison": "equal",
+      "expected": 0,
+      "observed": 0,
+      "passed": true,
+      "property": "initial_passwordlike_controls"
+    },
+    {
+      "comparison": "equal",
+      "expected": 1,
+      "observed": 1,
+      "passed": true,
+      "property": "final_passwordlike_controls"
+    },
+    {
+      "comparison": "equal",
+      "expected": 1,
+      "observed": 1,
+      "passed": true,
+      "property": "forms_added_after_dom_ready"
+    },
+    {
+      "comparison": "equal",
+      "expected": 1,
+      "observed": 1,
+      "passed": true,
+      "property": "requests_containing_dummy_password"
+    },
+    {
+      "comparison": "equal",
+      "expected": 1,
+      "observed": 1,
+      "passed": true,
+      "property": "cross_origin_requests_containing_dummy_password"
+    },
+    {
+      "passed": true,
+      "property": "observation_not_truncated_or_failed"
+    },
+    {
+      "passed": true,
+      "property": "initial_html_response_exact"
+    },
+    {
+      "passed": true,
+      "property": "all_received_response_bodies_exact_and_hashed"
+    },
+    {
+      "passed": true,
+      "property": "every_referenced_external_script_body_retained"
+    },
+    {
+      "passed": true,
+      "property": "css_body_retained"
+    },
+    {
+      "passed": true,
+      "property": "server_received_expected_dummy_identity_and_password_requests"
+    },
+    {
+      "passed": true,
+      "property": "final_dom_html_retained"
+    },
+    {
+      "passed": true,
+      "property": "page_requests_only_owned_loopback_or_aborted"
+    }
+  ],
+  "dummy_probe_action": "submit",
+  "events": [
+    {
+      "case_elapsed_ms": 78.00000000861473,
+      "document_ms": 8.900000005960464,
+      "document_url": "http://127.0.0.1:50999/fixtures/mocked_external_script_form",
+      "is_main_frame": true,
+      "kind": "dom_content_loaded",
+      "phase": "passive",
+      "snapshot": {
+        "document_ms": 8.900000005960464,
+        "document_url": "http://127.0.0.1:50999/fixtures/mocked_external_script_form",
+        "entry_control_count": 0,
+        "fields": [],
+        "form_count": 0,
+        "forms": [],
+        "identitylike_count": 0,
+        "native_password_count": 0,
+        "nonnative_passwordlike_count": 0,
+        "passwordlike_count": 0,
+        "storage_cut": false,
+        "trace_events_dropped": 0
+      }
+    },
+    {
+      "case_elapsed_ms": 484.0000000258442,
+      "declared_delay_ms": 400,
+      "document_ms": 410.59999999403954,
+      "document_url": "http://127.0.0.1:50999/fixtures/mocked_external_script_form",
+      "is_main_frame": true,
+      "kind": "timer_callback_fired",
+      "phase": "passive"
+    },
+    {
+      "attributes_changed": 0,
+      "case_elapsed_ms": 484.0000000258442,
+      "controls_added": 2,
+      "document_ms": 413.80000001192093,
+      "document_url": "http://127.0.0.1:50999/fixtures/mocked_external_script_form",
+      "forms_added": 1,
+      "is_main_frame": true,
+      "kind": "dom_mutation_after_ready",
+      "phase": "passive",
+      "snapshot": {
+        "document_ms": 413.7000000178814,
+        "document_url": "http://127.0.0.1:50999/fixtures/mocked_external_script_form",
+        "entry_control_count": 2,
+        "fields": [
+          {
+            "aria_labelledby_texts": [],
+            "attributes": {
+              "aria-label": "",
+              "autocomplete": "",
+              "id": "user",
+              "name": "user",
+              "placeholder": "",
+              "title": ""
+            },
+            "disabled": false,
+            "dom_index": 0,
+            "form_index": 0,
+            "identitylike": true,
+            "label_texts": [
+              "Email"
+            ],
+            "native_password": false,
+            "password_cue_evidence": [],
+            "passwordlike": false,
+            "rendered_visible": true,
+            "tag": "input",
+            "type": "email"
+          },
+          {
+            "aria_labelledby_texts": [],
+            "attributes": {
+              "aria-label": "",
+              "autocomplete": "",
+              "id": "secret",
+              "name": "secret",
+              "placeholder": "",
+              "title": ""
+            },
+            "disabled": false,
+            "dom_index": 1,
+            "form_index": 0,
+            "identitylike": false,
+            "label_texts": [
+              "Mot de pase"
+            ],
+            "native_password": false,
+            "password_cue_evidence": [
+              {
+                "associated_text": "Mot de pase",
+                "cue": "password_word_or_phrase"
+              }
+            ],
+            "passwordlike": true,
+            "rendered_visible": true,
+            "tag": "input",
+            "type": "text"
+          }
+        ],
+        "form_count": 1,
+        "forms": [
+          {
+            "action": "http://127.0.0.1:50999/collect",
+            "cross_origin": false,
+            "id": "login",
+            "index": 0,
+            "method": "post"
+          }
+        ],
+        "identitylike_count": 1,
+        "native_password_count": 0,
+        "nonnative_passwordlike_count": 1,
+        "passwordlike_count": 1,
+        "storage_cut": false,
+        "trace_events_dropped": 0
+      }
+    },
+    {
+      "case_elapsed_ms": 1094.0000000118744,
+      "document_ms": 1030,
+      "document_url": "http://127.0.0.1:50999/fixtures/mocked_external_script_form",
+      "field_id": "user",
+      "field_type": "email",
+      "is_main_frame": true,
+      "kind": "input",
+      "phase": "dummy_probe"
+    },
+    {
+      "case_elapsed_ms": 1094.0000000118744,
+      "document_ms": 1033.800000011921,
+      "document_url": "http://127.0.0.1:50999/fixtures/mocked_external_script_form",
+      "field_id": "user",
+      "field_type": "email",
+      "is_main_frame": true,
+      "kind": "change",
+      "phase": "dummy_probe"
+    },
+    {
+      "case_elapsed_ms": 1094.0000000118744,
+      "document_ms": 1034.5999999940395,
+      "document_url": "http://127.0.0.1:50999/fixtures/mocked_external_script_form",
+      "field_id": "secret",
+      "field_type": "text",
+      "is_main_frame": true,
+      "kind": "input",
+      "phase": "dummy_probe"
+    },
+    {
+      "case_elapsed_ms": 1140.0000000139698,
+      "document_ms": 1072,
+      "document_url": "http://127.0.0.1:50999/fixtures/mocked_external_script_form",
+      "field_id": "secret",
+      "field_type": "text",
+      "is_main_frame": true,
+      "kind": "change",
+      "phase": "dummy_probe"
+    },
+    {
+      "action": "http://127.0.0.1:50999/collect",
+      "case_elapsed_ms": 1140.0000000139698,
+      "document_ms": 1072.800000011921,
+      "document_url": "http://127.0.0.1:50999/fixtures/mocked_external_script_form",
+      "form_id": "login",
+      "is_main_frame": true,
+      "kind": "submit_event",
+      "method": "post",
+      "phase": "dummy_probe"
+    },
+    {
+      "case_elapsed_ms": 1140.0000000139698,
+      "document_ms": 1073.2000000178814,
+      "document_url": "http://127.0.0.1:50999/fixtures/mocked_external_script_form",
+      "is_main_frame": true,
+      "kind": "fetch_call",
+      "method": "POST",
+      "phase": "dummy_probe",
+      "url": "http://127.0.0.1:51000/collect"
+    }
+  ],
+  "final_html": "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>Controlled pilot page</title><link rel=\"stylesheet\" href=\"/fixture.css\"></head><body><div id=\"mount\"><form id=\"login\" method=\"post\" action=\"/collect\"><label for=\"user\">Email</label><input id=\"user\" name=\"user\" type=\"email\" required=\"\"><label for=\"secret\">Mot de pase</label><input id=\"secret\" name=\"secret\" type=\"text\" required=\"\"><button id=\"go\" type=\"submit\">Continue</button></form></div><script src=\"/cases/mocked_external_script_form.js\"></script></body></html>",
+  "final_html_utf8_sha256": "4a63d2551b4d482a06a3636b6f3afcd7571f4a0be903bf3d35308075fd9aee59",
+  "final_snapshot": {
+    "document_ms": 1893.9000000059605,
+    "document_url": "http://127.0.0.1:50999/fixtures/mocked_external_script_form",
+    "entry_control_count": 2,
+    "fields": [
+      {
+        "aria_labelledby_texts": [],
+        "attributes": {
+          "aria-label": "",
+          "autocomplete": "",
+          "id": "user",
+          "name": "user",
+          "placeholder": "",
+          "title": ""
+        },
+        "disabled": false,
+        "dom_index": 0,
+        "form_index": 0,
+        "identitylike": true,
+        "label_texts": [
+          "Email"
+        ],
+        "native_password": false,
+        "password_cue_evidence": [],
+        "passwordlike": false,
+        "rendered_visible": true,
+        "tag": "input",
+        "type": "email"
+      },
+      {
+        "aria_labelledby_texts": [],
+        "attributes": {
+          "aria-label": "",
+          "autocomplete": "",
+          "id": "secret",
+          "name": "secret",
+          "placeholder": "",
+          "title": ""
+        },
+        "disabled": false,
+        "dom_index": 1,
+        "form_index": 0,
+        "identitylike": false,
+        "label_texts": [
+          "Mot de pase"
+        ],
+        "native_password": false,
+        "password_cue_evidence": [
+          {
+            "associated_text": "Mot de pase",
+            "cue": "password_word_or_phrase"
+          }
+        ],
+        "passwordlike": true,
+        "rendered_visible": true,
+        "tag": "input",
+        "type": "text"
+      }
+    ],
+    "form_count": 1,
+    "forms": [
+      {
+        "action": "http://127.0.0.1:50999/collect",
+        "cross_origin": false,
+        "id": "login",
+        "index": 0,
+        "method": "post"
+      }
+    ],
+    "identitylike_count": 1,
+    "native_password_count": 0,
+    "nonnative_passwordlike_count": 1,
+    "passwordlike_count": 1,
+    "storage_cut": false,
+    "trace_events_dropped": 0
+  },
+  "fixture_url": "http://127.0.0.1:50999/fixtures/mocked_external_script_form",
+  "initial_html": "<!doctype html><html lang='en'><head><meta charset='utf-8'><title>Controlled pilot page</title><link rel='stylesheet' href='/fixture.css'></head><body><div id='mount'>Loading external fixture script</div><script src='/cases/mocked_external_script_form.js'></script></body></html>",
+  "initial_html_utf8_sha256": "daf2e07c333972569f47fe2b18139c00c3e0a5c77741bb5101f548f6a4e4927e",
+  "initial_snapshot": {
+    "document_ms": 8.900000005960464,
+    "document_url": "http://127.0.0.1:50999/fixtures/mocked_external_script_form",
+    "entry_control_count": 0,
+    "fields": [],
+    "form_count": 0,
+    "forms": [],
+    "identitylike_count": 0,
+    "native_password_count": 0,
+    "nonnative_passwordlike_count": 0,
+    "passwordlike_count": 0,
+    "storage_cut": false,
+    "trace_events_dropped": 0
+  },
+  "main_frame_navigations": [
+    {
+      "case_elapsed_ms": 62.000000005355105,
+      "url": "http://127.0.0.1:50999/fixtures/mocked_external_script_form"
+    }
+  ],
+  "owned_server_requests": [
+    {
+      "body": "",
+      "method": "GET",
+      "path": "/fixtures/mocked_external_script_form",
+      "port": 50999
+    },
+    {
+      "body": "",
+      "method": "GET",
+      "path": "/fixture.css",
+      "port": 50999
+    },
+    {
+      "body": "",
+      "method": "GET",
+      "path": "/cases/mocked_external_script_form.js",
+      "port": 50999
+    },
+    {
+      "body": "user=RESEARCH_DUMMY_USER_21%40example.test&secret=RESEARCH_DUMMY_PASSWORD_21",
+      "method": "POST",
+      "path": "/collect",
+      "port": 51000
+    }
+  ],
+  "page_script_errors": [],
+  "quality": {
+    "page_script_error_count": 0,
+    "request_events_dropped": 0,
+    "response_body_budget_exceeded": 0,
+    "response_body_errors": 0,
+    "response_events_dropped": 0,
+    "snapshot_storage_cut": 0,
+    "trace_events_dropped": 0
+  },
+  "requests": [
+    {
+      "case_elapsed_ms": 62.000000005355105,
+      "contains_dummy_identity": false,
+      "contains_dummy_password": false,
+      "cross_origin_from_fixture": false,
+      "initial_fixture_request": true,
+      "method": "GET",
+      "navigation": true,
+      "page_request_sent_to_live_network": false,
+      "phase": "passive",
+      "post_body": "",
+      "resource_type": "document",
+      "route_action": "continued_owned_loopback",
+      "sent_to_owned_loopback_server": true,
+      "url": "http://127.0.0.1:50999/fixtures/mocked_external_script_form"
+    },
+    {
+      "case_elapsed_ms": 62.000000005355105,
+      "contains_dummy_identity": false,
+      "contains_dummy_password": false,
+      "cross_origin_from_fixture": false,
+      "initial_fixture_request": false,
+      "method": "GET",
+      "navigation": false,
+      "page_request_sent_to_live_network": false,
+      "phase": "passive",
+      "post_body": "",
+      "resource_type": "stylesheet",
+      "route_action": "continued_owned_loopback",
+      "sent_to_owned_loopback_server": true,
+      "url": "http://127.0.0.1:50999/fixture.css"
+    },
+    {
+      "case_elapsed_ms": 62.000000005355105,
+      "contains_dummy_identity": false,
+      "contains_dummy_password": false,
+      "cross_origin_from_fixture": false,
+      "initial_fixture_request": false,
+      "method": "GET",
+      "navigation": false,
+      "page_request_sent_to_live_network": false,
+      "phase": "passive",
+      "post_body": "",
+      "resource_type": "script",
+      "route_action": "continued_owned_loopback",
+      "sent_to_owned_loopback_server": true,
+      "url": "http://127.0.0.1:50999/cases/mocked_external_script_form.js"
+    },
+    {
+      "case_elapsed_ms": 1140.0000000139698,
+      "contains_dummy_identity": true,
+      "contains_dummy_password": true,
+      "cross_origin_from_fixture": true,
+      "initial_fixture_request": false,
+      "method": "POST",
+      "navigation": false,
+      "page_request_sent_to_live_network": false,
+      "phase": "dummy_probe",
+      "post_body": "user=RESEARCH_DUMMY_USER_21%40example.test&secret=RESEARCH_DUMMY_PASSWORD_21",
+      "resource_type": "fetch",
+      "route_action": "continued_owned_loopback",
+      "sent_to_owned_loopback_server": true,
+      "url": "http://127.0.0.1:51000/collect"
+    }
+  ],
+  "responses": [
+    {
+      "body_base64": "PCFkb2N0eXBlIGh0bWw+PGh0bWwgbGFuZz0nZW4nPjxoZWFkPjxtZXRhIGNoYXJzZXQ9J3V0Zi04Jz48dGl0bGU+Q29udHJvbGxlZCBwaWxvdCBwYWdlPC90aXRsZT48bGluayByZWw9J3N0eWxlc2hlZXQnIGhyZWY9Jy9maXh0dXJlLmNzcyc+PC9oZWFkPjxib2R5PjxkaXYgaWQ9J21vdW50Jz5Mb2FkaW5nIGV4dGVybmFsIGZpeHR1cmUgc2NyaXB0PC9kaXY+PHNjcmlwdCBzcmM9Jy9jYXNlcy9tb2NrZWRfZXh0ZXJuYWxfc2NyaXB0X2Zvcm0uanMnPjwvc2NyaXB0PjwvYm9keT48L2h0bWw+",
+      "body_bytes": 279,
+      "body_complete": true,
+      "body_encoding": "base64_of_playwright_decoded_response_body",
+      "body_sha256": "daf2e07c333972569f47fe2b18139c00c3e0a5c77741bb5101f548f6a4e4927e",
+      "case_elapsed_ms": 78.00000000861473,
+      "headers": {
+        "cache-control": "no-store",
+        "content-length": "279",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 08 Oct 2026 16:04:13 GMT",
+        "server": "BaseHTTP/0.6 Python/3.12.10"
+      },
+      "method": "GET",
+      "resource_type": "document",
+      "status": 200,
+      "url": "http://127.0.0.1:50999/fixtures/mocked_external_script_form"
+    },
+    {
+      "body_base64": "Ym9keXtmb250LWZhbWlseTpzYW5zLXNlcmlmO3BhZGRpbmc6MTZweH1sYWJlbHtkaXNwbGF5OmJsb2NrfQ==",
+      "body_bytes": 61,
+      "body_complete": true,
+      "body_encoding": "base64_of_playwright_decoded_response_body",
+      "body_sha256": "f0281b81a5e1b2b61aefe21921227e4457b1b1caf37534c2058b5ac653b1202e",
+      "case_elapsed_ms": 78.00000000861473,
+      "headers": {
+        "cache-control": "no-store",
+        "content-length": "61",
+        "content-type": "text/css; charset=utf-8",
+        "date": "Thu, 08 Oct 2026 16:04:13 GMT",
+        "server": "BaseHTTP/0.6 Python/3.12.10"
+      },
+      "method": "GET",
+      "resource_type": "stylesheet",
+      "status": 200,
+      "url": "http://127.0.0.1:50999/fixture.css"
+    },
+    {
+      "body_base64": "ZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcignRE9NQ29udGVudExvYWRlZCcsKCk9PnNldFRpbWVvdXQoKCk9Pntkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcjbW91bnQnKS5pbm5lckhUTUw9Ijxmb3JtIGlkPSdsb2dpbicgbWV0aG9kPSdwb3N0JyBhY3Rpb249Jy9jb2xsZWN0Jz48bGFiZWwgZm9yPSd1c2VyJz5FbWFpbDwvbGFiZWw+PGlucHV0IGlkPSd1c2VyJyBuYW1lPSd1c2VyJyB0eXBlPSdlbWFpbCcgcmVxdWlyZWQ+PGxhYmVsIGZvcj0nc2VjcmV0Jz5Nb3QgZGUgcGFzZTwvbGFiZWw+PGlucHV0IGlkPSdzZWNyZXQnIG5hbWU9J3NlY3JldCcgdHlwZT0ndGV4dCcgcmVxdWlyZWQ+PGJ1dHRvbiBpZD0nZ28nIHR5cGU9J3N1Ym1pdCc+Q29udGludWU8L2J1dHRvbj48L2Zvcm0+Ijtkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcjbG9naW4nKS5hZGRFdmVudExpc3RlbmVyKCdzdWJtaXQnLGU9PntlLnByZXZlbnREZWZhdWx0KCk7ZmV0Y2goJ2h0dHA6Ly8xMjcuMC4wLjE6NTEwMDAvY29sbGVjdCcse21ldGhvZDonUE9TVCcsYm9keTpuZXcgVVJMU2VhcmNoUGFyYW1zKHt1c2VyOmRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJyN1c2VyJykudmFsdWUsc2VjcmV0OmRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJyNzZWNyZXQnKS52YWx1ZX0pfSkuY2F0Y2goKCk9Pnt9KTt9KTt9LDQwMCkpOw==",
+      "body_bytes": 670,
+      "body_complete": true,
+      "body_encoding": "base64_of_playwright_decoded_response_body",
+      "body_sha256": "f47748cd45b79824725e3ea57878f002b9b84436c82b3e60bb9ac4bce3978ec1",
+      "case_elapsed_ms": 94.00000001187436,
+      "headers": {
+        "cache-control": "no-store",
+        "content-length": "670",
+        "content-type": "application/javascript; charset=utf-8",
+        "date": "Thu, 08 Oct 2026 16:04:13 GMT",
+        "server": "BaseHTTP/0.6 Python/3.12.10"
+      },
+      "method": "GET",
+      "resource_type": "script",
+      "status": 200,
+      "url": "http://127.0.0.1:50999/cases/mocked_external_script_form.js"
+    }
+  ],
+  "scenario_role_not_a_dataset_label": "behaviour_scenario",
+  "status": "passed",
+  "training_eligible": false
+}

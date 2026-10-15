@@ -1,0 +1,1048 @@
+{
+  "cases": [
+    {
+      "behaviour_features": {
+        "aborted_unknown_requests": 0,
+        "captured_external_script_response_count": 1,
+        "committed_main_frame_navigations_after_initial": 0,
+        "controls_added_after_dom_ready": 0,
+        "cross_origin_requests_containing_dummy_password": 0,
+        "final_native_password_controls": 1,
+        "final_passwordlike_controls": 1,
+        "forms_added_after_dom_ready": 0,
+        "initial_passwordlike_controls": 1,
+        "maximum_passwordlike_controls": 1,
+        "navigation_attempts_after_initial_load": 1,
+        "observed_attribute_changes": 0,
+        "observed_beacon_calls": 0,
+        "observed_fetch_calls": 0,
+        "observed_input_events": 2,
+        "observed_submit_events": 1,
+        "observed_submit_method_calls": 0,
+        "observed_timer_callbacks": 0,
+        "observed_xhr_send_calls": 0,
+        "requests_containing_dummy_identity": 1,
+        "requests_containing_dummy_password": 1
+      },
+      "case_id": "normal_same_origin_login",
+      "checks": [
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "initial_passwordlike_controls"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "final_passwordlike_controls"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "requests_containing_dummy_password"
+        },
+        {
+          "comparison": "equal",
+          "expected": 0,
+          "observed": 0,
+          "passed": true,
+          "property": "cross_origin_requests_containing_dummy_password"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "observed_submit_events"
+        },
+        {
+          "passed": true,
+          "property": "observation_not_truncated_or_failed"
+        },
+        {
+          "passed": true,
+          "property": "initial_html_response_exact"
+        },
+        {
+          "passed": true,
+          "property": "all_received_response_bodies_exact_and_hashed"
+        },
+        {
+          "passed": true,
+          "property": "every_referenced_external_script_body_retained"
+        },
+        {
+          "passed": true,
+          "property": "css_body_retained"
+        },
+        {
+          "passed": true,
+          "property": "server_received_expected_dummy_identity_and_password_requests"
+        },
+        {
+          "passed": true,
+          "property": "final_dom_html_retained"
+        },
+        {
+          "passed": true,
+          "property": "page_requests_only_owned_loopback_or_aborted"
+        }
+      ],
+      "error": null,
+      "evidence_file": "evidence/normal_same_origin_login.json",
+      "evidence_sha256": "23947b3de32015d0fa26af7c8d90a5ea3ca2b4936f6ae0f273983fc6387d9872",
+      "quality": {
+        "page_script_error_count": 0,
+        "request_events_dropped": 0,
+        "response_body_budget_exceeded": 0,
+        "response_body_errors": 0,
+        "response_events_dropped": 0,
+        "snapshot_storage_cut": 0,
+        "trace_events_dropped": 0
+      },
+      "response_count": 3,
+      "scenario_role_not_a_dataset_label": "ordinary_control",
+      "status": "passed"
+    },
+    {
+      "behaviour_features": {
+        "aborted_unknown_requests": 0,
+        "captured_external_script_response_count": 1,
+        "committed_main_frame_navigations_after_initial": 0,
+        "controls_added_after_dom_ready": 0,
+        "cross_origin_requests_containing_dummy_password": 1,
+        "final_native_password_controls": 1,
+        "final_passwordlike_controls": 1,
+        "forms_added_after_dom_ready": 0,
+        "initial_passwordlike_controls": 1,
+        "maximum_passwordlike_controls": 1,
+        "navigation_attempts_after_initial_load": 1,
+        "observed_attribute_changes": 0,
+        "observed_beacon_calls": 0,
+        "observed_fetch_calls": 0,
+        "observed_input_events": 2,
+        "observed_submit_events": 1,
+        "observed_submit_method_calls": 0,
+        "observed_timer_callbacks": 0,
+        "observed_xhr_send_calls": 0,
+        "requests_containing_dummy_identity": 1,
+        "requests_containing_dummy_password": 1
+      },
+      "case_id": "ordinary_cross_origin_login",
+      "checks": [
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "initial_passwordlike_controls"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "final_passwordlike_controls"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "requests_containing_dummy_password"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "cross_origin_requests_containing_dummy_password"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "observed_submit_events"
+        },
+        {
+          "passed": true,
+          "property": "observation_not_truncated_or_failed"
+        },
+        {
+          "passed": true,
+          "property": "initial_html_response_exact"
+        },
+        {
+          "passed": true,
+          "property": "all_received_response_bodies_exact_and_hashed"
+        },
+        {
+          "passed": true,
+          "property": "every_referenced_external_script_body_retained"
+        },
+        {
+          "passed": true,
+          "property": "css_body_retained"
+        },
+        {
+          "passed": true,
+          "property": "server_received_expected_dummy_identity_and_password_requests"
+        },
+        {
+          "passed": true,
+          "property": "final_dom_html_retained"
+        },
+        {
+          "passed": true,
+          "property": "page_requests_only_owned_loopback_or_aborted"
+        }
+      ],
+      "error": null,
+      "evidence_file": "evidence/ordinary_cross_origin_login.json",
+      "evidence_sha256": "ef1a24a0e5a16609f79deb3fe88f72f23b52f1c622c747b2cef9a3972e233a9b",
+      "quality": {
+        "page_script_error_count": 0,
+        "request_events_dropped": 0,
+        "response_body_budget_exceeded": 0,
+        "response_body_errors": 0,
+        "response_events_dropped": 0,
+        "snapshot_storage_cut": 0,
+        "trace_events_dropped": 0
+      },
+      "response_count": 3,
+      "scenario_role_not_a_dataset_label": "ordinary_control",
+      "status": "passed"
+    },
+    {
+      "behaviour_features": {
+        "aborted_unknown_requests": 0,
+        "captured_external_script_response_count": 1,
+        "committed_main_frame_navigations_after_initial": 0,
+        "controls_added_after_dom_ready": 0,
+        "cross_origin_requests_containing_dummy_password": 0,
+        "final_native_password_controls": 0,
+        "final_passwordlike_controls": 1,
+        "forms_added_after_dom_ready": 0,
+        "initial_passwordlike_controls": 1,
+        "maximum_passwordlike_controls": 1,
+        "navigation_attempts_after_initial_load": 0,
+        "observed_attribute_changes": 1,
+        "observed_beacon_calls": 0,
+        "observed_fetch_calls": 0,
+        "observed_input_events": 2,
+        "observed_submit_events": 0,
+        "observed_submit_method_calls": 0,
+        "observed_timer_callbacks": 0,
+        "observed_xhr_send_calls": 0,
+        "requests_containing_dummy_identity": 0,
+        "requests_containing_dummy_password": 0
+      },
+      "case_id": "ordinary_password_visibility_toggle",
+      "checks": [
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "initial_passwordlike_controls"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "final_passwordlike_controls"
+        },
+        {
+          "comparison": "equal",
+          "expected": 0,
+          "observed": 0,
+          "passed": true,
+          "property": "final_native_password_controls"
+        },
+        {
+          "comparison": "equal",
+          "expected": 0,
+          "observed": 0,
+          "passed": true,
+          "property": "requests_containing_dummy_password"
+        },
+        {
+          "comparison": "at_least",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "observed_attribute_changes"
+        },
+        {
+          "passed": true,
+          "property": "observation_not_truncated_or_failed"
+        },
+        {
+          "passed": true,
+          "property": "initial_html_response_exact"
+        },
+        {
+          "passed": true,
+          "property": "all_received_response_bodies_exact_and_hashed"
+        },
+        {
+          "passed": true,
+          "property": "every_referenced_external_script_body_retained"
+        },
+        {
+          "passed": true,
+          "property": "css_body_retained"
+        },
+        {
+          "passed": true,
+          "property": "server_received_expected_dummy_identity_and_password_requests"
+        },
+        {
+          "passed": true,
+          "property": "final_dom_html_retained"
+        },
+        {
+          "passed": true,
+          "property": "page_requests_only_owned_loopback_or_aborted"
+        }
+      ],
+      "error": null,
+      "evidence_file": "evidence/ordinary_password_visibility_toggle.json",
+      "evidence_sha256": "5945a791cfa002ce17da89709c3ffea65cc9189f8a2f37002fd7a01a71769014",
+      "quality": {
+        "page_script_error_count": 0,
+        "request_events_dropped": 0,
+        "response_body_budget_exceeded": 0,
+        "response_body_errors": 0,
+        "response_events_dropped": 0,
+        "snapshot_storage_cut": 0,
+        "trace_events_dropped": 0
+      },
+      "response_count": 3,
+      "scenario_role_not_a_dataset_label": "ordinary_control",
+      "status": "passed"
+    },
+    {
+      "behaviour_features": {
+        "aborted_unknown_requests": 0,
+        "captured_external_script_response_count": 1,
+        "committed_main_frame_navigations_after_initial": 0,
+        "controls_added_after_dom_ready": 2,
+        "cross_origin_requests_containing_dummy_password": 0,
+        "final_native_password_controls": 0,
+        "final_passwordlike_controls": 0,
+        "forms_added_after_dom_ready": 1,
+        "initial_passwordlike_controls": 0,
+        "maximum_passwordlike_controls": 0,
+        "navigation_attempts_after_initial_load": 1,
+        "observed_attribute_changes": 0,
+        "observed_beacon_calls": 0,
+        "observed_fetch_calls": 0,
+        "observed_input_events": 1,
+        "observed_submit_events": 1,
+        "observed_submit_method_calls": 0,
+        "observed_timer_callbacks": 1,
+        "observed_xhr_send_calls": 0,
+        "requests_containing_dummy_identity": 1,
+        "requests_containing_dummy_password": 0
+      },
+      "case_id": "delayed_contact_form",
+      "checks": [
+        {
+          "comparison": "equal",
+          "expected": 0,
+          "observed": 0,
+          "passed": true,
+          "property": "initial_passwordlike_controls"
+        },
+        {
+          "comparison": "equal",
+          "expected": 0,
+          "observed": 0,
+          "passed": true,
+          "property": "final_passwordlike_controls"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "forms_added_after_dom_ready"
+        },
+        {
+          "comparison": "equal",
+          "expected": 0,
+          "observed": 0,
+          "passed": true,
+          "property": "requests_containing_dummy_password"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "requests_containing_dummy_identity"
+        },
+        {
+          "passed": true,
+          "property": "observation_not_truncated_or_failed"
+        },
+        {
+          "passed": true,
+          "property": "initial_html_response_exact"
+        },
+        {
+          "passed": true,
+          "property": "all_received_response_bodies_exact_and_hashed"
+        },
+        {
+          "passed": true,
+          "property": "every_referenced_external_script_body_retained"
+        },
+        {
+          "passed": true,
+          "property": "css_body_retained"
+        },
+        {
+          "passed": true,
+          "property": "server_received_expected_dummy_identity_and_password_requests"
+        },
+        {
+          "passed": true,
+          "property": "final_dom_html_retained"
+        },
+        {
+          "passed": true,
+          "property": "page_requests_only_owned_loopback_or_aborted"
+        }
+      ],
+      "error": null,
+      "evidence_file": "evidence/delayed_contact_form.json",
+      "evidence_sha256": "836ecfb97bb218e301a5dc56524511839b4a784858904e5e6293e44c53fcc514",
+      "quality": {
+        "page_script_error_count": 0,
+        "request_events_dropped": 0,
+        "response_body_budget_exceeded": 0,
+        "response_body_errors": 0,
+        "response_events_dropped": 0,
+        "snapshot_storage_cut": 0,
+        "trace_events_dropped": 0
+      },
+      "response_count": 3,
+      "scenario_role_not_a_dataset_label": "ordinary_control",
+      "status": "passed"
+    },
+    {
+      "behaviour_features": {
+        "aborted_unknown_requests": 0,
+        "captured_external_script_response_count": 1,
+        "committed_main_frame_navigations_after_initial": 0,
+        "controls_added_after_dom_ready": 2,
+        "cross_origin_requests_containing_dummy_password": 1,
+        "final_native_password_controls": 0,
+        "final_passwordlike_controls": 1,
+        "forms_added_after_dom_ready": 1,
+        "initial_passwordlike_controls": 0,
+        "maximum_passwordlike_controls": 1,
+        "navigation_attempts_after_initial_load": 0,
+        "observed_attribute_changes": 0,
+        "observed_beacon_calls": 0,
+        "observed_fetch_calls": 1,
+        "observed_input_events": 2,
+        "observed_submit_events": 1,
+        "observed_submit_method_calls": 0,
+        "observed_timer_callbacks": 1,
+        "observed_xhr_send_calls": 0,
+        "requests_containing_dummy_identity": 1,
+        "requests_containing_dummy_password": 1
+      },
+      "case_id": "mocked_external_script_form",
+      "checks": [
+        {
+          "comparison": "equal",
+          "expected": 0,
+          "observed": 0,
+          "passed": true,
+          "property": "initial_passwordlike_controls"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "final_passwordlike_controls"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "forms_added_after_dom_ready"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "requests_containing_dummy_password"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "cross_origin_requests_containing_dummy_password"
+        },
+        {
+          "passed": true,
+          "property": "observation_not_truncated_or_failed"
+        },
+        {
+          "passed": true,
+          "property": "initial_html_response_exact"
+        },
+        {
+          "passed": true,
+          "property": "all_received_response_bodies_exact_and_hashed"
+        },
+        {
+          "passed": true,
+          "property": "every_referenced_external_script_body_retained"
+        },
+        {
+          "passed": true,
+          "property": "css_body_retained"
+        },
+        {
+          "passed": true,
+          "property": "server_received_expected_dummy_identity_and_password_requests"
+        },
+        {
+          "passed": true,
+          "property": "final_dom_html_retained"
+        },
+        {
+          "passed": true,
+          "property": "page_requests_only_owned_loopback_or_aborted"
+        }
+      ],
+      "error": null,
+      "evidence_file": "evidence/mocked_external_script_form.json",
+      "evidence_sha256": "1b4486fdb2b06fc65d3844de6f66344b97e27fa232d802f6227b623a599443eb",
+      "quality": {
+        "page_script_error_count": 0,
+        "request_events_dropped": 0,
+        "response_body_budget_exceeded": 0,
+        "response_body_errors": 0,
+        "response_events_dropped": 0,
+        "snapshot_storage_cut": 0,
+        "trace_events_dropped": 0
+      },
+      "response_count": 3,
+      "scenario_role_not_a_dataset_label": "behaviour_scenario",
+      "status": "passed"
+    },
+    {
+      "behaviour_features": {
+        "aborted_unknown_requests": 0,
+        "captured_external_script_response_count": 1,
+        "committed_main_frame_navigations_after_initial": 0,
+        "controls_added_after_dom_ready": 2,
+        "cross_origin_requests_containing_dummy_password": 1,
+        "final_native_password_controls": 0,
+        "final_passwordlike_controls": 1,
+        "forms_added_after_dom_ready": 1,
+        "initial_passwordlike_controls": 0,
+        "maximum_passwordlike_controls": 1,
+        "navigation_attempts_after_initial_load": 0,
+        "observed_attribute_changes": 0,
+        "observed_beacon_calls": 0,
+        "observed_fetch_calls": 1,
+        "observed_input_events": 2,
+        "observed_submit_events": 1,
+        "observed_submit_method_calls": 0,
+        "observed_timer_callbacks": 1,
+        "observed_xhr_send_calls": 0,
+        "requests_containing_dummy_identity": 1,
+        "requests_containing_dummy_password": 1
+      },
+      "case_id": "encoded_delayed_form",
+      "checks": [
+        {
+          "comparison": "equal",
+          "expected": 0,
+          "observed": 0,
+          "passed": true,
+          "property": "initial_passwordlike_controls"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "final_passwordlike_controls"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "forms_added_after_dom_ready"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "requests_containing_dummy_password"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "cross_origin_requests_containing_dummy_password"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "observed_fetch_calls"
+        },
+        {
+          "passed": true,
+          "property": "observation_not_truncated_or_failed"
+        },
+        {
+          "passed": true,
+          "property": "initial_html_response_exact"
+        },
+        {
+          "passed": true,
+          "property": "all_received_response_bodies_exact_and_hashed"
+        },
+        {
+          "passed": true,
+          "property": "every_referenced_external_script_body_retained"
+        },
+        {
+          "passed": true,
+          "property": "css_body_retained"
+        },
+        {
+          "passed": true,
+          "property": "server_received_expected_dummy_identity_and_password_requests"
+        },
+        {
+          "passed": true,
+          "property": "final_dom_html_retained"
+        },
+        {
+          "passed": true,
+          "property": "page_requests_only_owned_loopback_or_aborted"
+        }
+      ],
+      "error": null,
+      "evidence_file": "evidence/encoded_delayed_form.json",
+      "evidence_sha256": "9a542d833f14ed9eb91aa8d21f2df4e8f542333463aeda99d969b748dfa22cd7",
+      "quality": {
+        "page_script_error_count": 0,
+        "request_events_dropped": 0,
+        "response_body_budget_exceeded": 0,
+        "response_body_errors": 0,
+        "response_events_dropped": 0,
+        "snapshot_storage_cut": 0,
+        "trace_events_dropped": 0
+      },
+      "response_count": 3,
+      "scenario_role_not_a_dataset_label": "behaviour_scenario",
+      "status": "passed"
+    },
+    {
+      "behaviour_features": {
+        "aborted_unknown_requests": 0,
+        "captured_external_script_response_count": 1,
+        "committed_main_frame_navigations_after_initial": 0,
+        "controls_added_after_dom_ready": 0,
+        "cross_origin_requests_containing_dummy_password": 1,
+        "final_native_password_controls": 0,
+        "final_passwordlike_controls": 1,
+        "forms_added_after_dom_ready": 0,
+        "initial_passwordlike_controls": 1,
+        "maximum_passwordlike_controls": 1,
+        "navigation_attempts_after_initial_load": 0,
+        "observed_attribute_changes": 0,
+        "observed_beacon_calls": 0,
+        "observed_fetch_calls": 0,
+        "observed_input_events": 2,
+        "observed_submit_events": 1,
+        "observed_submit_method_calls": 0,
+        "observed_timer_callbacks": 0,
+        "observed_xhr_send_calls": 1,
+        "requests_containing_dummy_identity": 1,
+        "requests_containing_dummy_password": 1
+      },
+      "case_id": "japanese_label_xhr",
+      "checks": [
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "initial_passwordlike_controls"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "final_passwordlike_controls"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "requests_containing_dummy_password"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "cross_origin_requests_containing_dummy_password"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "observed_xhr_send_calls"
+        },
+        {
+          "passed": true,
+          "property": "observation_not_truncated_or_failed"
+        },
+        {
+          "passed": true,
+          "property": "initial_html_response_exact"
+        },
+        {
+          "passed": true,
+          "property": "all_received_response_bodies_exact_and_hashed"
+        },
+        {
+          "passed": true,
+          "property": "every_referenced_external_script_body_retained"
+        },
+        {
+          "passed": true,
+          "property": "css_body_retained"
+        },
+        {
+          "passed": true,
+          "property": "server_received_expected_dummy_identity_and_password_requests"
+        },
+        {
+          "passed": true,
+          "property": "final_dom_html_retained"
+        },
+        {
+          "passed": true,
+          "property": "page_requests_only_owned_loopback_or_aborted"
+        }
+      ],
+      "error": null,
+      "evidence_file": "evidence/japanese_label_xhr.json",
+      "evidence_sha256": "c08247a73f305ba1ffa203d1453fef0cbf2fad3e9eea3ecc2e4543ad6ced0fef",
+      "quality": {
+        "page_script_error_count": 0,
+        "request_events_dropped": 0,
+        "response_body_budget_exceeded": 0,
+        "response_body_errors": 0,
+        "response_events_dropped": 0,
+        "snapshot_storage_cut": 0,
+        "trace_events_dropped": 0
+      },
+      "response_count": 4,
+      "scenario_role_not_a_dataset_label": "behaviour_scenario",
+      "status": "passed"
+    },
+    {
+      "behaviour_features": {
+        "aborted_unknown_requests": 0,
+        "captured_external_script_response_count": 1,
+        "committed_main_frame_navigations_after_initial": 0,
+        "controls_added_after_dom_ready": 0,
+        "cross_origin_requests_containing_dummy_password": 1,
+        "final_native_password_controls": 1,
+        "final_passwordlike_controls": 1,
+        "forms_added_after_dom_ready": 0,
+        "initial_passwordlike_controls": 1,
+        "maximum_passwordlike_controls": 1,
+        "navigation_attempts_after_initial_load": 0,
+        "observed_attribute_changes": 0,
+        "observed_beacon_calls": 0,
+        "observed_fetch_calls": 1,
+        "observed_input_events": 2,
+        "observed_submit_events": 1,
+        "observed_submit_method_calls": 0,
+        "observed_timer_callbacks": 1,
+        "observed_xhr_send_calls": 0,
+        "requests_containing_dummy_identity": 1,
+        "requests_containing_dummy_password": 1
+      },
+      "case_id": "delayed_dummy_submission",
+      "checks": [
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "initial_passwordlike_controls"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "final_passwordlike_controls"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "requests_containing_dummy_password"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "cross_origin_requests_containing_dummy_password"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "observed_fetch_calls"
+        },
+        {
+          "comparison": "at_least",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "observed_timer_callbacks"
+        },
+        {
+          "passed": true,
+          "property": "observation_not_truncated_or_failed"
+        },
+        {
+          "passed": true,
+          "property": "initial_html_response_exact"
+        },
+        {
+          "passed": true,
+          "property": "all_received_response_bodies_exact_and_hashed"
+        },
+        {
+          "passed": true,
+          "property": "every_referenced_external_script_body_retained"
+        },
+        {
+          "passed": true,
+          "property": "css_body_retained"
+        },
+        {
+          "passed": true,
+          "property": "server_received_expected_dummy_identity_and_password_requests"
+        },
+        {
+          "passed": true,
+          "property": "final_dom_html_retained"
+        },
+        {
+          "passed": true,
+          "property": "page_requests_only_owned_loopback_or_aborted"
+        }
+      ],
+      "error": null,
+      "evidence_file": "evidence/delayed_dummy_submission.json",
+      "evidence_sha256": "1e92b211666f841a005bee3eb708e0d7ced54e72954f4ab68cce989bc78a9029",
+      "quality": {
+        "page_script_error_count": 0,
+        "request_events_dropped": 0,
+        "response_body_budget_exceeded": 0,
+        "response_body_errors": 0,
+        "response_events_dropped": 0,
+        "snapshot_storage_cut": 0,
+        "trace_events_dropped": 0
+      },
+      "response_count": 3,
+      "scenario_role_not_a_dataset_label": "behaviour_scenario",
+      "status": "passed"
+    },
+    {
+      "behaviour_features": {
+        "aborted_unknown_requests": 1,
+        "captured_external_script_response_count": 1,
+        "committed_main_frame_navigations_after_initial": 0,
+        "controls_added_after_dom_ready": 0,
+        "cross_origin_requests_containing_dummy_password": 0,
+        "final_native_password_controls": 0,
+        "final_passwordlike_controls": 0,
+        "forms_added_after_dom_ready": 0,
+        "initial_passwordlike_controls": 0,
+        "maximum_passwordlike_controls": 0,
+        "navigation_attempts_after_initial_load": 0,
+        "observed_attribute_changes": 0,
+        "observed_beacon_calls": 0,
+        "observed_fetch_calls": 1,
+        "observed_input_events": 0,
+        "observed_submit_events": 0,
+        "observed_submit_method_calls": 0,
+        "observed_timer_callbacks": 0,
+        "observed_xhr_send_calls": 0,
+        "requests_containing_dummy_identity": 0,
+        "requests_containing_dummy_password": 0
+      },
+      "case_id": "unknown_request_containment",
+      "checks": [
+        {
+          "comparison": "equal",
+          "expected": 0,
+          "observed": 0,
+          "passed": true,
+          "property": "initial_passwordlike_controls"
+        },
+        {
+          "comparison": "equal",
+          "expected": 0,
+          "observed": 0,
+          "passed": true,
+          "property": "final_passwordlike_controls"
+        },
+        {
+          "comparison": "equal",
+          "expected": 0,
+          "observed": 0,
+          "passed": true,
+          "property": "requests_containing_dummy_password"
+        },
+        {
+          "comparison": "equal",
+          "expected": 1,
+          "observed": 1,
+          "passed": true,
+          "property": "aborted_unknown_requests"
+        },
+        {
+          "passed": true,
+          "property": "observation_not_truncated_or_failed"
+        },
+        {
+          "passed": true,
+          "property": "initial_html_response_exact"
+        },
+        {
+          "passed": true,
+          "property": "all_received_response_bodies_exact_and_hashed"
+        },
+        {
+          "passed": true,
+          "property": "every_referenced_external_script_body_retained"
+        },
+        {
+          "passed": true,
+          "property": "css_body_retained"
+        },
+        {
+          "passed": true,
+          "property": "server_received_expected_dummy_identity_and_password_requests"
+        },
+        {
+          "passed": true,
+          "property": "final_dom_html_retained"
+        },
+        {
+          "passed": true,
+          "property": "page_requests_only_owned_loopback_or_aborted"
+        }
+      ],
+      "error": null,
+      "evidence_file": "evidence/unknown_request_containment.json",
+      "evidence_sha256": "2409f9e1538f12adb1d00442c9b2886c9265a2cd008a67addd2e1089f77ce134",
+      "quality": {
+        "page_script_error_count": 0,
+        "request_events_dropped": 0,
+        "response_body_budget_exceeded": 0,
+        "response_body_errors": 0,
+        "response_events_dropped": 0,
+        "snapshot_storage_cut": 0,
+        "trace_events_dropped": 0
+      },
+      "response_count": 3,
+      "scenario_role_not_a_dataset_label": "network_boundary_control",
+      "status": "passed"
+    }
+  ],
+  "config": {
+    "action_ms": 800,
+    "chromium_sandbox_requested": true,
+    "chromium_version": "153.0.8010.12",
+    "fixture_definitions_sha256": "ac8caada7e353734e351c6f226ca79b4e6094fa2d116f883e6df49eaf5a22c0b",
+    "max_response_body_bytes": 1048576,
+    "max_response_records_per_case": 150,
+    "max_total_response_body_bytes_per_case": 8388608,
+    "observe_ms": 1000,
+    "owned_loopback_origins": [
+      "http://127.0.0.1:50999",
+      "http://127.0.0.1:51000"
+    ],
+    "page_network_policy": "exact_owned_loopback_routes_only_all_other_requests_aborted",
+    "playwright_version": "1.63.0",
+    "python_version": "3.12.10",
+    "script_sha256": "319b6fdf87659235fe878189ba6fb1eed8113829fac7065fbe23cb420648aa86",
+    "script_version": "1.0",
+    "verified_script21_sha256": "35333800b2f2c5f40cee5c25518beba09f53475c724b6ad51f5d9b20cba3048b"
+  },
+  "controlled_cases": 9,
+  "created_utc": "2026-10-08T16:04:22.771212+00:00",
+  "failed_cases": 0,
+  "limitations": [
+    "Owned synthetic scenarios verify capture and observation, not phishing accuracy or real labelled data.",
+    "Four ordinary controls and four behaviour scenarios are paired software tests, not balanced real classes. The ninth case checks request containment.",
+    "Cross-origin credential submission and dynamic forms occur in ordinary controls and do not establish phishing.",
+    "Body bytes come from Playwright response.body and are decoded HTTP response payloads, not a byte-exact wire capture.",
+    "Bounded windows, selected dummy interactions and capped main-document instrumentation can miss other behaviour.",
+    "Service workers are blocked; CSS and owned external JS are available here. General hostile or live URL capture is not enabled.",
+    "This does not recover the original missing external JavaScript from historical PhreshPhish records.",
+    "Real collection needs independently evidenced labels, provenance, capture timestamps and separate collection/split planning before model training."
+  ],
+  "live_websites_requested": false,
+  "model_trained": false,
+  "official_test_evaluated": false,
+  "passed_cases": 9,
+  "phishing_accuracy_measured": false,
+  "previous_model_and_dataset_changed": false,
+  "real_dataset_loaded": false,
+  "scenario_counts_not_dataset_labels": {
+    "behaviour_scenario": 4,
+    "network_boundary_control": 1,
+    "ordinary_control": 4
+  },
+  "status": "resource_capture_pilot_complete",
+  "training_eligible": false
+}

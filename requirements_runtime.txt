@@ -1,0 +1,3 @@
+# Additions only. Keep the existing frozen ML / extraction packages unchanged.
+# Version matches the original controlled browser test workflow (script 21).
+playwright==1.55.0

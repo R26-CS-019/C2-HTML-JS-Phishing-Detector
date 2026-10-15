@@ -1,0 +1,73 @@
+{
+  "candidate_ranking": "Main validation average precision descending; tie ROC AUC descending, FPR at 0.50 ascending, model name. Sensitivity sets are not used for selection.",
+  "early_stopping": {
+    "metric": "binary_logloss",
+    "rounds": 100,
+    "set": "main_validation"
+  },
+  "extractor_code_sha256": "4c845262a0cb27c085a2fc80c4d37f427addad5405b7319ba20438f7e18ab7ef",
+  "input_hashes": {
+    "extraction_report": "df648d384befb01a2b2e8bb96248b9f3726cafa0c926a9bbfb116120448ffe78",
+    "extractor": "4c845262a0cb27c085a2fc80c4d37f427addad5405b7319ba20438f7e18ab7ef",
+    "schema": "d5897a28f5d0b4c2dfb475540a3f0b88febc7ff42cdf497327c3969f52b1c712",
+    "sensitivity": "005c1cd1d1a69d2c407105ab223483cfadaeb28c4465d8a5e3c60338f0d687bc",
+    "train": "6325e699590722447c32a4b261fb406526924ced0f990ca4d06ea0d4beb10752",
+    "validation": "9b335030bcc877379006c2d3e9c7f53982751c53819c7010c1bdd0adacccf198"
+  },
+  "input_reader": "python_csv_and_numpy",
+  "lightgbm_hyperparameters": {
+    "boosting_type": "gbdt",
+    "colsample_bytree": 0.8,
+    "deterministic": true,
+    "device_type": "cpu",
+    "force_col_wise": true,
+    "importance_type": "gain",
+    "learning_rate": 0.03,
+    "max_depth": -1,
+    "min_child_samples": 100,
+    "n_estimators": 2000,
+    "n_jobs": 4,
+    "num_leaves": 31,
+    "objective": "binary",
+    "random_state": 42,
+    "reg_alpha": 0.1,
+    "reg_lambda": 1.0,
+    "subsample": 0.8,
+    "subsample_freq": 1,
+    "verbosity": -1
+  },
+  "logistic_regression_hyperparameters": {
+    "C": 1.0,
+    "class_weight": null,
+    "max_iter": 1000,
+    "preprocessing": "log1p then training-fitted StandardScaler",
+    "random_state": 42,
+    "solver": "lbfgs",
+    "tol": 0.0001
+  },
+  "model_names": [
+    "lightgbm_all_features",
+    "logistic_regression",
+    "lightgbm_without_size_features"
+  ],
+  "package_versions": {
+    "joblib": "1.6.0",
+    "lightgbm": "4.7.0",
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.1",
+    "threadpoolctl": "3.7.0"
+  },
+  "python_version": "3.12.10",
+  "script_version": "1.1",
+  "seed": 42,
+  "size_features_omitted_in_comparison": [
+    "html_character_count",
+    "tag_count",
+    "text_character_count",
+    "title_character_count",
+    "js_analysed_character_count"
+  ],
+  "threads": 4,
+  "threshold": 0.5,
+  "training_code_sha256": "e3b1b8f3c8400b55437246881f337ea57621aa63ee3b5e1e42f2740a736da6fb"
+}

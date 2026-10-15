@@ -1,0 +1,21 @@
+{
+  "29_run_webpage_detector.py": "227c853bc2eff743f884bdbc65f1be9800282be38e2ee24219fbcbc4af8eadf1",
+  "30_start_detector_ui.py": "9c0bff54fb1874ea412efdb46c02ad397b33afe44388cb32007a2c04d9fa3f4e",
+  "31_test_dynamic_runtime.py": "413e157d8ee5277cbb4adc1ae972bfddcf6c2cb434799c8f495ea997f1a44dc1",
+  "README.md": "0cbfdf34f5ad625beb773e380296a2742f801d0476217a8d9c8cc52d0182a785",
+  "VERIFICATION.md": "d98380039276b12211edeb6c62c5beac9e567ff3dd2fff4611330c0a06f7fbb1",
+  "detector_runtime/__init__.py": "270f10bcc58e052931a242211fbbaa32a53b70c06dc80ecaa794c48adc730019",
+  "detector_runtime/capture.py": "30d8ced35a97b5e8309626d04cb10cd5ea5b3581f167ebbce13aa85095576b2c",
+  "detector_runtime/controlled_fixtures.py": "35333800b2f2c5f40cee5c25518beba09f53475c724b6ad51f5d9b20cba3048b",
+  "detector_runtime/dynamic.py": "e94b24718a326561e4358334c5a288e482bef4f3e8df5549be44117eb0d1dd6a",
+  "detector_runtime/model.py": "f592ca2809136c89d33a5f9b88c872a384d8f49b6dd18e442fdd80fc9030fe8e",
+  "detector_runtime/reports.py": "57254fa292378583a45231aab794123f3dd1afa824d34f4c1ad6052acaaa29f2",
+  "detector_runtime/ui.py": "ab7eb4e3bd37196bfec07013b6245f6145cddff87078a259c6e46294de881fd7",
+  "detector_runtime/web/app.js": "613a873074dc235a313327bb400a3fef1d40a46ff455ede4c81e4b2d75b5a675",
+  "detector_runtime/web/index.html": "fe94a0e88f5161fe8ec0e0a918214de9803b86c934cfc98b6847c308d25bf859",
+  "detector_runtime/web/style.css": "4115f7929f2e74bb50a4a9acc3ef85e74beb6ba225040784d1b623f55816ba84",
+  "examples/example_page.html": "496c067f1b7f943df354a160a7d0970245e1cf0ff20d1b72ba2c9ef0b50b4655",
+  "requirements_runtime.txt": "c38ad3e4e52ab12ae8a5ce743413623ae91299e45ec02f4c64bb4b3b2ef2b09d",
+  "tests/test_runtime.py": "51ff3f9342a0a429413da7e210a55d9f85cfbc9b3d5c735a46ee5a56d4a7e9cc",
+  "verification/controlled_dynamic_report.json": "a156deb4deb4cc2523f0dfc96626acb34b53a626541921ec465816127273d1e3"
+}

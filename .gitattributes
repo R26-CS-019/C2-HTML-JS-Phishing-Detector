@@ -1,0 +1,4 @@
+# Store every file byte-for-byte. detector_runtime checks SHA-256 hashes of
+# scripts 09/15, the schema, run config, freeze report and model bundle, so
+# line-ending conversion on checkout would break the frozen runtime.
+* -text

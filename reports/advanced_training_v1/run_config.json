@@ -1,0 +1,93 @@
+{
+  "candidate_ranking": "Main validation average precision descending; tie ROC AUC descending, FPR at 0.50 ascending, model name. Sensitivity sets are not used for selection.",
+  "catboost_hyperparameters": {
+    "allow_writing_files": false,
+    "boosting_type": "Plain",
+    "bootstrap_type": "Bernoulli",
+    "border_count": 128,
+    "depth": 6,
+    "eval_metric": "Logloss",
+    "iterations": 2000,
+    "l2_leaf_reg": 3.0,
+    "learning_rate": 0.03,
+    "loss_function": "Logloss",
+    "random_seed": 42,
+    "rsm": 0.8,
+    "subsample": 0.8,
+    "task_type": "CPU",
+    "thread_count": 4,
+    "use_best_model": true
+  },
+  "device": "cpu",
+  "early_stopping": {
+    "metric": "logloss",
+    "rounds": 100,
+    "set": "main_validation"
+  },
+  "extractor_code_sha256": "4c845262a0cb27c085a2fc80c4d37f427addad5405b7319ba20438f7e18ab7ef",
+  "families": [
+    "xgboost",
+    "catboost"
+  ],
+  "input_hashes": {
+    "baseline_report": "c10f3748cbc7592f4965e4aec6ab624940af77eff836c2b618dac38a02712053",
+    "baseline_script": "e3b1b8f3c8400b55437246881f337ea57621aa63ee3b5e1e42f2740a736da6fb",
+    "extraction_report": "df648d384befb01a2b2e8bb96248b9f3726cafa0c926a9bbfb116120448ffe78",
+    "extractor": "4c845262a0cb27c085a2fc80c4d37f427addad5405b7319ba20438f7e18ab7ef",
+    "schema": "d5897a28f5d0b4c2dfb475540a3f0b88febc7ff42cdf497327c3969f52b1c712",
+    "sensitivity": "005c1cd1d1a69d2c407105ab223483cfadaeb28c4465d8a5e3c60338f0d687bc",
+    "train": "6325e699590722447c32a4b261fb406526924ced0f990ca4d06ea0d4beb10752",
+    "validation": "9b335030bcc877379006c2d3e9c7f53982751c53819c7010c1bdd0adacccf198"
+  },
+  "input_reader": "unchanged_script_10_v1_1_python_csv_numpy",
+  "model_names": [
+    "xgboost_all_features",
+    "xgboost_without_size_features",
+    "catboost_all_features",
+    "catboost_without_size_features"
+  ],
+  "package_versions": {
+    "catboost": "1.2.10",
+    "joblib": "1.6.0",
+    "lightgbm": "4.7.0",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "threadpoolctl": "3.7.0",
+    "xgboost": "3.4.1"
+  },
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python_version": "3.12.10",
+  "script_version": "1.0",
+  "seed": 42,
+  "size_features_omitted_in_comparison": [
+    "html_character_count",
+    "tag_count",
+    "text_character_count",
+    "title_character_count",
+    "js_analysed_character_count"
+  ],
+  "threads": 4,
+  "threshold": 0.5,
+  "training_code_sha256": "a99ac4b60370f080a0fa11d138e5991c923aba16cb7d7a1eaa3ae33c6865c8fa",
+  "trees_limit": 2000,
+  "xgboost_hyperparameters": {
+    "alpha": 0.1,
+    "booster": "gbtree",
+    "colsample_bytree": 0.8,
+    "device": "cpu",
+    "eta": 0.03,
+    "eval_metric": "logloss",
+    "lambda": 1.0,
+    "max_bin": 256,
+    "max_depth": 6,
+    "min_child_weight": 10.0,
+    "nthread": 4,
+    "objective": "binary:logistic",
+    "scale_pos_weight": 1.0,
+    "seed": 42,
+    "subsample": 0.8,
+    "tree_method": "hist",
+    "verbosity": 1
+  }
+}

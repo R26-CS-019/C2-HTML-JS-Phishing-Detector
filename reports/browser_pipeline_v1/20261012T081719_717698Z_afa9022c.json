@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-10-12T08:17:19.717698+00:00",
+  "status": "integrated_checks_failed",
+  "expected_cases": 9,
+  "executed_cases": 1,
+  "passed_cases": 0,
+  "accuracy_measured": false,
+  "model_retrained": false,
+  "cases": [
+    {
+      "case": "delayed_login",
+      "passed": false,
+      "checks": {
+        "expected_completion": false,
+        "browser_observation_present": false
+      },
+      "analysis": {
+        "status": "browser_capture_failed",
+        "display_result": "Browser analysis could not complete",
+        "analysis_pipeline": "browser_pipeline_1.0",
+        "model_prediction_made": false,
+        "phishing_score": null,
+        "static_model_prediction": null,
+        "needs_review": true,
+        "error": "Error: BrowserType.launch: Executable doesn't exist at C:\\Users\\wmuvi\\AppData\\Local\\ms-playwright\\chromium_headless_shell-1243\\chrome-headless-shell-win64\\chrome-headless-shell.exe\n\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\n\u2551 Looks like Playwright was just installed or updated.       \u2551\n\u2551 Please run the following command to download new browsers: \u2551\n\u2551                                                            \u2551\n\u2551     playwright install                                     \u2551\n\u2551                                                            \u2551\n\u2551 <3 Playwright Team                                         \u2551\n\u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d",
+        "limitations": [
+          "Finite observation windows and selected test interactions can miss behavior.",
+          "Cookies, POST/API writes, images, fonts, media, WebSockets and service workers are blocked; some pages cannot render fully.",
+          "JavaScript hooks are observations that a page can evade or tamper with; they are not proof of malicious intent.",
+          "The frozen model scores the passive rendered main-frame HTML; browser signals are separate evidence, not extra ML inputs.",
+          "Credential forms, encoding and cross-origin login occur on legitimate pages too.",
+          "Accuracy of this integrated browser pipeline requires a new independently labelled evaluation set.",
+          "A Chromium sandbox and routing policy are not a hardened malware-analysis VM. Use an isolated disposable VM for suspected phishing pages."
+        ],
+        "demonstration": {
+          "case": "delayed_login",
+          "all_resources_offline": true,
+          "is_accuracy_test": false
+        }
+      }
+    }
+  ]
+}

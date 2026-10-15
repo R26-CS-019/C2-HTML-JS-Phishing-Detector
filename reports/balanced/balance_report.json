@@ -1,0 +1,79 @@
+{
+  "balanced_counts": {
+    "train": {
+      "benign": 143040,
+      "phish": 143040
+    },
+    "validation": {
+      "benign": 33228,
+      "phish": 33228
+    }
+  },
+  "balanced_group_counts": {
+    "train": 118369,
+    "validation": 27977
+  },
+  "balanced_subsets_created": true,
+  "created_utc": "2026-10-06T23:30:00.150423+00:00",
+  "cross_split_raw_or_normalized_html_groups": 0,
+  "input_counts": {
+    "train": {
+      "benign": 220786,
+      "phish": 143040
+    },
+    "validation": {
+      "benign": 55109,
+      "phish": 33228
+    }
+  },
+  "inputs_sha256": {
+    "D:\\research_new\\HTML_JS_PhishingDetector\\reports\\prepared\\clean_training_validation_manifest.csv": "2675f02c6e502b47f4cadb5eb070ea28aa3cc80c903881898684a350a70c8ed3",
+    "D:\\research_new\\HTML_JS_PhishingDetector\\reports\\prepared\\preparation_report.json": "4dd84c4485abc75852b104e32f2cfe291a1026fb1b2a782b0188ce17f0d9627f",
+    "D:\\research_new\\HTML_JS_PhishingDetector\\reports\\similarity\\html_similarity_report.json": "8ef92d7614d380571416d451f8a668a9ad338d419e3aea7c40fbc9d1f1009dd0",
+    "D:\\research_new\\HTML_JS_PhishingDetector\\reports\\similarity\\validation_similarity_candidates.csv": "a0409ac3c5ff0abc3a504070c266c5387a298a27b0c701378a7dc3389f3d3c43"
+  },
+  "limitations": [
+    "The sensitivity subset can differ in difficulty and template distribution. Report both validation results and their counts; do not select whichever score looks better.",
+    "Sampled similarity hits are not confirmed duplicate pages or label errors. No-hit pages are not proven free of near copies.",
+    "Balanced evaluation does not represent real-world phishing prevalence; also report false positive rate, precision, recall and the full official test result later.",
+    "Undersampling discards some benign examples from this training experiment; original files and the decision CSV retain their identities.",
+    "Manifest files contain metadata references, not copied HTML or model features. No model is trained and no accuracy is measured."
+  ],
+  "outputs": {
+    "balance_decisions.csv": {
+      "rows": 452163,
+      "sha256": "f1a55a7b1536d0323a60822a53505ff282fb80e66e80a882ffd1c7c44a2bbb0d"
+    },
+    "balanced_training_validation_manifest.csv": {
+      "rows": 352536,
+      "sha256": "8fca9482460ebdc194d3eaf7bb0bdf4c942c6fca6baa6d4bac6e022378137ec2"
+    },
+    "balanced_validation_without_flagged_candidates.csv": {
+      "rows": 55362,
+      "sha256": "a832c21b3a080f90bd29da64024a95d58c4f35880b6318073177dbd4402257de"
+    }
+  },
+  "policy": [
+    "Primary training and validation are separately 1:1 balanced by seeded SHA-256 ranking, undersampling the majority label without replacement.",
+    "Original splits and labels are preserved; similarity candidates remain in primary validation and are explicitly flagged.",
+    "Secondary validation is nested within primary validation, with every script 07 flagged page withheld, then rebalanced 1:1. Use the SAME balanced training model for both evaluations.",
+    "Candidate withholding uses the pre-balance training audit, even when a matched benign training example was not selected. It is conservative.",
+    "No original data is deleted, relabelled, duplicated or overwritten. Test selection is deferred until final evaluation."
+  ],
+  "primary_records": 352536,
+  "records_withheld_for_class_balance": 99627,
+  "script_version": "1.0",
+  "seed": 42,
+  "shared_train_validation_site_groups": 0,
+  "similarity_candidates_in_primary_validation": {
+    "benign": 158,
+    "phish": 5547
+  },
+  "similarity_candidates_in_sensitivity_validation": 0,
+  "status": "balanced_experimental_manifests_complete",
+  "validation_sensitivity_counts": {
+    "benign": 27681,
+    "phish": 27681
+  },
+  "validation_sensitivity_records": 55362
+}

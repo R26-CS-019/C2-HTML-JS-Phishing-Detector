@@ -1,0 +1,154 @@
+{
+  "status": "live_evaluation_complete",
+  "evaluator_version": "1.0.0",
+  "generated_at_utc": "2026-10-11T05:58:21+00:00",
+  "protocol_sha256": "1a12d2ce7433882816567d024cb2b872791f0cee88e8217436ae6b2b7f04f23a",
+  "started_at_utc": "2026-10-11T05:56:00+00:00",
+  "model": {
+    "runtime_version": "1.0.0",
+    "model_name": "lightgbm_context_all_features",
+    "model_bundle_sha256": "944e9bcfcb884ab167beaf3b72b992cf4799aee727e31e8afbde1b1b2d4b4ca1",
+    "frozen_specification_sha256": "0443c025950a2fcce451c80c8d657ba2e5a56fbcb25de1e3279748e987c9e1cc",
+    "feature_count": 106,
+    "numeric_type": "float32",
+    "threshold": 0.5,
+    "best_iteration": 1269,
+    "threads": 4,
+    "environment": {
+      "python": "3.12.10",
+      "packages": {
+        "joblib": "1.6.0",
+        "lightgbm": "4.7.0",
+        "numpy": "2.5.3",
+        "scikit-learn": "1.9.1",
+        "threadpoolctl": "3.7.0",
+        "duckdb": "1.5.6",
+        "tldextract": "5.4.0"
+      }
+    },
+    "model_trained": false
+  },
+  "threshold": 0.5,
+  "selected_pages": 100,
+  "completed_attempts": 100,
+  "input_class_counts": {
+    "benign": 50,
+    "phish": 50
+  },
+  "input_list_balanced": true,
+  "scored_class_counts": {
+    "benign": 37,
+    "phish": 21
+  },
+  "scored_subset_balanced": false,
+  "coverage_by_class": {
+    "benign": {
+      "selected": 50,
+      "prediction_complete": 37,
+      "inconclusive_capture": 0,
+      "capture_failed": 13,
+      "interrupted_capture": 0,
+      "pending": 0,
+      "scored_coverage": 0.74,
+      "complete_http_capture_coverage": 0.74
+    },
+    "phish": {
+      "selected": 50,
+      "prediction_complete": 21,
+      "inconclusive_capture": 0,
+      "capture_failed": 29,
+      "interrupted_capture": 0,
+      "pending": 0,
+      "scored_coverage": 0.42,
+      "complete_http_capture_coverage": 0.42
+    }
+  },
+  "distinct_input_hostnames_by_class": {
+    "benign": 50,
+    "phish": 50
+  },
+  "scored_coverage_all_selected_pages": 0.58,
+  "classification_metrics_on_scored_pages": {
+    "positive_class": "phish",
+    "scored_pages": 58,
+    "confusion_matrix": {
+      "TN": 33,
+      "FP": 4,
+      "FN": 2,
+      "TP": 19
+    },
+    "accuracy": 0.896551724137931,
+    "balanced_accuracy": 0.8983268983268984,
+    "precision": 0.8260869565217391,
+    "recall": 0.9047619047619048,
+    "false_positive_rate": 0.10810810810810811,
+    "false_negative_rate": 0.09523809523809523,
+    "specificity": 0.8918918918918919,
+    "f1": 0.8636363636363636,
+    "wilson_95_intervals": {
+      "accuracy": [
+        0.7921189700751577,
+        0.951718592576371
+      ],
+      "precision": [
+        0.6286235235977385,
+        0.9302134643693744
+      ],
+      "recall": [
+        0.7108586092608176,
+        0.9734812325619255
+      ],
+      "false_positive_rate": [
+        0.04285189940411473,
+        0.24708531544126028
+      ]
+    },
+    "rates_are_fractions_not_percentages": true,
+    "denominator": "prediction_complete pages only; failures and inconclusive captures are excluded and reported separately"
+  },
+  "correct_scored_predictions_divided_by_all_selected_pages": 0.52,
+  "all_selected_fraction_is_not_classification_accuracy": true,
+  "duplicate_capture_groups": {
+    "final_url": [],
+    "html_sha256": [
+      {
+        "html_sha256": "e79398254ae97382cecb0af5e534bde997f1bec3747099c7a335c9df2725aeff",
+        "pages": [
+          {
+            "csv_row": 70,
+            "label": "phish"
+          },
+          {
+            "csv_row": 92,
+            "label": "phish"
+          }
+        ],
+        "conflicting_labels": false
+      }
+    ]
+  },
+  "labels_verified_by_evaluator": false,
+  "model_trained_or_tuned": false,
+  "javascript_executed": false,
+  "external_javascript_downloaded": false,
+  "sampling_design": "user-selected balanced live pilot; no probability sampling assumed",
+  "warnings": [
+    "Accuracy/FPR use scored pages only. Missing and inconclusive pages remain in coverage denominators.",
+    "The input list is balanced; the scored subset is not balanced. No successful pages were dropped to rebalance it.",
+    "Some URLs reached the same final URL or HTML. Review duplicate groups; rows and frozen labels were retained."
+  ],
+  "limitations": [
+    "Labels come from the supplied evidence/date; this evaluator cannot establish ground truth or whether a page later changed.",
+    "Do not use model predictions to choose or relabel evaluation URLs.",
+    "Metrics describe this live HTTP-source pilot, not population accuracy or a new official PhreshPhish benchmark.",
+    "Training/test archives used browser-rendered HTML. This runtime captures HTTP source without running JavaScript.",
+    "Conditional accuracy excludes capture failures and recognized challenge/unavailable-page responses; report coverage alongside it.",
+    "Wilson intervals describe binomial sampling uncertainty only. Site selection and correlated pages can add further uncertainty."
+  ],
+  "files": {
+    "predictions": "live_evaluation_predictions.csv",
+    "frozen_labels": "frozen_input.csv",
+    "protocol": "evaluation_protocol.json",
+    "captured_html_and_full_results": "checkpoint.sqlite3"
+  }
+}

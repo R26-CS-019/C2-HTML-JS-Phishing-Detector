@@ -1,0 +1,2 @@
+# Browser addition only. Keep all frozen ML/extraction packages unchanged.
+playwright==1.63.0

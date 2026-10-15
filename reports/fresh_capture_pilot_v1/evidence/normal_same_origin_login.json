@@ -1,0 +1,638 @@
+{
+  "before_dummy_probe_snapshot": {
+    "document_ms": 1014.7000000178814,
+    "document_url": "http://127.0.0.1:50999/fixtures/normal_same_origin_login",
+    "entry_control_count": 2,
+    "fields": [
+      {
+        "aria_labelledby_texts": [],
+        "attributes": {
+          "aria-label": "",
+          "autocomplete": "",
+          "id": "user",
+          "name": "user",
+          "placeholder": "",
+          "title": ""
+        },
+        "disabled": false,
+        "dom_index": 0,
+        "form_index": 0,
+        "identitylike": true,
+        "label_texts": [
+          "Email"
+        ],
+        "native_password": false,
+        "password_cue_evidence": [],
+        "passwordlike": false,
+        "rendered_visible": true,
+        "tag": "input",
+        "type": "email"
+      },
+      {
+        "aria_labelledby_texts": [],
+        "attributes": {
+          "aria-label": "",
+          "autocomplete": "",
+          "id": "secret",
+          "name": "secret",
+          "placeholder": "",
+          "title": ""
+        },
+        "disabled": false,
+        "dom_index": 1,
+        "form_index": 0,
+        "identitylike": false,
+        "label_texts": [
+          "Password"
+        ],
+        "native_password": true,
+        "password_cue_evidence": [
+          {
+            "associated_text": "Password",
+            "cue": "password_word_or_phrase"
+          }
+        ],
+        "passwordlike": true,
+        "rendered_visible": true,
+        "tag": "input",
+        "type": "password"
+      }
+    ],
+    "form_count": 1,
+    "forms": [
+      {
+        "action": "http://127.0.0.1:50999/collect",
+        "cross_origin": false,
+        "id": "login",
+        "index": 0,
+        "method": "post"
+      }
+    ],
+    "identitylike_count": 1,
+    "native_password_count": 1,
+    "nonnative_passwordlike_count": 0,
+    "passwordlike_count": 1,
+    "storage_cut": false,
+    "trace_events_dropped": 0
+  },
+  "behaviour_features": {
+    "aborted_unknown_requests": 0,
+    "captured_external_script_response_count": 1,
+    "committed_main_frame_navigations_after_initial": 0,
+    "controls_added_after_dom_ready": 0,
+    "cross_origin_requests_containing_dummy_password": 0,
+    "final_native_password_controls": 1,
+    "final_passwordlike_controls": 1,
+    "forms_added_after_dom_ready": 0,
+    "initial_passwordlike_controls": 1,
+    "maximum_passwordlike_controls": 1,
+    "navigation_attempts_after_initial_load": 1,
+    "observed_attribute_changes": 0,
+    "observed_beacon_calls": 0,
+    "observed_fetch_calls": 0,
+    "observed_input_events": 2,
+    "observed_submit_events": 1,
+    "observed_submit_method_calls": 0,
+    "observed_timer_callbacks": 0,
+    "observed_xhr_send_calls": 0,
+    "requests_containing_dummy_identity": 1,
+    "requests_containing_dummy_password": 1
+  },
+  "captured_utc": "2026-10-08T16:04:06.922657+00:00",
+  "case_elapsed_seconds": 2.2030000000086147,
+  "case_id": "normal_same_origin_login",
+  "checks": [
+    {
+      "comparison": "equal",
+      "expected": 1,
+      "observed": 1,
+      "passed": true,
+      "property": "initial_passwordlike_controls"
+    },
+    {
+      "comparison": "equal",
+      "expected": 1,
+      "observed": 1,
+      "passed": true,
+      "property": "final_passwordlike_controls"
+    },
+    {
+      "comparison": "equal",
+      "expected": 1,
+      "observed": 1,
+      "passed": true,
+      "property": "requests_containing_dummy_password"
+    },
+    {
+      "comparison": "equal",
+      "expected": 0,
+      "observed": 0,
+      "passed": true,
+      "property": "cross_origin_requests_containing_dummy_password"
+    },
+    {
+      "comparison": "equal",
+      "expected": 1,
+      "observed": 1,
+      "passed": true,
+      "property": "observed_submit_events"
+    },
+    {
+      "passed": true,
+      "property": "observation_not_truncated_or_failed"
+    },
+    {
+      "passed": true,
+      "property": "initial_html_response_exact"
+    },
+    {
+      "passed": true,
+      "property": "all_received_response_bodies_exact_and_hashed"
+    },
+    {
+      "passed": true,
+      "property": "every_referenced_external_script_body_retained"
+    },
+    {
+      "passed": true,
+      "property": "css_body_retained"
+    },
+    {
+      "passed": true,
+      "property": "server_received_expected_dummy_identity_and_password_requests"
+    },
+    {
+      "passed": true,
+      "property": "final_dom_html_retained"
+    },
+    {
+      "passed": true,
+      "property": "page_requests_only_owned_loopback_or_aborted"
+    }
+  ],
+  "dummy_probe_action": "submit",
+  "events": [
+    {
+      "case_elapsed_ms": 312.0000000053551,
+      "document_ms": 11.700000017881393,
+      "document_url": "http://127.0.0.1:50999/fixtures/normal_same_origin_login",
+      "is_main_frame": true,
+      "kind": "dom_content_loaded",
+      "phase": "passive",
+      "snapshot": {
+        "document_ms": 11.5,
+        "document_url": "http://127.0.0.1:50999/fixtures/normal_same_origin_login",
+        "entry_control_count": 2,
+        "fields": [
+          {
+            "aria_labelledby_texts": [],
+            "attributes": {
+              "aria-label": "",
+              "autocomplete": "",
+              "id": "user",
+              "name": "user",
+              "placeholder": "",
+              "title": ""
+            },
+            "disabled": false,
+            "dom_index": 0,
+            "form_index": 0,
+            "identitylike": true,
+            "label_texts": [
+              "Email"
+            ],
+            "native_password": false,
+            "password_cue_evidence": [],
+            "passwordlike": false,
+            "rendered_visible": true,
+            "tag": "input",
+            "type": "email"
+          },
+          {
+            "aria_labelledby_texts": [],
+            "attributes": {
+              "aria-label": "",
+              "autocomplete": "",
+              "id": "secret",
+              "name": "secret",
+              "placeholder": "",
+              "title": ""
+            },
+            "disabled": false,
+            "dom_index": 1,
+            "form_index": 0,
+            "identitylike": false,
+            "label_texts": [
+              "Password"
+            ],
+            "native_password": true,
+            "password_cue_evidence": [
+              {
+                "associated_text": "Password",
+                "cue": "password_word_or_phrase"
+              }
+            ],
+            "passwordlike": true,
+            "rendered_visible": true,
+            "tag": "input",
+            "type": "password"
+          }
+        ],
+        "form_count": 1,
+        "forms": [
+          {
+            "action": "http://127.0.0.1:50999/collect",
+            "cross_origin": false,
+            "id": "login",
+            "index": 0,
+            "method": "post"
+          }
+        ],
+        "identitylike_count": 1,
+        "native_password_count": 1,
+        "nonnative_passwordlike_count": 0,
+        "passwordlike_count": 1,
+        "storage_cut": false,
+        "trace_events_dropped": 0
+      }
+    },
+    {
+      "case_elapsed_ms": 1344.0000000118744,
+      "document_ms": 1042.4000000059605,
+      "document_url": "http://127.0.0.1:50999/fixtures/normal_same_origin_login",
+      "field_id": "user",
+      "field_type": "email",
+      "is_main_frame": true,
+      "kind": "input",
+      "phase": "dummy_probe"
+    },
+    {
+      "case_elapsed_ms": 1344.0000000118744,
+      "document_ms": 1047.800000011921,
+      "document_url": "http://127.0.0.1:50999/fixtures/normal_same_origin_login",
+      "field_id": "user",
+      "field_type": "email",
+      "is_main_frame": true,
+      "kind": "change",
+      "phase": "dummy_probe"
+    },
+    {
+      "case_elapsed_ms": 1344.0000000118744,
+      "document_ms": 1049.0999999940395,
+      "document_url": "http://127.0.0.1:50999/fixtures/normal_same_origin_login",
+      "field_id": "secret",
+      "field_type": "password",
+      "is_main_frame": true,
+      "kind": "input",
+      "phase": "dummy_probe"
+    },
+    {
+      "case_elapsed_ms": 1375.0,
+      "document_ms": 1082.0999999940395,
+      "document_url": "http://127.0.0.1:50999/fixtures/normal_same_origin_login",
+      "field_id": "secret",
+      "field_type": "password",
+      "is_main_frame": true,
+      "kind": "change",
+      "phase": "dummy_probe"
+    },
+    {
+      "action": "http://127.0.0.1:50999/collect",
+      "case_elapsed_ms": 1390.0000000139698,
+      "document_ms": 1084.9000000059605,
+      "document_url": "http://127.0.0.1:50999/fixtures/normal_same_origin_login",
+      "form_id": "login",
+      "is_main_frame": true,
+      "kind": "submit_event",
+      "method": "post",
+      "phase": "dummy_probe"
+    }
+  ],
+  "final_html": "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>Controlled pilot page</title><link rel=\"stylesheet\" href=\"/fixture.css\"></head><body><form id=\"login\" method=\"post\" action=\"/collect\"><label for=\"user\">Email</label><input id=\"user\" name=\"user\" type=\"email\" required=\"\"><label for=\"secret\">Password</label><input id=\"secret\" name=\"secret\" type=\"password\" required=\"\"><button id=\"go\" type=\"submit\">Continue</button></form><script src=\"/cases/normal_same_origin_login.js\"></script></body></html>",
+  "final_html_utf8_sha256": "0a9721ab5f1a9bd9be5099a928e4f56a763c30d8e94dad9cbc5a01fcb93ae21f",
+  "final_snapshot": {
+    "document_ms": 1909.4000000059605,
+    "document_url": "http://127.0.0.1:50999/fixtures/normal_same_origin_login",
+    "entry_control_count": 2,
+    "fields": [
+      {
+        "aria_labelledby_texts": [],
+        "attributes": {
+          "aria-label": "",
+          "autocomplete": "",
+          "id": "user",
+          "name": "user",
+          "placeholder": "",
+          "title": ""
+        },
+        "disabled": false,
+        "dom_index": 0,
+        "form_index": 0,
+        "identitylike": true,
+        "label_texts": [
+          "Email"
+        ],
+        "native_password": false,
+        "password_cue_evidence": [],
+        "passwordlike": false,
+        "rendered_visible": true,
+        "tag": "input",
+        "type": "email"
+      },
+      {
+        "aria_labelledby_texts": [],
+        "attributes": {
+          "aria-label": "",
+          "autocomplete": "",
+          "id": "secret",
+          "name": "secret",
+          "placeholder": "",
+          "title": ""
+        },
+        "disabled": false,
+        "dom_index": 1,
+        "form_index": 0,
+        "identitylike": false,
+        "label_texts": [
+          "Password"
+        ],
+        "native_password": true,
+        "password_cue_evidence": [
+          {
+            "associated_text": "Password",
+            "cue": "password_word_or_phrase"
+          }
+        ],
+        "passwordlike": true,
+        "rendered_visible": true,
+        "tag": "input",
+        "type": "password"
+      }
+    ],
+    "form_count": 1,
+    "forms": [
+      {
+        "action": "http://127.0.0.1:50999/collect",
+        "cross_origin": false,
+        "id": "login",
+        "index": 0,
+        "method": "post"
+      }
+    ],
+    "identitylike_count": 1,
+    "native_password_count": 1,
+    "nonnative_passwordlike_count": 0,
+    "passwordlike_count": 1,
+    "storage_cut": false,
+    "trace_events_dropped": 0
+  },
+  "fixture_url": "http://127.0.0.1:50999/fixtures/normal_same_origin_login",
+  "initial_html": "<!doctype html><html lang='en'><head><meta charset='utf-8'><title>Controlled pilot page</title><link rel='stylesheet' href='/fixture.css'></head><body><form id='login' method='post' action='/collect'><label for='user'>Email</label><input id='user' name='user' type='email' required><label for='secret'>Password</label><input id='secret' name='secret' type='password' required><button id='go' type='submit'>Continue</button></form><script src='/cases/normal_same_origin_login.js'></script></body></html>",
+  "initial_html_utf8_sha256": "d38477d5c7e5b51dff28e3c7e7777bd02ccbce2b55dbce58583e3ac715bd04f4",
+  "initial_snapshot": {
+    "document_ms": 11.5,
+    "document_url": "http://127.0.0.1:50999/fixtures/normal_same_origin_login",
+    "entry_control_count": 2,
+    "fields": [
+      {
+        "aria_labelledby_texts": [],
+        "attributes": {
+          "aria-label": "",
+          "autocomplete": "",
+          "id": "user",
+          "name": "user",
+          "placeholder": "",
+          "title": ""
+        },
+        "disabled": false,
+        "dom_index": 0,
+        "form_index": 0,
+        "identitylike": true,
+        "label_texts": [
+          "Email"
+        ],
+        "native_password": false,
+        "password_cue_evidence": [],
+        "passwordlike": false,
+        "rendered_visible": true,
+        "tag": "input",
+        "type": "email"
+      },
+      {
+        "aria_labelledby_texts": [],
+        "attributes": {
+          "aria-label": "",
+          "autocomplete": "",
+          "id": "secret",
+          "name": "secret",
+          "placeholder": "",
+          "title": ""
+        },
+        "disabled": false,
+        "dom_index": 1,
+        "form_index": 0,
+        "identitylike": false,
+        "label_texts": [
+          "Password"
+        ],
+        "native_password": true,
+        "password_cue_evidence": [
+          {
+            "associated_text": "Password",
+            "cue": "password_word_or_phrase"
+          }
+        ],
+        "passwordlike": true,
+        "rendered_visible": true,
+        "tag": "input",
+        "type": "password"
+      }
+    ],
+    "form_count": 1,
+    "forms": [
+      {
+        "action": "http://127.0.0.1:50999/collect",
+        "cross_origin": false,
+        "id": "login",
+        "index": 0,
+        "method": "post"
+      }
+    ],
+    "identitylike_count": 1,
+    "native_password_count": 1,
+    "nonnative_passwordlike_count": 0,
+    "passwordlike_count": 1,
+    "storage_cut": false,
+    "trace_events_dropped": 0
+  },
+  "main_frame_navigations": [
+    {
+      "case_elapsed_ms": 297.0000000204891,
+      "url": "http://127.0.0.1:50999/fixtures/normal_same_origin_login"
+    }
+  ],
+  "owned_server_requests": [
+    {
+      "body": "",
+      "method": "GET",
+      "path": "/fixtures/normal_same_origin_login",
+      "port": 50999
+    },
+    {
+      "body": "",
+      "method": "GET",
+      "path": "/fixture.css",
+      "port": 50999
+    },
+    {
+      "body": "",
+      "method": "GET",
+      "path": "/cases/normal_same_origin_login.js",
+      "port": 50999
+    },
+    {
+      "body": "user=RESEARCH_DUMMY_USER_21%40example.test&secret=RESEARCH_DUMMY_PASSWORD_21",
+      "method": "POST",
+      "path": "/collect",
+      "port": 50999
+    }
+  ],
+  "page_script_errors": [],
+  "quality": {
+    "page_script_error_count": 0,
+    "request_events_dropped": 0,
+    "response_body_budget_exceeded": 0,
+    "response_body_errors": 0,
+    "response_events_dropped": 0,
+    "snapshot_storage_cut": 0,
+    "trace_events_dropped": 0
+  },
+  "requests": [
+    {
+      "case_elapsed_ms": 109.0000000258442,
+      "contains_dummy_identity": false,
+      "contains_dummy_password": false,
+      "cross_origin_from_fixture": false,
+      "initial_fixture_request": true,
+      "method": "GET",
+      "navigation": true,
+      "page_request_sent_to_live_network": false,
+      "phase": "passive",
+      "post_body": "",
+      "resource_type": "document",
+      "route_action": "continued_owned_loopback",
+      "sent_to_owned_loopback_server": true,
+      "url": "http://127.0.0.1:50999/fixtures/normal_same_origin_login"
+    },
+    {
+      "case_elapsed_ms": 297.0000000204891,
+      "contains_dummy_identity": false,
+      "contains_dummy_password": false,
+      "cross_origin_from_fixture": false,
+      "initial_fixture_request": false,
+      "method": "GET",
+      "navigation": false,
+      "page_request_sent_to_live_network": false,
+      "phase": "passive",
+      "post_body": "",
+      "resource_type": "stylesheet",
+      "route_action": "continued_owned_loopback",
+      "sent_to_owned_loopback_server": true,
+      "url": "http://127.0.0.1:50999/fixture.css"
+    },
+    {
+      "case_elapsed_ms": 297.0000000204891,
+      "contains_dummy_identity": false,
+      "contains_dummy_password": false,
+      "cross_origin_from_fixture": false,
+      "initial_fixture_request": false,
+      "method": "GET",
+      "navigation": false,
+      "page_request_sent_to_live_network": false,
+      "phase": "passive",
+      "post_body": "",
+      "resource_type": "script",
+      "route_action": "continued_owned_loopback",
+      "sent_to_owned_loopback_server": true,
+      "url": "http://127.0.0.1:50999/cases/normal_same_origin_login.js"
+    },
+    {
+      "case_elapsed_ms": 1390.0000000139698,
+      "contains_dummy_identity": true,
+      "contains_dummy_password": true,
+      "cross_origin_from_fixture": false,
+      "initial_fixture_request": false,
+      "method": "POST",
+      "navigation": true,
+      "page_request_sent_to_live_network": false,
+      "phase": "dummy_probe",
+      "post_body": "user=RESEARCH_DUMMY_USER_21%40example.test&secret=RESEARCH_DUMMY_PASSWORD_21",
+      "resource_type": "document",
+      "route_action": "continued_owned_loopback",
+      "sent_to_owned_loopback_server": true,
+      "url": "http://127.0.0.1:50999/collect"
+    }
+  ],
+  "responses": [
+    {
+      "body_base64": "PCFkb2N0eXBlIGh0bWw+PGh0bWwgbGFuZz0nZW4nPjxoZWFkPjxtZXRhIGNoYXJzZXQ9J3V0Zi04Jz48dGl0bGU+Q29udHJvbGxlZCBwaWxvdCBwYWdlPC90aXRsZT48bGluayByZWw9J3N0eWxlc2hlZXQnIGhyZWY9Jy9maXh0dXJlLmNzcyc+PC9oZWFkPjxib2R5Pjxmb3JtIGlkPSdsb2dpbicgbWV0aG9kPSdwb3N0JyBhY3Rpb249Jy9jb2xsZWN0Jz48bGFiZWwgZm9yPSd1c2VyJz5FbWFpbDwvbGFiZWw+PGlucHV0IGlkPSd1c2VyJyBuYW1lPSd1c2VyJyB0eXBlPSdlbWFpbCcgcmVxdWlyZWQ+PGxhYmVsIGZvcj0nc2VjcmV0Jz5QYXNzd29yZDwvbGFiZWw+PGlucHV0IGlkPSdzZWNyZXQnIG5hbWU9J3NlY3JldCcgdHlwZT0ncGFzc3dvcmQnIHJlcXVpcmVkPjxidXR0b24gaWQ9J2dvJyB0eXBlPSdzdWJtaXQnPkNvbnRpbnVlPC9idXR0b24+PC9mb3JtPjxzY3JpcHQgc3JjPScvY2FzZXMvbm9ybWFsX3NhbWVfb3JpZ2luX2xvZ2luLmpzJz48L3NjcmlwdD48L2JvZHk+PC9odG1sPg==",
+      "body_bytes": 502,
+      "body_complete": true,
+      "body_encoding": "base64_of_playwright_decoded_response_body",
+      "body_sha256": "d38477d5c7e5b51dff28e3c7e7777bd02ccbce2b55dbce58583e3ac715bd04f4",
+      "case_elapsed_ms": 312.0000000053551,
+      "headers": {
+        "cache-control": "no-store",
+        "content-length": "502",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 08 Oct 2026 16:04:05 GMT",
+        "server": "BaseHTTP/0.6 Python/3.12.10"
+      },
+      "method": "GET",
+      "resource_type": "document",
+      "status": 200,
+      "url": "http://127.0.0.1:50999/fixtures/normal_same_origin_login"
+    },
+    {
+      "body_base64": "Ym9keXtmb250LWZhbWlseTpzYW5zLXNlcmlmO3BhZGRpbmc6MTZweH1sYWJlbHtkaXNwbGF5OmJsb2NrfQ==",
+      "body_bytes": 61,
+      "body_complete": true,
+      "body_encoding": "base64_of_playwright_decoded_response_body",
+      "body_sha256": "f0281b81a5e1b2b61aefe21921227e4457b1b1caf37534c2058b5ac653b1202e",
+      "case_elapsed_ms": 312.0000000053551,
+      "headers": {
+        "cache-control": "no-store",
+        "content-length": "61",
+        "content-type": "text/css; charset=utf-8",
+        "date": "Thu, 08 Oct 2026 16:04:05 GMT",
+        "server": "BaseHTTP/0.6 Python/3.12.10"
+      },
+      "method": "GET",
+      "resource_type": "stylesheet",
+      "status": 200,
+      "url": "http://127.0.0.1:50999/fixture.css"
+    },
+    {
+      "body_base64": "LyogT3duZWQgY29sbGVjdG9yIGNvbnRyb2w6IG5vIHBhZ2UgYWN0aW9uLiAqLw==",
+      "body_bytes": 46,
+      "body_complete": true,
+      "body_encoding": "base64_of_playwright_decoded_response_body",
+      "body_sha256": "1686c3be7687137a1aebead68723090ea12eda63a60cd0f5d936e91321f6a9f6",
+      "case_elapsed_ms": 312.0000000053551,
+      "headers": {
+        "cache-control": "no-store",
+        "content-length": "46",
+        "content-type": "application/javascript; charset=utf-8",
+        "date": "Thu, 08 Oct 2026 16:04:05 GMT",
+        "server": "BaseHTTP/0.6 Python/3.12.10"
+      },
+      "method": "GET",
+      "resource_type": "script",
+      "status": 200,
+      "url": "http://127.0.0.1:50999/cases/normal_same_origin_login.js"
+    }
+  ],
+  "scenario_role_not_a_dataset_label": "ordinary_control",
+  "status": "passed",
+  "training_eligible": false
+}

@@ -1,0 +1,29 @@
+{
+  "analysis_code_sha256": "e88859af65d1d95e9d1400c0f40ad8abd276259d73b7ef06d2852d743747aabe",
+  "illustrative_empirical_fpr_limits": [
+    0.01,
+    0.005,
+    0.001
+  ],
+  "input_hashes": {
+    "baseline_report": "c10f3748cbc7592f4965e4aec6ab624940af77eff836c2b618dac38a02712053",
+    "feature_report": "3c4e87dd25dbb5b4154a1163115143a5e4688a6201aa85da2bb7d1b8e2540540",
+    "lightgbm_all_features": "db8b79455426cf74fbd06258e0986411ea9242be52583fb53259dc6d7d0e6c4f",
+    "lightgbm_context_all_features": "d363911ce3b4f72cefc607e6ec3fb52bae656e4b55ac126672cf589fa9e3957a",
+    "lightgbm_context_without_size_features": "88b3ef730361e44dd4c4dc7fa979f7b1bbccf9eb97c93833b389b5cbe1bcc733",
+    "lightgbm_without_size_features": "0bd57e899a1d1ab8e5afdcbd7948d9aa6515adad8a9e9a5760885da6f6040cd7",
+    "schema": "ddac06f97eb873aace6a76a5033731bde70d63beeab3897017f6bc6bad503def",
+    "training_config": "c024a9754684015497c8b2f9cf0f2b7373df96dcb14c2a365658cf99f9b59a36",
+    "training_report": "ec7684b6d452d3e01d73e528963055c4faa7813de5d29da6c5586b134ce590ed",
+    "validation_features": "5dfe956cf427e7ce49b3250e1f1c800643fe497ce6a3da2a00a085570a30793f"
+  },
+  "models": [
+    "lightgbm_all_features",
+    "lightgbm_without_size_features",
+    "lightgbm_context_all_features",
+    "lightgbm_context_without_size_features"
+  ],
+  "numpy_version": "2.5.3",
+  "python_version": "3.12.10",
+  "script_version": "1.0"
+}

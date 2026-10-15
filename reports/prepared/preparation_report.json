@@ -1,0 +1,155 @@
+{
+  "balanced_subsets_created": false,
+  "created_utc": "2026-10-06T20:26:15.772071+00:00",
+  "decisions_by_original_split_and_label": [
+    {
+      "decision": "quarantine_unresolved_url",
+      "label": "phish",
+      "original_split": "quarantine",
+      "rows": 1
+    },
+    {
+      "decision": "eligible",
+      "label": "benign",
+      "original_split": "train",
+      "rows": 220786
+    },
+    {
+      "decision": "exclude_exact_duplicate_html",
+      "label": "benign",
+      "original_split": "train",
+      "rows": 582
+    },
+    {
+      "decision": "quarantine_conflicting_exact_html_labels",
+      "label": "benign",
+      "original_split": "train",
+      "rows": 15
+    },
+    {
+      "decision": "eligible",
+      "label": "phish",
+      "original_split": "train",
+      "rows": 143040
+    },
+    {
+      "decision": "exclude_exact_duplicate_html",
+      "label": "phish",
+      "original_split": "train",
+      "rows": 34135
+    },
+    {
+      "decision": "quarantine_conflicting_exact_html_labels",
+      "label": "phish",
+      "original_split": "train",
+      "rows": 45
+    },
+    {
+      "decision": "eligible",
+      "label": "benign",
+      "original_split": "validation",
+      "rows": 55109
+    },
+    {
+      "decision": "exclude_exact_duplicate_html",
+      "label": "benign",
+      "original_split": "validation",
+      "rows": 232
+    },
+    {
+      "decision": "quarantine_conflicting_exact_html_labels",
+      "label": "benign",
+      "original_split": "validation",
+      "rows": 5
+    },
+    {
+      "decision": "eligible",
+      "label": "phish",
+      "original_split": "validation",
+      "rows": 33228
+    },
+    {
+      "decision": "exclude_exact_duplicate_html",
+      "label": "phish",
+      "original_split": "validation",
+      "rows": 11040
+    },
+    {
+      "decision": "exclude_normalized_validation_overlap",
+      "label": "phish",
+      "original_split": "validation",
+      "rows": 24
+    },
+    {
+      "decision": "quarantine_conflicting_exact_html_labels",
+      "label": "phish",
+      "original_split": "validation",
+      "rows": 13
+    }
+  ],
+  "decisions_row_counts": {
+    "eligible": 452163,
+    "exclude_exact_duplicate_html": 45989,
+    "exclude_normalized_validation_overlap": 24,
+    "quarantine_conflicting_exact_html_labels": 78,
+    "quarantine_unresolved_url": 1
+  },
+  "excluded_rows": 46092,
+  "input_fingerprint_report_sha256": "1217899b745686dbbefa71080ae88a62e0c7bdc4ba7c921d6cc150b31e430ff5",
+  "input_manifest_sha256": "e5d82cc7e38b60a2bf12c01685fed53eac2456bfe7e6fc4021148ac5ab843046",
+  "input_rows": 498255,
+  "limitations": [
+    "This is a provisional experimental subset, not a corrected release of the source dataset.",
+    "Identical HTML with different labels can reflect different URL contexts; these records are not declared mislabelled.",
+    "Whitespace can be meaningful, including inside JavaScript strings; normalized filtering is conservative and does not establish semantic equivalence.",
+    "Training-preferred deduplication prunes validation, changing its distribution; report exclusions and evaluate the untouched official test separately.",
+    "No title-based quality filtering was performed; title excerpts alone cannot verify capture failures.",
+    "General near-duplicate/template leakage is still pending. Zero fingerprint matches is not proof of zero leakage.",
+    "Class balancing is not performed yet. Final balanced counts can be smaller after subsequent similarity checks.",
+    "Original Parquet files and the fingerprint index are not modified; no test content is read and no model is trained."
+  ],
+  "output_excluded_manifest_sha256": "292ef637d304a143570189677c9d9836dbadb5496045a5b466078163393ecbbb",
+  "output_retained_manifest_sha256": "2675f02c6e502b47f4cadb5eb070ea28aa3cc80c903881898684a350a70c8ed3",
+  "policy": [
+    "Original unresolved-URL quarantine is retained.",
+    "Null or whitespace-only captures are excluded from this HTML-focused experiment.",
+    "All rows in exact or whitespace-normalized groups with both labels are set aside for manual review, without relabelling.",
+    "For same-label exact copies, retain one row globally: prefer the original training split, then lowest seeded SHA-256 rank of the supplied identifier.",
+    "A validation record whose normalized HTML matches retained training is excluded conservatively; normalized variants within one split remain for later similarity checks.",
+    "No records move between website groups or from one original split to another."
+  ],
+  "provisional_balanced_targets_if_no_more_exclusions": {
+    "train": {
+      "benign": 143040,
+      "phish": 143040
+    },
+    "validation": {
+      "benign": 33228,
+      "phish": 33228
+    }
+  },
+  "remaining_conflicting_exact_or_normalized_label_groups": 0,
+  "remaining_cross_split_normalized_html_groups": 0,
+  "remaining_cross_split_raw_html_groups": 0,
+  "remaining_exact_duplicate_groups": 0,
+  "remaining_normalized_matching_groups_within_splits": 90,
+  "retained_group_counts_by_split": {
+    "train": 140011,
+    "validation": 33961
+  },
+  "retained_label_counts_by_split": {
+    "train": {
+      "benign": 220786,
+      "phish": 143040
+    },
+    "validation": {
+      "benign": 55109,
+      "phish": 33228
+    }
+  },
+  "retained_rows": 452163,
+  "script_version": "1.0",
+  "seed": 42,
+  "shared_train_validation_site_groups": 0,
+  "status": "exact_filters_complete_general_near_duplicate_check_and_balancing_pending"
+}

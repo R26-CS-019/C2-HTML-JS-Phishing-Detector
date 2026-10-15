@@ -1,0 +1,483 @@
+{
+  "audit_flag_counts_are_not_exclusive": true,
+  "balanced_test_cohort_available": true,
+  "balanced_test_counts": {
+    "benign": 28984,
+    "phish": 28984
+  },
+  "cohorts_selected_before_model_predictions": true,
+  "coverage_percent_of_all_raw_rows": {
+    "balanced": 34.49244317505653,
+    "eligible": 38.725455194573364
+  },
+  "created_utc": "2026-10-08T20:57:27.302586+00:00",
+  "decisions_by_label": [
+    {
+      "decision": "eligible",
+      "label": "benign",
+      "rows": 28984
+    },
+    {
+      "decision": "exclude_development_exact_html_overlap",
+      "label": "benign",
+      "rows": 2
+    },
+    {
+      "decision": "exclude_development_site_group_overlap",
+      "label": "benign",
+      "rows": 62163
+    },
+    {
+      "decision": "exclude_same_label_exact_duplicate",
+      "label": "benign",
+      "rows": 99
+    },
+    {
+      "decision": "quarantine_conflicting_exact_labels",
+      "label": "benign",
+      "rows": 12
+    },
+    {
+      "decision": "eligible",
+      "label": "phish",
+      "rows": 36098
+    },
+    {
+      "decision": "exclude_development_exact_html_overlap",
+      "label": "phish",
+      "rows": 2
+    },
+    {
+      "decision": "exclude_development_normalized_html_overlap",
+      "label": "phish",
+      "rows": 1
+    },
+    {
+      "decision": "exclude_development_site_group_overlap",
+      "label": "phish",
+      "rows": 10256
+    },
+    {
+      "decision": "exclude_same_label_exact_duplicate",
+      "label": "phish",
+      "rows": 30438
+    },
+    {
+      "decision": "quarantine_conflicting_exact_labels",
+      "label": "phish",
+      "rows": 5
+    }
+  ],
+  "development_reference_rows": 498255,
+  "eligible_unbalanced_counts": {
+    "benign": 28984,
+    "phish": 36098
+  },
+  "exclusive_decision_counts": {
+    "eligible": 65082,
+    "exclude_development_exact_html_overlap": 4,
+    "exclude_development_normalized_html_overlap": 1,
+    "exclude_development_site_group_overlap": 72419,
+    "exclude_same_label_exact_duplicate": 30537,
+    "quarantine_conflicting_exact_labels": 17
+  },
+  "existing_dataset_or_model_modified": false,
+  "features_extracted": false,
+  "inputs": {
+    "additional_structural_checks": "Missing/malformed supplied IDs and repeated supplied IDs are quarantined; ambiguous records are not assigned fabricated IDs.",
+    "code_sha256": "fe5d87805a0f8b5c7102b560747550f33820373c17a92cb4221132bb9021de5e",
+    "data_dir": "D:\\new dataset\\phreshphish_dataset\\data",
+    "development_manifest_sha256": "e5d82cc7e38b60a2bf12c01685fed53eac2456bfe7e6fc4021148ac5ab843046",
+    "development_scope": "All rows in the completed original development fingerprint index, including later withheld/quarantined rows.",
+    "duckdb_version": "1.5.6",
+    "fingerprint_index_path": "D:\\research_new\\HTML_JS_PhishingDetector\\reports\\html_fingerprints\\html_fingerprint_index.sqlite",
+    "fingerprint_index_sha256": "c931c2aa676b1869ff8bab58b32589f08dea96748fb3c6437d2ba4442072b015",
+    "fingerprint_report_sha256": "1217899b745686dbbefa71080ae88a62e0c7bdc4ba7c921d6cc150b31e430ff5",
+    "fingerprint_sql_sha256": "d29d2dc0cad3f2751f7dfa759af896938b8f5eca76eaa44b585259f0ec54c184",
+    "freeze_report_sha256": "ec6a97badebb0268dc25e864add0d2fdab115a2fc5db9a520ba0a9dda9ab24a9",
+    "frozen_specification_sha256": "0443c025950a2fcce451c80c8d657ba2e5a56fbcb25de1e3279748e987c9e1cc",
+    "grouping_policy": "Original script 02; offline bundled PSL with private suffixes; no DNS.",
+    "normalization": "Replace every run of ASCII whitespace with one space and trim edge spaces. Preserve case, tags, attributes, text and script content otherwise.",
+    "script_version": "1.0",
+    "seed": 42,
+    "source_files": [
+      {
+        "bytes": 55340975,
+        "mtime_ns": 1790761002997384700,
+        "name": "test-000.parquet"
+      },
+      {
+        "bytes": 349640343,
+        "mtime_ns": 1790761636501540600,
+        "name": "test-001.parquet"
+      },
+      {
+        "bytes": 309443239,
+        "mtime_ns": 1790761346562468400,
+        "name": "test-002.parquet"
+      },
+      {
+        "bytes": 371223967,
+        "mtime_ns": 1790761648218868400,
+        "name": "test-003.parquet"
+      },
+      {
+        "bytes": 378348158,
+        "mtime_ns": 1790761923258996100,
+        "name": "test-004.parquet"
+      },
+      {
+        "bytes": 401642506,
+        "mtime_ns": 1790761971150859600,
+        "name": "test-005.parquet"
+      },
+      {
+        "bytes": 421478326,
+        "mtime_ns": 1790761769582139900,
+        "name": "test-006.parquet"
+      },
+      {
+        "bytes": 454488388,
+        "mtime_ns": 1790761593280143300,
+        "name": "test-007.parquet"
+      },
+      {
+        "bytes": 456990152,
+        "mtime_ns": 1790762055107934900,
+        "name": "test-008.parquet"
+      },
+      {
+        "bytes": 483918414,
+        "mtime_ns": 1790762362473268700,
+        "name": "test-009.parquet"
+      },
+      {
+        "bytes": 530323891,
+        "mtime_ns": 1790762678723451500,
+        "name": "test-010.parquet"
+      },
+      {
+        "bytes": 500273254,
+        "mtime_ns": 1790762950885203200,
+        "name": "test-011.parquet"
+      },
+      {
+        "bytes": 524605977,
+        "mtime_ns": 1790763289708366500,
+        "name": "test-012.parquet"
+      },
+      {
+        "bytes": 497270955,
+        "mtime_ns": 1790763589380067000,
+        "name": "test-013.parquet"
+      },
+      {
+        "bytes": 478593835,
+        "mtime_ns": 1790763864347770600,
+        "name": "test-014.parquet"
+      },
+      {
+        "bytes": 502425981,
+        "mtime_ns": 1790764170654213700,
+        "name": "test-015.parquet"
+      },
+      {
+        "bytes": 523758907,
+        "mtime_ns": 1790764468806033100,
+        "name": "test-016.parquet"
+      },
+      {
+        "bytes": 516672678,
+        "mtime_ns": 1790764745437965200,
+        "name": "test-017.parquet"
+      },
+      {
+        "bytes": 567766583,
+        "mtime_ns": 1790765040371754600,
+        "name": "test-018.parquet"
+      },
+      {
+        "bytes": 504129805,
+        "mtime_ns": 1790765352349082500,
+        "name": "test-019.parquet"
+      },
+      {
+        "bytes": 347423824,
+        "mtime_ns": 1790765553002002500,
+        "name": "test-020.parquet"
+      }
+    ],
+    "test_protocol": {
+      "after_test": "Report the results as measured. Further model changes require a new independent holdout.",
+      "archive_eligibility": [
+        "Valid supplied label and parseable HTTP(S) URL/site group under the existing grouping policy; no DNS lookup needed for archived analysis.",
+        "Non-null, non-whitespace archived HTML; no current resources fetched to replace missing historical JS.",
+        "Quarantine conflicting exact/whitespace-normalized content-label groups; do not relabel.",
+        "Deterministically retain one same-label exact copy, ranked by seed and record ID.",
+        "Keep parse/truncation/association-limit quality flags; do not exclude pages based on model scores."
+      ],
+      "decision_rule": "phishing_score >= 0.50",
+      "development_overlap_audit": [
+        "Audit record IDs, private-suffix-aware site groups, exact HTML and whitespace-normalized HTML against development data.",
+        "Primary clean cohort excludes test/development record, group and exact/normalized content overlaps.",
+        "Keep exclusions and overlap counts; these filters do not prove campaign/template independence."
+      ],
+      "metrics": [
+        "accuracy",
+        "balanced_accuracy",
+        "precision",
+        "recall",
+        "F1",
+        "FPR",
+        "FNR",
+        "TP/TN/FP/FN",
+        "ROC AUC",
+        "average precision"
+      ],
+      "model_refit": false,
+      "official_split_only": "Use the released test-*.parquet split; never move development rows into test.",
+      "positive_class": "phish",
+      "primary_balanced_cohort": {
+        "interpretation": "A derived balanced, filtered cohort; do not call it the complete official-release benchmark.",
+        "per_class_target": "min(eligible benign count, eligible phish count); fail if either is zero.",
+        "population": "Eligible development-disjoint test archives after the stated filters.",
+        "replacement_or_oversampling": false,
+        "selection": "Within each label, sort by SHA256(UTF8(str(seed) + '|' + record_id)), then record_id; take the target count."
+      },
+      "quality_reporting": "Report exclusions, coverage and class counts, plus metrics by capture-quality flags.",
+      "report_population": "Record raw release counts and every exclusion reason before scoring.",
+      "scope": "Static archived HTML/inline-JS baseline only; no live websites or dynamic-accuracy claim.",
+      "secondary_unbalanced_cohort": {
+        "interpretation": "Preserves this filtered cohort's class ratio; it does not establish real deployment prevalence.",
+        "population": "All eligible development-disjoint archives before class balancing."
+      },
+      "seed": 42,
+      "selection_before_predictions": true,
+      "test_guided_threshold_or_feature_selection": false
+    },
+    "tldextract_version": "5.4.0"
+  },
+  "javascript_executed": false,
+  "last_run_memory_limit": "4GB",
+  "limitations": [
+    "This is metadata/fingerprint selection, not model evaluation. No test accuracy has been measured.",
+    "The primary balanced cohort is filtered and development-disjoint under recorded checks; it is not the complete official-release benchmark.",
+    "All development-index rows supply overlap references, including withheld/quarantined rows. This is more conservative than comparing only fitted training rows.",
+    "Class balance is by pages, not by site groups, brands, languages or template families.",
+    "URL eligibility reuses the original schemeless-URL and hostname-fallback grouping heuristics; it is not browser-navigation validation.",
+    "Same-label whitespace-normalized variants remain within test. Exact/normalized equality does not detect general near-duplicates or establish campaign independence.",
+    "Whitespace normalization can change meaningful text/JS strings; matches are conservatively excluded or quarantined, never relabelled.",
+    "Flags can overlap; exclusive decisions use the recorded precedence. Sum exclusive decisions, not flags, to account for raw rows.",
+    "Exact-copy representatives are chosen before development-overlap exclusion, according to the frozen protocol; an excluded representative is not replaced by a different copy.",
+    "Archived content is analyzed offline. External JavaScript remains historical references, not recovered resources or observed live behaviour.",
+    "Test-shard SHA-256 snapshots record the files actually scanned. During a new scan, size/mtime changes are checked; this is not a locked filesystem snapshot."
+  ],
+  "model_loaded": false,
+  "model_threshold_changed": false,
+  "model_trained": false,
+  "official_test_evaluated": false,
+  "official_test_files_opened": true,
+  "official_test_labels_and_html_read": true,
+  "outputs": {
+    "balanced_test_manifest.csv": {
+      "rows": 57968,
+      "sha256": "1a8ed95f85c97dda6a0c789a4d4bd147601a41120d2ec5b450eba4b1ca9928c1"
+    },
+    "eligible_test_manifest.csv": {
+      "rows": 65082,
+      "sha256": "358c33f0baebd5383fd9223cdf8285a82e4917abc43c002d68e0820a9da69238"
+    },
+    "test_preparation_index.sqlite": {
+      "rows": 168060,
+      "sha256": "81284f7ca4b3f9bc87705cdaff60988625259bc5c12e0f2e5ce148bdda9695a7"
+    },
+    "test_selection_decisions.jsonl": {
+      "rows": 168060,
+      "sha256": "f8f329fff929922ddfd02ead223310b301f35b9b86006804074752a17fadd58c"
+    }
+  },
+  "overlapping_audit_flag_counts_by_valid_label": {
+    "conflicting_exact_labels": {
+      "benign": 12,
+      "phish": 5
+    },
+    "conflicting_normalized_labels": {
+      "benign": 12,
+      "phish": 5
+    },
+    "development_exact_html_overlap": {
+      "benign": 40,
+      "phish": 450
+    },
+    "development_normalized_html_overlap": {
+      "benign": 40,
+      "phish": 452
+    },
+    "development_record_id_overlap": {
+      "benign": 0,
+      "phish": 0
+    },
+    "development_site_group_overlap": {
+      "benign": 62242,
+      "phish": 20406
+    },
+    "invalid_label": {
+      "benign": 0,
+      "phish": 0
+    },
+    "invalid_record_id": {
+      "benign": 0,
+      "phish": 0
+    },
+    "null_or_empty_html": {
+      "benign": 0,
+      "phish": 0
+    },
+    "repeated_test_record_id": {
+      "benign": 0,
+      "phish": 0
+    },
+    "same_label_exact_duplicate": {
+      "benign": 99,
+      "phish": 30438
+    },
+    "unresolved_url": {
+      "benign": 0,
+      "phish": 0
+    }
+  },
+  "per_class_balanced_target": 28984,
+  "python_version": "3.12.10",
+  "raw_test_label_counts": {
+    "benign": 91260,
+    "phish": 76800
+  },
+  "raw_test_rows": 168060,
+  "records_withheld_for_class_balance": {
+    "benign": 0,
+    "phish": 7114
+  },
+  "same_label_normalized_matching_groups_remaining_in_eligible_cohort": 5,
+  "script_version": "1.0",
+  "source_file_snapshots": [
+    {
+      "name": "test-000.parquet",
+      "rows": 1000,
+      "sha256": "9ae7908b64cc75669e4be4cbd0fec884ac2b3f4984211eacfbf013a2ada12851"
+    },
+    {
+      "name": "test-001.parquet",
+      "rows": 5236,
+      "sha256": "bb122ccb309436b92e7edf11792d53efdbde46c4b5d2ad7d39a7d48b50d2b00f"
+    },
+    {
+      "name": "test-002.parquet",
+      "rows": 5759,
+      "sha256": "da3e9b1fb7e537ea951bb6e9ac68ae5a0c48e6590714f2b90ecf5dd96276d894"
+    },
+    {
+      "name": "test-003.parquet",
+      "rows": 6558,
+      "sha256": "c6157aeddfc5eff2728e88ccc61186464e4e6861bee0ae841a830be9ebc7cf17"
+    },
+    {
+      "name": "test-004.parquet",
+      "rows": 7098,
+      "sha256": "b20de434400f3030dd711a1e4f6e012397d1c2889d575b21aa747f8c5ae04df1"
+    },
+    {
+      "name": "test-005.parquet",
+      "rows": 7645,
+      "sha256": "19b0ecd6a657a11a3fb43dcb22e260eb5b5c8d7a0dcee880b4705a9ee2ef1c6f"
+    },
+    {
+      "name": "test-006.parquet",
+      "rows": 8111,
+      "sha256": "a34c4ad85cf863af950cad8251717cba3642ae0c0e7bd8ab245a29a63139d187"
+    },
+    {
+      "name": "test-007.parquet",
+      "rows": 8506,
+      "sha256": "f91281ac9a8bbf39fe9146e115be5e74cf3d59719c2f06bb38178fbaa9d6719b"
+    },
+    {
+      "name": "test-008.parquet",
+      "rows": 8767,
+      "sha256": "82e7216cef17bd78f83ee3339a980d0e09ef864c83f3e8222ef809b961821252"
+    },
+    {
+      "name": "test-009.parquet",
+      "rows": 9025,
+      "sha256": "a18e27d35f3a06983c1734f875093f45dbd041ea39e796f8d762f5712f800be6"
+    },
+    {
+      "name": "test-010.parquet",
+      "rows": 9175,
+      "sha256": "b5d9ca33207b70e2c22aeef6cdec1f294a7ce5f843c6033e208c6f520c85cfdd"
+    },
+    {
+      "name": "test-011.parquet",
+      "rows": 9154,
+      "sha256": "585cf9cfa0ddb54421bfccedb26590dd87426908e814f1290b1986c2e750f0e5"
+    },
+    {
+      "name": "test-012.parquet",
+      "rows": 9241,
+      "sha256": "3bbffccd4269ac723febeacc01905b2d52d1f98242f5bf18a82093cc4f4cdf97"
+    },
+    {
+      "name": "test-013.parquet",
+      "rows": 9239,
+      "sha256": "81daa4b68fca7b2df4d144145e80a09355d963e290d277c9976fb5a988b5e1f3"
+    },
+    {
+      "name": "test-014.parquet",
+      "rows": 9339,
+      "sha256": "8e30a3b2419604ce578f341392bd6e3878abdae38d7b3e38adb107bf2f557c03"
+    },
+    {
+      "name": "test-015.parquet",
+      "rows": 9517,
+      "sha256": "9d2589e528116c862aba4eed4ce0b4778172e8b82f2ac3c4157153666bb68adc"
+    },
+    {
+      "name": "test-016.parquet",
+      "rows": 9599,
+      "sha256": "3d9f97863ee0c88448487d4a13c4947951d62e65e571ed695e8bb69108995ba7"
+    },
+    {
+      "name": "test-017.parquet",
+      "rows": 9600,
+      "sha256": "66b916bc81a28f172ee807acedb497096993f64266459af8d785bc09d4d127d1"
+    },
+    {
+      "name": "test-018.parquet",
+      "rows": 9628,
+      "sha256": "aaa23d30b1c242b94000b5243dfb855f715f95fdbc0fd345f9ec4d30aeda36b1"
+    },
+    {
+      "name": "test-019.parquet",
+      "rows": 9480,
+      "sha256": "c7169aa4564a95e4950f05bc3281a66fe58f2b31eb1594b62a693de65da7508c"
+    },
+    {
+      "name": "test-020.parquet",
+      "rows": 6383,
+      "sha256": "77d312fe7dc92fc3b2ed208ab55b148b2032345091ad44d513b479241013d18e"
+    }
+  ],
+  "status": "static_test_cohorts_prepared_not_evaluated",
+  "test_accuracy": null,
+  "threads": 1,
+  "unique_site_groups_by_cohort_and_label": {
+    "balanced": {
+      "benign": 26707,
+      "phish": 21652
+    },
+    "eligible": {
+      "benign": 26707,
+      "phish": 26228
+    }
+  },
+  "websites_requested": false
+}

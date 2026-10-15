@@ -1,0 +1,29 @@
+{
+  "updated_files": {
+    "29_run_webpage_detector.py": "5f8805880ce3b005c4758244496989b1132330f8d718ec14752721cb3d910839",
+    "34_verify_integrated_detector.py": "f9e956856ca37ef6de38e8e5c5e29cf504985a340d5b4fbf7a806b64c4f57353",
+    "35_evaluate_browser_urls.py": "9194b80c54c79b99d6a63c179bdfabfbeca57975a1be32d8ad5c989676cdd061",
+    "requirements_behavior.txt": "3eb5ecc57dacf92d6062c0c59071fce719241854546cc870f7631404c9ddc5a7",
+    "READ_ME_BEHAVIOR.md": "bfefabc2c5f3402ddd4ea4afb125ed95b5fc670a30ec14b39dc472e552938618",
+    "BEHAVIOR_VERIFICATION.json": "f8c1f24abb2c14e631279df16ed3520e856a2547cbc31e82f87e1b213e907eed",
+    "tests/test_integrated_behavior.py": "8ed315befdbf6c9a3bc58a6d08571b6451bb8ab7fce54a9b700099f5fdf383e0",
+    "detector_runtime/ui.py": "c1cc6122ef9bf4d35c6cd18775af075753d0a5a6e404dbc14060d38c18fb22e4",
+    "detector_runtime/reports.py": "d7d5e265fa854609475922b405b6c833afb1781db0547767b07a955f70d1439e",
+    "detector_runtime/web/index.html": "0a8df79c4e4ce0011ffe8447c66db1d731c0a559a6b0e1d9f3c3f2ff428b63f1",
+    "detector_runtime/web/app.js": "9263cb12ec058973def6d9b43d833cc76d6425785474ec0ff0620a8100065acd",
+    "detector_runtime/browser_network.py": "cee8e65a67fd0a6bf9dc228db147287684427b607569664d95a7e917e1fab244",
+    "detector_runtime/behavior_probe.js": "ad67d6139fe376605406b0d8135bff2e98ddab90659ae634dc7e36ad61792ecc",
+    "detector_runtime/behavior_worker.py": "93dc5c90b0dd44fd0f38b3a42ecebfd3e64be5c347adfad30ddc4eda4e835ae1",
+    "detector_runtime/behavior.py": "8d0908f4d3de98ce8f39f2ce8d90296b69987f114f49fcc83cba118e6c3ca0b3",
+    "detector_runtime/behavior_examples.py": "c2f8392ed96f49b1da2f0b75e0dc48e1c18339b65c3a3376995764e74be200cc",
+    "detector_runtime/browser_evaluation.py": "771a1fb85b3a0eb22a65e2eae45f595a763de2428b89b6b695f316717ad3d5ba",
+    "detector_runtime/worker_job.py": "90ad34e60b7f3370cadc964a0be15b992c6d79e4ff27339aa7bd4990c94eb513"
+  },
+  "previous_files": {
+    "29_run_webpage_detector.py": "227c853bc2eff743f884bdbc65f1be9800282be38e2ee24219fbcbc4af8eadf1",
+    "detector_runtime/ui.py": "ab7eb4e3bd37196bfec07013b6245f6145cddff87078a259c6e46294de881fd7",
+    "detector_runtime/reports.py": "57254fa292378583a45231aab794123f3dd1afa824d34f4c1ad6052acaaa29f2",
+    "detector_runtime/web/index.html": "fe94a0e88f5161fe8ec0e0a918214de9803b86c934cfc98b6847c308d25bf859",
+    "detector_runtime/web/app.js": "613a873074dc235a313327bb400a3fef1d40a46ff455ede4c81e4b2d75b5a675"
+  }
+}

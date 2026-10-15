@@ -1,0 +1,30 @@
+{
+  "status": "implementation_and_trusted_fixture_checks_complete",
+  "normal_sandboxed_browser_worker_verified": false,
+  "focused_tests_passed": 14,
+  "original_runtime_tests_passed": 16,
+  "controlled_browser_model_cases_passed": 9,
+  "controlled_cases_expected": 9,
+  "interface_delayed_demo_verified": true,
+  "windows_worker_job_cleanup_verified": true,
+  "model_retrained": false,
+  "phishing_accuracy_measured": false,
+  "frozen_model_sha256": "944e9bcfcb884ab167beaf3b72b992cf4799aee727e31e8afbde1b1b2d4b4ca1",
+  "qa_browser": {
+    "playwright": "1.63.0",
+    "chromium": "153.0.8010.12",
+    "renderer_sandbox_enabled": false,
+    "only_trusted_offline_examples": true,
+    "test_override_shipped": false
+  },
+  "deployment_requirement": "Run 34_verify_integrated_detector.py in the normal project terminal after installing requirements_behavior.txt and Chromium.",
+  "limitations": [
+    "Normal sandboxed launch could not run in the agent Windows AppContainer.",
+    "Current Playwright browser combination requires local verification.",
+    "Nine fixture checks are instrumentation checks, not classification accuracy.",
+    "No unknown phishing JavaScript executed by the agent.",
+    "No new independent labelled holdout evaluated.",
+    "Group website integration is supplied as callable functions and still needs its caller connection."
+  ],
+  "public_get_gateway_checked": true
+}

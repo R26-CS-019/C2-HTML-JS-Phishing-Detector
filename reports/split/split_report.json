@@ -1,0 +1,193 @@
+{
+  "class_balance_within_one_percentage_point": true,
+  "created_utc": "2026-10-06T19:19:53.863956+00:00",
+  "group_counts_by_split": {
+    "train": 154251,
+    "validation": 38563
+  },
+  "input_domain_report_sha256": "07500aa6e5a7ea5e65bf78f137f6d1aed61b053bae2bc6445793c7d7a925e6c1",
+  "input_manifest_sha256": "2552c57b063c7f2310e36e4b084d53719805044ef3ed3294c00e55adefbc4584",
+  "input_training_rows": 498255,
+  "label_counts_by_split": {
+    "quarantine": {
+      "benign": 0,
+      "phish": 1
+    },
+    "train": {
+      "benign": 221383,
+      "phish": 177220
+    },
+    "validation": {
+      "benign": 55346,
+      "phish": 44305
+    }
+  },
+  "largest_train_groups": [
+    {
+      "benign": 0,
+      "phish": 19738,
+      "rows": 19738,
+      "site_group": "domain:gitbook.io"
+    },
+    {
+      "benign": 879,
+      "phish": 12278,
+      "rows": 13157,
+      "site_group": "domain:google.com"
+    },
+    {
+      "benign": 10787,
+      "phish": 0,
+      "rows": 10787,
+      "site_group": "domain:wikipedia.org"
+    },
+    {
+      "benign": 0,
+      "phish": 8472,
+      "rows": 8472,
+      "site_group": "domain:weeblysite.com"
+    },
+    {
+      "benign": 3293,
+      "phish": 0,
+      "rows": 3293,
+      "site_group": "domain:reddit.com"
+    },
+    {
+      "benign": 3128,
+      "phish": 25,
+      "rows": 3153,
+      "site_group": "domain:facebook.com"
+    },
+    {
+      "benign": 2595,
+      "phish": 0,
+      "rows": 2595,
+      "site_group": "domain:2mdn.net"
+    },
+    {
+      "benign": 1570,
+      "phish": 0,
+      "rows": 1570,
+      "site_group": "domain:imdb.com"
+    },
+    {
+      "benign": 1509,
+      "phish": 10,
+      "rows": 1519,
+      "site_group": "domain:quora.com"
+    },
+    {
+      "benign": 1516,
+      "phish": 3,
+      "rows": 1519,
+      "site_group": "domain:youtube.com"
+    }
+  ],
+  "largest_validation_group_row_fraction": 0.07710911079668041,
+  "largest_validation_groups": [
+    {
+      "benign": 10,
+      "phish": 7674,
+      "rows": 7684,
+      "site_group": "domain:weebly.com"
+    },
+    {
+      "benign": 2492,
+      "phish": 0,
+      "rows": 2492,
+      "site_group": "domain:amazon.com"
+    },
+    {
+      "benign": 1570,
+      "phish": 0,
+      "rows": 1570,
+      "site_group": "domain:merriam-webster.com"
+    },
+    {
+      "benign": 1108,
+      "phish": 0,
+      "rows": 1108,
+      "site_group": "domain:ebay.com"
+    },
+    {
+      "benign": 0,
+      "phish": 942,
+      "rows": 942,
+      "site_group": "domain:ipfs.io"
+    },
+    {
+      "benign": 924,
+      "phish": 0,
+      "rows": 924,
+      "site_group": "domain:pixiv.net"
+    },
+    {
+      "benign": 868,
+      "phish": 0,
+      "rows": 868,
+      "site_group": "domain:cambridge.org"
+    },
+    {
+      "benign": 798,
+      "phish": 0,
+      "rows": 798,
+      "site_group": "domain:nih.gov"
+    },
+    {
+      "benign": 681,
+      "phish": 0,
+      "rows": 681,
+      "site_group": "domain:twitter.com"
+    },
+    {
+      "benign": 578,
+      "phish": 0,
+      "rows": 578,
+      "site_group": "domain:usnews.com"
+    }
+  ],
+  "limitations": [
+    "This is a metadata-based split; no HTML similarity check has been completed here.",
+    "Site groups follow script 02 including conservative platform-level groups where the bundled suffix list does not separate tenants.",
+    "Unknown-suffix exact-hostname groups are retained; rows without a group are quarantined only in this manifest.",
+    "Labels are retained as supplied, including mixed-label website groups; label accuracy is not independently verified.",
+    "Exact validation percentages are not guaranteed because groups remain indivisible.",
+    "Validation group count targets the requested fraction independently of page counts; large groups can still dominate some metrics.",
+    "Pages on different domains can share templates or campaigns. A domain-separated split alone cannot eliminate all leakage.",
+    "Official test data are not read, altered, or used to select the validation groups.",
+    "No features are extracted and no model is trained by this script."
+  ],
+  "method": "Fixed validation group count; 128 seeded whole-group candidate samples by default, selected for class balance; whole-group swaps improve class balance while preserving group count.",
+  "quarantined_records": [
+    {
+      "date": "2024-08-08",
+      "domain_status": "invalid_url",
+      "hostname": "",
+      "label": "phish",
+      "sha256": "560c66d86763031f248ebd5dd824d521d4951fc46297044018b3fffb433d55a3",
+      "site_group": "",
+      "source_file": "train-020.parquet"
+    }
+  ],
+  "script_version": "1.1",
+  "seed": 42,
+  "selection_details": {
+    "best_initial_trial_zero_based": 44,
+    "candidate_trials": 128,
+    "swap_attempts": 100000,
+    "swaps_accepted": 457
+  },
+  "shared_train_validation_site_groups": 0,
+  "status": "provisional_until_html_similarity_check",
+  "supplied_training_hashes_unique": true,
+  "top_ten_validation_groups_row_fraction": 0.17706796720554735,
+  "usable_rows": 498254,
+  "validation_fraction_actual": 0.20000040140169473,
+  "validation_fraction_by_label": {
+    "benign": 0.20000072272873462,
+    "phish": 0.2
+  },
+  "validation_fraction_requested": 0.2,
+  "validation_group_fraction_actual": 0.20000103726907797
+}

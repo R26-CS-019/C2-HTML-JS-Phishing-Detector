@@ -1,0 +1,2614 @@
+{
+  "balanced_splits_changed": false,
+  "base_feature_count": 86,
+  "context_feature_count": 20,
+  "created_utc": "2026-10-07T18:19:02.947012+00:00",
+  "extracted_label_counts": {
+    "train": {
+      "benign": 143040,
+      "phish": 143040
+    },
+    "validation": {
+      "benign": 33228,
+      "phish": 33228
+    }
+  },
+  "feature_count": 106,
+  "inputs": {
+    "association_limits": {
+      "max_association_items": 20000,
+      "max_controls": 10000,
+      "max_open_elements": 512,
+      "max_text_hint_characters": 50000,
+      "max_text_per_association": 1024
+    },
+    "base_implementation_code_sha256": "4c845262a0cb27c085a2fc80c4d37f427addad5405b7319ba20438f7e18ab7ef",
+    "code_sha256": "62d468f83d124346cce3866894f85ae4bec4cdcd3163267b23625b61764d16eb",
+    "context_feature_names": [
+      "context_user_entry_control_count",
+      "context_passwordlike_control_count",
+      "context_plaintext_passwordlike_control_count",
+      "context_label_only_passwordlike_control_count",
+      "context_normalized_password_cue_control_count",
+      "context_identitylike_control_count",
+      "context_passwordlike_textarea_count",
+      "context_passwordlike_unowned_control_count",
+      "context_passwordlike_form_count",
+      "context_identity_password_pair_form_count",
+      "context_passwordlike_post_form_count",
+      "context_passwordlike_get_form_count",
+      "context_plaintext_passwordlike_post_form_count",
+      "context_passwordlike_cross_site_form_count",
+      "context_passwordlike_https_to_http_form_count",
+      "context_passwordlike_handler_form_count",
+      "context_passwordlike_control_ratio",
+      "context_identitylike_control_ratio",
+      "context_plaintext_passwordlike_fraction",
+      "context_identity_password_pair_form_ratio"
+    ],
+    "data_dir": "D:\\new dataset\\phreshphish_dataset\\data",
+    "duckdb_version": "1.5.6",
+    "external_js_policy": "references_only_no_download",
+    "input_hashes": {
+      "extraction_report": "df648d384befb01a2b2e8bb96248b9f3726cafa0c926a9bbfb116120448ffe78",
+      "extractor_script": "4c845262a0cb27c085a2fc80c4d37f427addad5405b7319ba20438f7e18ab7ef",
+      "html_review_report": "df3a9035c9b46a396fdec72e0af3f03e68b94205c1f1d1733d3497ff0a8788d8",
+      "manifest": "8fca9482460ebdc194d3eaf7bb0bdf4c942c6fca6baa6d4bac6e022378137ec2",
+      "original_checkpoint": "1139043547dfcf92ddac49a2ae4fce23eea2a1d05e8bc11adbd808d8237c31c2",
+      "schema": "d5897a28f5d0b4c2dfb475540a3f0b88febc7ff42cdf497327c3969f52b1c712",
+      "sensitivity": "005c1cd1d1a69d2c407105ab223483cfadaeb28c4465d8a5e3c60338f0d687bc",
+      "train": "6325e699590722447c32a4b261fb406526924ced0f990ca4d06ea0d4beb10752",
+      "validation": "9b335030bcc877379006c2d3e9c7f53982751c53819c7010c1bdd0adacccf198"
+    },
+    "parameters": {
+      "max_html_characters": 4000000,
+      "max_js_characters": 500000
+    },
+    "python_version": "3.12.10",
+    "script_version": "1.0",
+    "source_files": [
+      {
+        "bytes": 49639686,
+        "mtime_ns": 1790765582989639000,
+        "name": "train-000.parquet"
+      },
+      {
+        "bytes": 322018201,
+        "mtime_ns": 1790765751656146300,
+        "name": "train-001.parquet"
+      },
+      {
+        "bytes": 354725131,
+        "mtime_ns": 1790765947832239400,
+        "name": "train-002.parquet"
+      },
+      {
+        "bytes": 433568855,
+        "mtime_ns": 1790766218795270100,
+        "name": "train-003.parquet"
+      },
+      {
+        "bytes": 403296550,
+        "mtime_ns": 1790766466272772700,
+        "name": "train-004.parquet"
+      },
+      {
+        "bytes": 463326261,
+        "mtime_ns": 1790766774034974100,
+        "name": "train-005.parquet"
+      },
+      {
+        "bytes": 421664373,
+        "mtime_ns": 1790767020254788000,
+        "name": "train-006.parquet"
+      },
+      {
+        "bytes": 470883056,
+        "mtime_ns": 1790767310133710000,
+        "name": "train-007.parquet"
+      },
+      {
+        "bytes": 489853296,
+        "mtime_ns": 1790767625647158000,
+        "name": "train-008.parquet"
+      },
+      {
+        "bytes": 459330640,
+        "mtime_ns": 1790972639493199900,
+        "name": "train-009.parquet"
+      },
+      {
+        "bytes": 496786679,
+        "mtime_ns": 1790776914172580600,
+        "name": "train-010.parquet"
+      },
+      {
+        "bytes": 489298015,
+        "mtime_ns": 1790777166848126600,
+        "name": "train-011.parquet"
+      },
+      {
+        "bytes": 539858399,
+        "mtime_ns": 1790777415786477900,
+        "name": "train-012.parquet"
+      },
+      {
+        "bytes": 516513156,
+        "mtime_ns": 1790777685150704100,
+        "name": "train-013.parquet"
+      },
+      {
+        "bytes": 528280696,
+        "mtime_ns": 1790777919287721600,
+        "name": "train-014.parquet"
+      },
+      {
+        "bytes": 491305707,
+        "mtime_ns": 1790778117203829500,
+        "name": "train-015.parquet"
+      },
+      {
+        "bytes": 481450112,
+        "mtime_ns": 1790778325169351900,
+        "name": "train-016.parquet"
+      },
+      {
+        "bytes": 553260365,
+        "mtime_ns": 1790778542999671600,
+        "name": "train-017.parquet"
+      },
+      {
+        "bytes": 512599049,
+        "mtime_ns": 1791233213035323500,
+        "name": "train-018.parquet"
+      },
+      {
+        "bytes": 531769758,
+        "mtime_ns": 1791231945114463000,
+        "name": "train-019.parquet"
+      },
+      {
+        "bytes": 516696945,
+        "mtime_ns": 1791233092674144100,
+        "name": "train-020.parquet"
+      },
+      {
+        "bytes": 542055394,
+        "mtime_ns": 1791232679986091300,
+        "name": "train-021.parquet"
+      },
+      {
+        "bytes": 519913293,
+        "mtime_ns": 1791232769942876000,
+        "name": "train-022.parquet"
+      },
+      {
+        "bytes": 512579781,
+        "mtime_ns": 1791232366016471800,
+        "name": "train-023.parquet"
+      },
+      {
+        "bytes": 490380787,
+        "mtime_ns": 1791232952906897600,
+        "name": "train-024.parquet"
+      },
+      {
+        "bytes": 522028796,
+        "mtime_ns": 1790972774346690600,
+        "name": "train-025.parquet"
+      },
+      {
+        "bytes": 507351379,
+        "mtime_ns": 1791233027767217900,
+        "name": "train-026.parquet"
+      },
+      {
+        "bytes": 518847095,
+        "mtime_ns": 1791233446112972000,
+        "name": "train-027.parquet"
+      },
+      {
+        "bytes": 519883269,
+        "mtime_ns": 1791233688121640300,
+        "name": "train-028.parquet"
+      },
+      {
+        "bytes": 521537139,
+        "mtime_ns": 1791234001102330800,
+        "name": "train-029.parquet"
+      },
+      {
+        "bytes": 517131354,
+        "mtime_ns": 1791234216956978800,
+        "name": "train-030.parquet"
+      },
+      {
+        "bytes": 546849720,
+        "mtime_ns": 1791234405809447800,
+        "name": "train-031.parquet"
+      },
+      {
+        "bytes": 516975992,
+        "mtime_ns": 1791234676332410000,
+        "name": "train-032.parquet"
+      },
+      {
+        "bytes": 518462738,
+        "mtime_ns": 1791234850963722300,
+        "name": "train-033.parquet"
+      },
+      {
+        "bytes": 523909100,
+        "mtime_ns": 1791235087070651700,
+        "name": "train-034.parquet"
+      },
+      {
+        "bytes": 539652745,
+        "mtime_ns": 1791235356829782100,
+        "name": "train-035.parquet"
+      },
+      {
+        "bytes": 526415880,
+        "mtime_ns": 1791235581885878300,
+        "name": "train-036.parquet"
+      },
+      {
+        "bytes": 528799237,
+        "mtime_ns": 1791235841857292300,
+        "name": "train-037.parquet"
+      },
+      {
+        "bytes": 540585532,
+        "mtime_ns": 1791236189099355000,
+        "name": "train-038.parquet"
+      },
+      {
+        "bytes": 519866563,
+        "mtime_ns": 1791236345989362000,
+        "name": "train-039.parquet"
+      },
+      {
+        "bytes": 516416700,
+        "mtime_ns": 1791236603765818800,
+        "name": "train-040.parquet"
+      },
+      {
+        "bytes": 521429018,
+        "mtime_ns": 1791236865916463200,
+        "name": "train-041.parquet"
+      },
+      {
+        "bytes": 556020581,
+        "mtime_ns": 1791237121748352000,
+        "name": "train-042.parquet"
+      },
+      {
+        "bytes": 517091171,
+        "mtime_ns": 1791237363013505400,
+        "name": "train-043.parquet"
+      },
+      {
+        "bytes": 512627533,
+        "mtime_ns": 1791237606845956100,
+        "name": "train-044.parquet"
+      },
+      {
+        "bytes": 512117091,
+        "mtime_ns": 1791238243771964400,
+        "name": "train-045.parquet"
+      },
+      {
+        "bytes": 513316966,
+        "mtime_ns": 1791238196173355000,
+        "name": "train-046.parquet"
+      },
+      {
+        "bytes": 563189367,
+        "mtime_ns": 1791238417047820500,
+        "name": "train-047.parquet"
+      },
+      {
+        "bytes": 526941482,
+        "mtime_ns": 1791238675800018100,
+        "name": "train-048.parquet"
+      },
+      {
+        "bytes": 493483710,
+        "mtime_ns": 1791238954781312000,
+        "name": "train-049.parquet"
+      },
+      {
+        "bytes": 518835096,
+        "mtime_ns": 1791239436087505100,
+        "name": "train-050.parquet"
+      },
+      {
+        "bytes": 526031430,
+        "mtime_ns": 1791239394125671000,
+        "name": "train-051.parquet"
+      },
+      {
+        "bytes": 510965576,
+        "mtime_ns": 1791239661051550700,
+        "name": "train-052.parquet"
+      },
+      {
+        "bytes": 584768973,
+        "mtime_ns": 1791240229912284300,
+        "name": "train-053.parquet"
+      },
+      {
+        "bytes": 547814803,
+        "mtime_ns": 1791240234977397900,
+        "name": "train-054.parquet"
+      },
+      {
+        "bytes": 20213199,
+        "mtime_ns": 1791240131908645300,
+        "name": "train-055.parquet"
+      }
+    ],
+    "tldextract_version": "5.4.0"
+  },
+  "labels_changed": false,
+  "limitations": [
+    "This is a static extension, not observed credential harvesting, dynamic JS execution or the completed crawling/behavior component.",
+    "Credential dictionaries cover selected English/German/French/Spanish/Portuguese terms and common variants, not every language or obfuscation method.",
+    "Tolerant form/label ownership approximates HTML association; browser DOM repair, CSS visibility, Shadow DOM and dynamic labels are not observed.",
+    "HTML and association caps can leave partial signals. All pages are retained and quality flags record these limits.",
+    "Password cues and same-site/cross-site POST forms occur on legitimate sites; no individual feature determines a phishing label.",
+    "Development validation errors motivated the features. Improvement must be measured; final claims require an untouched test set.",
+    "Original dataset URLs remain the reference base. Final redirect URLs and capture-label consistency cannot be reconstructed here.",
+    "Completed context checkpoints use matching configuration and source metadata; complete Parquet shard bytes are not re-hashed on resume."
+  ],
+  "model_trained": false,
+  "official_test_evaluated": false,
+  "original_features_unchanged": true,
+  "outputs": {
+    "static_feature_schema.json": {
+      "sha256": "ddac06f97eb873aace6a76a5033731bde70d63beeab3897017f6bc6bad503def"
+    },
+    "train_static_features.csv": {
+      "rows": 286080,
+      "sha256": "2c4e08fbd4fd9fb4711fb3ecfa7a6fad09e3697b3e8b1dc5d61308cdb9782e0e"
+    },
+    "validation_sensitivity_static_features.csv": {
+      "rows": 55362,
+      "sha256": "3111178963f4896b71032c3f1b026f6a359aacdf85d086a83172398aefff892b"
+    },
+    "validation_static_features.csv": {
+      "rows": 66456,
+      "sha256": "5dfe956cf427e7ce49b3250e1f1c800643fe497ce6a3da2a00a085570a30793f"
+    }
+  },
+  "policy": [
+    "All original 86 feature values are copied from the verified original checkpoint without modification.",
+    "Balanced row IDs, domain-separated splits and sensitivity membership are retained.",
+    "Full archived HTML hashes and labels are checked when new context is extracted.",
+    "Only field-associated text supplies credential cues; a sign-in link or password article elsewhere is not a credential-field cue.",
+    "Challenge/unavailable-page hints and association limits are quality flags, not classifier features or new labels.",
+    "No brand target, dataset annotation, label, record ID, site name or source file becomes a classifier feature."
+  ],
+  "quality_summary_by_split_and_label": {
+    "train": {
+      "benign": {
+        "context_association_storage_cut_rows": 335,
+        "context_duplicate_element_id_seen_rows": 64418,
+        "context_human_verification_hint_present_rows": 203,
+        "context_identity_password_pair_form_count_present_rows": 17832,
+        "context_identity_password_pair_form_ratio_present_rows": 17832,
+        "context_identitylike_control_count_present_rows": 46265,
+        "context_identitylike_control_ratio_present_rows": 46265,
+        "context_label_only_passwordlike_control_count_present_rows": 78,
+        "context_normalized_password_cue_control_count_present_rows": 4,
+        "context_parse_error_rows": 0,
+        "context_passwordlike_control_count_present_rows": 22495,
+        "context_passwordlike_control_ratio_present_rows": 22495,
+        "context_passwordlike_cross_site_form_count_present_rows": 215,
+        "context_passwordlike_form_count_present_rows": 19275,
+        "context_passwordlike_get_form_count_present_rows": 2907,
+        "context_passwordlike_handler_form_count_present_rows": 1796,
+        "context_passwordlike_https_to_http_form_count_present_rows": 0,
+        "context_passwordlike_post_form_count_present_rows": 16611,
+        "context_passwordlike_textarea_count_present_rows": 568,
+        "context_passwordlike_unowned_control_count_present_rows": 3402,
+        "context_plaintext_passwordlike_control_count_present_rows": 2297,
+        "context_plaintext_passwordlike_fraction_present_rows": 2297,
+        "context_plaintext_passwordlike_post_form_count_present_rows": 1743,
+        "context_text_hint_scan_cut_rows": 17473,
+        "context_unavailable_page_hint_present_rows": 308,
+        "context_user_entry_control_count_present_rows": 117051,
+        "html_analysis_truncated_rows": 392,
+        "html_parse_error_rows": 0,
+        "inline_executable_script_present_rows": 135805,
+        "invalid_reference_count_rows": 332,
+        "js_analysis_truncated_rows": 4238,
+        "password_input_present_rows": 20950,
+        "rows": 143040,
+        "unclosed_rawtext_element_rows": 244
+      },
+      "phish": {
+        "context_association_storage_cut_rows": 43,
+        "context_duplicate_element_id_seen_rows": 38460,
+        "context_human_verification_hint_present_rows": 3163,
+        "context_identity_password_pair_form_count_present_rows": 19793,
+        "context_identity_password_pair_form_ratio_present_rows": 19793,
+        "context_identitylike_control_count_present_rows": 34197,
+        "context_identitylike_control_ratio_present_rows": 34197,
+        "context_label_only_passwordlike_control_count_present_rows": 1296,
+        "context_normalized_password_cue_control_count_present_rows": 3215,
+        "context_parse_error_rows": 0,
+        "context_passwordlike_control_count_present_rows": 27148,
+        "context_passwordlike_control_ratio_present_rows": 27148,
+        "context_passwordlike_cross_site_form_count_present_rows": 3637,
+        "context_passwordlike_form_count_present_rows": 23113,
+        "context_passwordlike_get_form_count_present_rows": 7261,
+        "context_passwordlike_handler_form_count_present_rows": 1276,
+        "context_passwordlike_https_to_http_form_count_present_rows": 41,
+        "context_passwordlike_post_form_count_present_rows": 15964,
+        "context_passwordlike_textarea_count_present_rows": 161,
+        "context_passwordlike_unowned_control_count_present_rows": 4320,
+        "context_plaintext_passwordlike_control_count_present_rows": 7023,
+        "context_plaintext_passwordlike_fraction_present_rows": 7023,
+        "context_plaintext_passwordlike_post_form_count_present_rows": 4158,
+        "context_text_hint_scan_cut_rows": 2550,
+        "context_unavailable_page_hint_present_rows": 156,
+        "context_user_entry_control_count_present_rows": 71021,
+        "html_analysis_truncated_rows": 218,
+        "html_parse_error_rows": 0,
+        "inline_executable_script_present_rows": 128096,
+        "invalid_reference_count_rows": 65,
+        "js_analysis_truncated_rows": 675,
+        "password_input_present_rows": 21020,
+        "rows": 143040,
+        "unclosed_rawtext_element_rows": 140
+      }
+    },
+    "validation": {
+      "benign": {
+        "context_association_storage_cut_rows": 51,
+        "context_duplicate_element_id_seen_rows": 16271,
+        "context_human_verification_hint_present_rows": 122,
+        "context_identity_password_pair_form_count_present_rows": 3316,
+        "context_identity_password_pair_form_ratio_present_rows": 3316,
+        "context_identitylike_control_count_present_rows": 11149,
+        "context_identitylike_control_ratio_present_rows": 11149,
+        "context_label_only_passwordlike_control_count_present_rows": 25,
+        "context_normalized_password_cue_control_count_present_rows": 5,
+        "context_parse_error_rows": 0,
+        "context_passwordlike_control_count_present_rows": 4201,
+        "context_passwordlike_control_ratio_present_rows": 4201,
+        "context_passwordlike_cross_site_form_count_present_rows": 40,
+        "context_passwordlike_form_count_present_rows": 3635,
+        "context_passwordlike_get_form_count_present_rows": 722,
+        "context_passwordlike_handler_form_count_present_rows": 458,
+        "context_passwordlike_https_to_http_form_count_present_rows": 1,
+        "context_passwordlike_post_form_count_present_rows": 2939,
+        "context_passwordlike_textarea_count_present_rows": 118,
+        "context_passwordlike_unowned_control_count_present_rows": 590,
+        "context_plaintext_passwordlike_control_count_present_rows": 473,
+        "context_plaintext_passwordlike_fraction_present_rows": 473,
+        "context_plaintext_passwordlike_post_form_count_present_rows": 406,
+        "context_text_hint_scan_cut_rows": 4967,
+        "context_unavailable_page_hint_present_rows": 110,
+        "context_user_entry_control_count_present_rows": 27336,
+        "html_analysis_truncated_rows": 91,
+        "html_parse_error_rows": 0,
+        "inline_executable_script_present_rows": 31856,
+        "invalid_reference_count_rows": 79,
+        "js_analysis_truncated_rows": 1745,
+        "password_input_present_rows": 3859,
+        "rows": 33228,
+        "unclosed_rawtext_element_rows": 58
+      },
+      "phish": {
+        "context_association_storage_cut_rows": 20,
+        "context_duplicate_element_id_seen_rows": 9750,
+        "context_human_verification_hint_present_rows": 141,
+        "context_identity_password_pair_form_count_present_rows": 9659,
+        "context_identity_password_pair_form_ratio_present_rows": 9659,
+        "context_identitylike_control_count_present_rows": 14068,
+        "context_identitylike_control_ratio_present_rows": 14068,
+        "context_label_only_passwordlike_control_count_present_rows": 5950,
+        "context_normalized_password_cue_control_count_present_rows": 2709,
+        "context_parse_error_rows": 0,
+        "context_passwordlike_control_count_present_rows": 11731,
+        "context_passwordlike_control_ratio_present_rows": 11731,
+        "context_passwordlike_cross_site_form_count_present_rows": 1031,
+        "context_passwordlike_form_count_present_rows": 10830,
+        "context_passwordlike_get_form_count_present_rows": 2003,
+        "context_passwordlike_handler_form_count_present_rows": 269,
+        "context_passwordlike_https_to_http_form_count_present_rows": 16,
+        "context_passwordlike_post_form_count_present_rows": 8851,
+        "context_passwordlike_textarea_count_present_rows": 221,
+        "context_passwordlike_unowned_control_count_present_rows": 915,
+        "context_plaintext_passwordlike_control_count_present_rows": 6703,
+        "context_plaintext_passwordlike_fraction_present_rows": 6703,
+        "context_plaintext_passwordlike_post_form_count_present_rows": 5863,
+        "context_text_hint_scan_cut_rows": 843,
+        "context_unavailable_page_hint_present_rows": 75,
+        "context_user_entry_control_count_present_rows": 22056,
+        "html_analysis_truncated_rows": 63,
+        "html_parse_error_rows": 0,
+        "inline_executable_script_present_rows": 30212,
+        "invalid_reference_count_rows": 15,
+        "js_analysis_truncated_rows": 407,
+        "password_input_present_rows": 5178,
+        "rows": 33228,
+        "unclosed_rawtext_element_rows": 47
+      }
+    }
+  },
+  "script_version": "1.0",
+  "selected_review_pages_context": [
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 1
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 1,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "benign",
+        "record_id": "e063294842b535737368c8061fad30129c80ee4f5d1e31b48a99ecf9dfb6a4f9",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:amazon.com",
+        "source_file": "train-027.parquet"
+      },
+      "original_baseline_phishing_score": 0.9746948277200453,
+      "original_password_input_count": 0.0,
+      "review_category": "false_positive_largest_group"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 6
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 1,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 1,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "benign",
+        "record_id": "5e5edf13efc7219c724b223cc13611f74e7c439bfc9c2505e3982615830ebdc5",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:amazon.com",
+        "source_file": "train-027.parquet"
+      },
+      "original_baseline_phishing_score": 0.9109739646440277,
+      "original_password_input_count": 0.0,
+      "review_category": "false_positive_largest_group"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 0
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "benign",
+        "record_id": "a01f9712078818122b5629cfa1f5ebd8d86e1a91bf85cd77858ccf5210f70b59",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:amazon.com",
+        "source_file": "train-047.parquet"
+      },
+      "original_baseline_phishing_score": 0.9061033243870872,
+      "original_password_input_count": 0.0,
+      "review_category": "false_positive_largest_group"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 2
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 1,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 1,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "benign",
+        "record_id": "28de96e742aa2a9b1d0d9d11af3b2e41a2b79e78b0e53e7ee12f49bf7de00802",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:amazon.com",
+        "source_file": "train-005.parquet"
+      },
+      "original_baseline_phishing_score": 0.9031844422717228,
+      "original_password_input_count": 0.0,
+      "review_category": "false_positive_largest_group"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 1
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 1,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 1,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "benign",
+        "record_id": "79a5d7fa758a7bd8cb862352095b38adda93176f32b5c26ccbbc056b97fc50b8",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:amazon.com",
+        "source_file": "train-021.parquet"
+      },
+      "original_baseline_phishing_score": 0.5783408066308704,
+      "original_password_input_count": 0.0,
+      "review_category": "false_positive_largest_group"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 7
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 1,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 1,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "benign",
+        "record_id": "9f57af13997a04648b2a68df29a43cb0083215e17e421cacaa0d9cf7fb834655",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:amazon.com",
+        "source_file": "train-038.parquet"
+      },
+      "original_baseline_phishing_score": 0.5304578889855098,
+      "original_password_input_count": 0.0,
+      "review_category": "false_positive_largest_group"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 6
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 1,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 1,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "benign",
+        "record_id": "ea1c7564a06875065ad477c0fd3af5f1dcdc8864711c4ae9920dd890819a511a",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:amazon.com",
+        "source_file": "train-020.parquet"
+      },
+      "original_baseline_phishing_score": 0.7196840262194505,
+      "original_password_input_count": 0.0,
+      "review_category": "false_positive_largest_group"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 1
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 1,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 1,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "benign",
+        "record_id": "f04486328bb4790bf753c6b179d29a3ef7247f861cc746fe1f183c5c0dbadaf5",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:amazon.com",
+        "source_file": "train-024.parquet"
+      },
+      "original_baseline_phishing_score": 0.7091283873172799,
+      "original_password_input_count": 0.0,
+      "review_category": "false_positive_largest_group"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 1,
+        "context_identitylike_control_ratio": 1.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 1
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "benign",
+        "record_id": "ada6ce956774f504404993b90cfe5bbbc727fe7cc01c447c5f270fa8ecb04f46",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:shop-ware.com",
+        "source_file": "train-034.parquet"
+      },
+      "original_baseline_phishing_score": 0.9944797535025756,
+      "original_password_input_count": 0.0,
+      "review_category": "false_positive_other_groups"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 0
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "benign",
+        "record_id": "13098a90506c72a114d7d04c4fe32c0b20a845320cff732f612eae3a8ba32e00",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:journeynorth.org",
+        "source_file": "train-023.parquet"
+      },
+      "original_baseline_phishing_score": 0.9931306195185854,
+      "original_password_input_count": 0.0,
+      "review_category": "false_positive_other_groups"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 0
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "benign",
+        "record_id": "de5c1f4162db97991d0689f5cbe95a594fcc01fc7512e41e1569b9143b7e57b3",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:meritagepress.com",
+        "source_file": "train-047.parquet"
+      },
+      "original_baseline_phishing_score": 0.9914484128886346,
+      "original_password_input_count": 0.0,
+      "review_category": "false_positive_other_groups"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 1,
+        "context_identity_password_pair_form_ratio": 1.0,
+        "context_identitylike_control_count": 1,
+        "context_identitylike_control_ratio": 0.5,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 1,
+        "context_passwordlike_control_ratio": 0.5,
+        "context_passwordlike_cross_site_form_count": 1,
+        "context_passwordlike_form_count": 1,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 1,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 2
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "benign",
+        "record_id": "a903859a4a43c56cd417d9169d308ebbbad19a282656c44023793c295985281f",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:eyefinityehr.com",
+        "source_file": "train-015.parquet"
+      },
+      "original_baseline_phishing_score": 0.9907746158720238,
+      "original_password_input_count": 1.0,
+      "review_category": "false_positive_other_groups"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 0
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "0",
+        "label": "benign",
+        "record_id": "0a9584a6b5248722bf9ffd1209ab98c76eba0367bd684c4446e2524a2924d0ba",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:vgsi.com",
+        "source_file": "train-024.parquet"
+      },
+      "original_baseline_phishing_score": 0.7492621030471898,
+      "original_password_input_count": 0.0,
+      "review_category": "false_positive_other_groups"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 0
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "0",
+        "label": "benign",
+        "record_id": "30ab48f7604b7bb286d60ae81ab38c8bcbc458c87da608c62297af529b77c7fd",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:maksnet.tv",
+        "source_file": "train-010.parquet"
+      },
+      "original_baseline_phishing_score": 0.6852243588394568,
+      "original_password_input_count": 0.0,
+      "review_category": "false_positive_other_groups"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 1,
+        "context_passwordlike_control_ratio": 0.125,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 1,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 8
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 1,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "benign",
+        "record_id": "b5a013c764453c40c1cdb4fdb7e314137ec7c235453ccdeb4a8c420ae9c54e42",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:tonetool.co.jp",
+        "source_file": "train-001.parquet"
+      },
+      "original_baseline_phishing_score": 0.9392807462311835,
+      "original_password_input_count": 1.0,
+      "review_category": "false_positive_other_groups"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 0
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "0",
+        "label": "benign",
+        "record_id": "f7a5fe4d8c6596ff394020ee5b319facc19c6d2fb470ace1ccdf1a290962d31e",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:thymedoorcounty.com",
+        "source_file": "train-011.parquet"
+      },
+      "original_baseline_phishing_score": 0.5544921864517918,
+      "original_password_input_count": 0.0,
+      "review_category": "false_positive_other_groups"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 2,
+        "context_identity_password_pair_form_ratio": 1.0,
+        "context_identitylike_control_count": 2,
+        "context_identitylike_control_ratio": 0.3333333333333333,
+        "context_label_only_passwordlike_control_count": 2,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 2,
+        "context_passwordlike_control_ratio": 0.3333333333333333,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 2,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 2,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 2,
+        "context_plaintext_passwordlike_fraction": 1.0,
+        "context_plaintext_passwordlike_post_form_count": 2,
+        "context_user_entry_control_count": 6
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 1,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "phish",
+        "record_id": "e5f5ac6df8de80f723248453427e5aa773b67ac1f8c1b9112e888a829632870d",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:weebly.com",
+        "source_file": "train-011.parquet"
+      },
+      "original_baseline_phishing_score": 0.014670726515608265,
+      "original_password_input_count": 0.0,
+      "review_category": "false_negative_largest_group"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 1
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 1,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "phish",
+        "record_id": "02abf8567228aae3068ba00d249becef78aa2dcbee9798da304d6a1d1eaff5f8",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:weebly.com",
+        "source_file": "train-042.parquet"
+      },
+      "original_baseline_phishing_score": 0.018133072669849582,
+      "original_password_input_count": 0.0,
+      "review_category": "false_negative_largest_group"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 1,
+        "context_identity_password_pair_form_ratio": 0.5,
+        "context_identitylike_control_count": 2,
+        "context_identitylike_control_ratio": 0.2857142857142857,
+        "context_label_only_passwordlike_control_count": 2,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 2,
+        "context_passwordlike_control_ratio": 0.2857142857142857,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 1,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 1,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 2,
+        "context_plaintext_passwordlike_fraction": 1.0,
+        "context_plaintext_passwordlike_post_form_count": 1,
+        "context_user_entry_control_count": 7
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 1,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "phish",
+        "record_id": "2c3ee832ffdbec278e01c58f53769ee2810c20375aa60999d590c4df58eb43d2",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:weebly.com",
+        "source_file": "train-025.parquet"
+      },
+      "original_baseline_phishing_score": 0.01891045139142775,
+      "original_password_input_count": 0.0,
+      "review_category": "false_negative_largest_group"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 4
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "phish",
+        "record_id": "b6a11c6cb8a9a8ecdb0518bf70f3b3e8757d5f624d2a8000ed10502d3e61420d",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:weebly.com",
+        "source_file": "train-027.parquet"
+      },
+      "original_baseline_phishing_score": 0.022772075522209424,
+      "original_password_input_count": 0.0,
+      "review_category": "false_negative_largest_group"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 1,
+        "context_identity_password_pair_form_ratio": 1.0,
+        "context_identitylike_control_count": 1,
+        "context_identitylike_control_ratio": 0.5,
+        "context_label_only_passwordlike_control_count": 1,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 1,
+        "context_passwordlike_control_ratio": 0.5,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 1,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 1,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 1,
+        "context_plaintext_passwordlike_fraction": 1.0,
+        "context_plaintext_passwordlike_post_form_count": 1,
+        "context_user_entry_control_count": 2
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 1,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "phish",
+        "record_id": "2ceb37cc23f7b0ff52474933c5fdd5da1f01d18da47f254c9cfa4e734eeab1c4",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:weebly.com",
+        "source_file": "train-037.parquet"
+      },
+      "original_baseline_phishing_score": 0.39558265522092595,
+      "original_password_input_count": 0.0,
+      "review_category": "false_negative_largest_group"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 1,
+        "context_identity_password_pair_form_ratio": 0.5,
+        "context_identitylike_control_count": 1,
+        "context_identitylike_control_ratio": 0.3333333333333333,
+        "context_label_only_passwordlike_control_count": 1,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 1,
+        "context_passwordlike_control_ratio": 0.3333333333333333,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 1,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 1,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 1,
+        "context_plaintext_passwordlike_fraction": 1.0,
+        "context_plaintext_passwordlike_post_form_count": 1,
+        "context_user_entry_control_count": 3
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 1,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "phish",
+        "record_id": "4a91e6468e0bf2c154ef76d195e0660a1c7cadb666e493c4f45bb71b5cc32eb9",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:weebly.com",
+        "source_file": "train-052.parquet"
+      },
+      "original_baseline_phishing_score": 0.35849264733154224,
+      "original_password_input_count": 0.0,
+      "review_category": "false_negative_largest_group"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 1,
+        "context_identity_password_pair_form_ratio": 0.5,
+        "context_identitylike_control_count": 1,
+        "context_identitylike_control_ratio": 0.3333333333333333,
+        "context_label_only_passwordlike_control_count": 1,
+        "context_normalized_password_cue_control_count": 1,
+        "context_passwordlike_control_count": 1,
+        "context_passwordlike_control_ratio": 0.3333333333333333,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 1,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 1,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 1,
+        "context_plaintext_passwordlike_fraction": 1.0,
+        "context_plaintext_passwordlike_post_form_count": 1,
+        "context_user_entry_control_count": 3
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 1,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "phish",
+        "record_id": "8381b0dfc051b77a9163a18b0be59729e08292ad8176ed1ec9c96864240cdcb6",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:weebly.com",
+        "source_file": "train-010.parquet"
+      },
+      "original_baseline_phishing_score": 0.3402760168877393,
+      "original_password_input_count": 0.0,
+      "review_category": "false_negative_largest_group"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 1,
+        "context_identity_password_pair_form_ratio": 1.0,
+        "context_identitylike_control_count": 1,
+        "context_identitylike_control_ratio": 0.5,
+        "context_label_only_passwordlike_control_count": 1,
+        "context_normalized_password_cue_control_count": 1,
+        "context_passwordlike_control_count": 1,
+        "context_passwordlike_control_ratio": 0.5,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 1,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 1,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 1,
+        "context_plaintext_passwordlike_fraction": 1.0,
+        "context_plaintext_passwordlike_post_form_count": 1,
+        "context_user_entry_control_count": 2
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 1,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "phish",
+        "record_id": "dd88b9b169fc40c9e29cceec62a1441722b86222d37d9c883606dab53e9258d4",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:weebly.com",
+        "source_file": "train-011.parquet"
+      },
+      "original_baseline_phishing_score": 0.3751745400586223,
+      "original_password_input_count": 0.0,
+      "review_category": "false_negative_largest_group"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 2,
+        "context_identitylike_control_ratio": 0.3333333333333333,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 6
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "phish",
+        "record_id": "bc2f071d37a47c9ad702cd91a8deb23e6f7f0295f3079170f43800657cd838d7",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:bit.ly",
+        "source_file": "train-031.parquet"
+      },
+      "original_baseline_phishing_score": 0.0014718699237660491,
+      "original_password_input_count": 0.0,
+      "review_category": "false_negative_other_groups"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 2,
+        "context_identitylike_control_ratio": 0.2,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 10
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 1,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "phish",
+        "record_id": "af10b0fe1a899f84a9d42c23063ea10b8c93faf22c5222b5e64a0205ffe200f6",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:printerval.com",
+        "source_file": "train-041.parquet"
+      },
+      "original_baseline_phishing_score": 0.0017172122651880996,
+      "original_password_input_count": 0.0,
+      "review_category": "false_negative_other_groups"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 2,
+        "context_identitylike_control_ratio": 0.2,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 10
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 1,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "phish",
+        "record_id": "481198c548b8095166ae97d55eac2a172080527d5d41e8de20997ab3ecd696b0",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:printerval.com",
+        "source_file": "train-040.parquet"
+      },
+      "original_baseline_phishing_score": 0.0018617401179269707,
+      "original_password_input_count": 0.0,
+      "review_category": "false_negative_other_groups"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 2,
+        "context_identitylike_control_ratio": 0.2,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 10
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 1,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "phish",
+        "record_id": "5a4055998418df76bd61a75fb7a149edb43c2ebcf6f3ce64b65e412d3b9feb6b",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:printerval.com",
+        "source_file": "train-016.parquet"
+      },
+      "original_baseline_phishing_score": 0.0019005624376840034,
+      "original_password_input_count": 0.0,
+      "review_category": "false_negative_other_groups"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 0
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "phish",
+        "record_id": "3cbad04dab2f19bf710c5d95fcf2ddcdf47dd5d78173f8d68c5614c8e0d78074",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:oddcircles.com",
+        "source_file": "train-044.parquet"
+      },
+      "original_baseline_phishing_score": 0.06496927626205833,
+      "original_password_input_count": 0.0,
+      "review_category": "false_negative_other_groups"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 1,
+        "context_identitylike_control_ratio": 0.3333333333333333,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 3
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "phish",
+        "record_id": "3f635cf4bbcd53451d938e70df86da3ef8ed8ce8db69d8dd4c79bb264a5b6f17",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:printerval.com",
+        "source_file": "train-054.parquet"
+      },
+      "original_baseline_phishing_score": 0.04190036685793068,
+      "original_password_input_count": 0.0,
+      "review_category": "false_negative_other_groups"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 0
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "phish",
+        "record_id": "50328cd9c14367e3b4242d83cbb6102b871a14da352c54f3bee213d83173e699",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:threads-jet-rho.vercel.app",
+        "source_file": "train-002.parquet"
+      },
+      "original_baseline_phishing_score": 0.4239441027654776,
+      "original_password_input_count": 0.0,
+      "review_category": "false_negative_other_groups"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 0
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 1
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "phish",
+        "record_id": "5e129ee656567207fcb460d7aff87f81845c7a5e0f747e42a777de5a436e82da",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:myportfolio.com",
+        "source_file": "train-039.parquet"
+      },
+      "original_baseline_phishing_score": 0.060456842745183724,
+      "original_password_input_count": 0.0,
+      "review_category": "false_negative_other_groups"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 2
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "benign",
+        "record_id": "ecc1e1053afb19f63f0feea85cc7c2c5fdace54983f8038fe9ea34b28058951e",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:amazon.com",
+        "source_file": "train-041.parquet"
+      },
+      "original_baseline_phishing_score": 0.005402785944234499,
+      "original_password_input_count": 0.0,
+      "review_category": "true_benign_controls"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 1
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 1,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "0",
+        "label": "benign",
+        "record_id": "17504bf7c9e9f244ff0162f12af7e8968c60a10d0c6f6b72fa6e025d6ffa022d",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:amazon.com",
+        "source_file": "train-001.parquet"
+      },
+      "original_baseline_phishing_score": 0.006735974021379485,
+      "original_password_input_count": 0.0,
+      "review_category": "true_benign_controls"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 1
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "benign",
+        "record_id": "88ead64194e0dd404254c1aed1fb96b54c3700d979f709f8a3de6dd1defdac19",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:amazon.com",
+        "source_file": "train-002.parquet"
+      },
+      "original_baseline_phishing_score": 0.008208657783729246,
+      "original_password_input_count": 0.0,
+      "review_category": "true_benign_controls"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 4
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 1,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 1,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "benign",
+        "record_id": "9abd0c6beec7768af239514df8379510735606dc9a1bb38ca4fb0d617de935ff",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:amazon.com",
+        "source_file": "train-038.parquet"
+      },
+      "original_baseline_phishing_score": 0.00938663012916189,
+      "original_password_input_count": 0.0,
+      "review_category": "true_benign_controls"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 2
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 1,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 1,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "benign",
+        "record_id": "069bae65d5d5bef063ee43a2ee3d9d4e090247b819301436bd5dd3d01bc0b8cb",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:amazon.com",
+        "source_file": "train-024.parquet"
+      },
+      "original_baseline_phishing_score": 0.3667191689603856,
+      "original_password_input_count": 0.0,
+      "review_category": "true_benign_controls"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 2
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "0",
+        "label": "benign",
+        "record_id": "120435e02d4eab19cac1f7703720727e8e19c0cdb442b257624ceb291a8ab305",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:amazon.com",
+        "source_file": "train-036.parquet"
+      },
+      "original_baseline_phishing_score": 0.16086330409204042,
+      "original_password_input_count": 0.0,
+      "review_category": "true_benign_controls"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 1
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 1,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 1,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "benign",
+        "record_id": "c84f3f457d6cd8a38fcc8d5e5be591dff2f0fa0b314cb3136dca89eeab931fde",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:amazon.com",
+        "source_file": "train-034.parquet"
+      },
+      "original_baseline_phishing_score": 0.1834106055379109,
+      "original_password_input_count": 0.0,
+      "review_category": "true_benign_controls"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 1
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "benign",
+        "record_id": "ddb9f65dead4067f535a17880b48c94992fc48ebc05aeeafb76b020381c86066",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:amazon.com",
+        "source_file": "train-008.parquet"
+      },
+      "original_baseline_phishing_score": 0.03092964051145135,
+      "original_password_input_count": 0.0,
+      "review_category": "true_benign_controls"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 1,
+        "context_identity_password_pair_form_ratio": 0.5,
+        "context_identitylike_control_count": 1,
+        "context_identitylike_control_ratio": 0.5,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 1,
+        "context_passwordlike_control_ratio": 0.5,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 1,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 1,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 1,
+        "context_plaintext_passwordlike_fraction": 1.0,
+        "context_plaintext_passwordlike_post_form_count": 1,
+        "context_user_entry_control_count": 2
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 1,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "phish",
+        "record_id": "9cbf36e70d91adeb9be0d823e3dcacf12460b5054cb114167b2453e9316e1de2",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:weebly.com",
+        "source_file": "train-038.parquet"
+      },
+      "original_baseline_phishing_score": 0.998734496172452,
+      "original_password_input_count": 0.0,
+      "review_category": "true_phish_controls"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 1,
+        "context_identity_password_pair_form_ratio": 0.5,
+        "context_identitylike_control_count": 1,
+        "context_identitylike_control_ratio": 0.5,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 1,
+        "context_passwordlike_control_count": 1,
+        "context_passwordlike_control_ratio": 0.5,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 1,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 1,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 1,
+        "context_plaintext_passwordlike_fraction": 1.0,
+        "context_plaintext_passwordlike_post_form_count": 1,
+        "context_user_entry_control_count": 2
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 1,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "0",
+        "label": "phish",
+        "record_id": "0f59c3618c5a2ec389196e0195afa632a659e62f73f204cc9a5775e1ec0bf6a0",
+        "sampled_similarity_candidate": "1",
+        "site_group": "domain:weebly.com",
+        "source_file": "train-032.parquet"
+      },
+      "original_baseline_phishing_score": 0.9987246883752653,
+      "original_password_input_count": 0.0,
+      "review_category": "true_phish_controls"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 1,
+        "context_identity_password_pair_form_ratio": 0.5,
+        "context_identitylike_control_count": 1,
+        "context_identitylike_control_ratio": 0.5,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 1,
+        "context_passwordlike_control_count": 1,
+        "context_passwordlike_control_ratio": 0.5,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 1,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 1,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 1,
+        "context_plaintext_passwordlike_fraction": 1.0,
+        "context_plaintext_passwordlike_post_form_count": 1,
+        "context_user_entry_control_count": 2
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 1,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "phish",
+        "record_id": "9420792243f22f7718c2efa38e592ed753bf3d5e6b5310fba72011a067595c61",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:weebly.com",
+        "source_file": "train-022.parquet"
+      },
+      "original_baseline_phishing_score": 0.9985347221152565,
+      "original_password_input_count": 0.0,
+      "review_category": "true_phish_controls"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 0,
+        "context_identity_password_pair_form_ratio": 0.0,
+        "context_identitylike_control_count": 0,
+        "context_identitylike_control_ratio": 0.0,
+        "context_label_only_passwordlike_control_count": 0,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 0,
+        "context_passwordlike_control_ratio": 0.0,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 0,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 0,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 0,
+        "context_plaintext_passwordlike_fraction": 0.0,
+        "context_plaintext_passwordlike_post_form_count": 0,
+        "context_user_entry_control_count": 0
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "phish",
+        "record_id": "117b375e2bf69f206d8acf889a0f0dd8dc37d9c3e2cd873a19ea624d3b6b8873",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:weebly.com",
+        "source_file": "train-019.parquet"
+      },
+      "original_baseline_phishing_score": 0.9969528437559163,
+      "original_password_input_count": 0.0,
+      "review_category": "true_phish_controls"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 1,
+        "context_identity_password_pair_form_ratio": 1.0,
+        "context_identitylike_control_count": 1,
+        "context_identitylike_control_ratio": 0.5,
+        "context_label_only_passwordlike_control_count": 1,
+        "context_normalized_password_cue_control_count": 1,
+        "context_passwordlike_control_count": 1,
+        "context_passwordlike_control_ratio": 0.5,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 1,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 1,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 1,
+        "context_plaintext_passwordlike_fraction": 1.0,
+        "context_plaintext_passwordlike_post_form_count": 1,
+        "context_user_entry_control_count": 2
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "phish",
+        "record_id": "933d7d1371c945310b4ee987481066a108160eb934cff0979ed2b7116e1c5730",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:weebly.com",
+        "source_file": "train-052.parquet"
+      },
+      "original_baseline_phishing_score": 0.8135314854783737,
+      "original_password_input_count": 0.0,
+      "review_category": "true_phish_controls"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 1,
+        "context_identity_password_pair_form_ratio": 1.0,
+        "context_identitylike_control_count": 1,
+        "context_identitylike_control_ratio": 0.5,
+        "context_label_only_passwordlike_control_count": 1,
+        "context_normalized_password_cue_control_count": 1,
+        "context_passwordlike_control_count": 1,
+        "context_passwordlike_control_ratio": 0.5,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 1,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 1,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 1,
+        "context_plaintext_passwordlike_fraction": 1.0,
+        "context_plaintext_passwordlike_post_form_count": 1,
+        "context_user_entry_control_count": 2
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "phish",
+        "record_id": "d450e0ed41f09d39be24a42c6bdb341500bb079504886db7cfa2a17fa3927771",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:weebly.com",
+        "source_file": "train-018.parquet"
+      },
+      "original_baseline_phishing_score": 0.5204778612095458,
+      "original_password_input_count": 0.0,
+      "review_category": "true_phish_controls"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 1,
+        "context_identity_password_pair_form_ratio": 1.0,
+        "context_identitylike_control_count": 1,
+        "context_identitylike_control_ratio": 0.5,
+        "context_label_only_passwordlike_control_count": 1,
+        "context_normalized_password_cue_control_count": 1,
+        "context_passwordlike_control_count": 1,
+        "context_passwordlike_control_ratio": 0.5,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 1,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 1,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 1,
+        "context_plaintext_passwordlike_fraction": 1.0,
+        "context_plaintext_passwordlike_post_form_count": 1,
+        "context_user_entry_control_count": 2
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 0,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "phish",
+        "record_id": "e76e65bcbf7f1c3492b21c4cbe8c48b89d7ecc72c1b643dabf51478455bc9dc8",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:weebly.com",
+        "source_file": "train-025.parquet"
+      },
+      "original_baseline_phishing_score": 0.805793598344108,
+      "original_password_input_count": 0.0,
+      "review_category": "true_phish_controls"
+    },
+    {
+      "context_features": {
+        "context_identity_password_pair_form_count": 1,
+        "context_identity_password_pair_form_ratio": 1.0,
+        "context_identitylike_control_count": 1,
+        "context_identitylike_control_ratio": 0.5,
+        "context_label_only_passwordlike_control_count": 1,
+        "context_normalized_password_cue_control_count": 0,
+        "context_passwordlike_control_count": 1,
+        "context_passwordlike_control_ratio": 0.5,
+        "context_passwordlike_cross_site_form_count": 0,
+        "context_passwordlike_form_count": 1,
+        "context_passwordlike_get_form_count": 0,
+        "context_passwordlike_handler_form_count": 0,
+        "context_passwordlike_https_to_http_form_count": 0,
+        "context_passwordlike_post_form_count": 1,
+        "context_passwordlike_textarea_count": 0,
+        "context_passwordlike_unowned_control_count": 0,
+        "context_plaintext_passwordlike_control_count": 1,
+        "context_plaintext_passwordlike_fraction": 1.0,
+        "context_plaintext_passwordlike_post_form_count": 1,
+        "context_user_entry_control_count": 2
+      },
+      "context_quality": {
+        "context_association_storage_cut": 0,
+        "context_duplicate_element_id_seen": 1,
+        "context_human_verification_hint_present": 0,
+        "context_parse_error": 0,
+        "context_text_hint_scan_cut": 0,
+        "context_unavailable_page_hint_present": 0
+      },
+      "metadata": {
+        "in_validation_sensitivity_subset": "1",
+        "label": "phish",
+        "record_id": "ebc26f07505967549e07e1156dd93523f41268500ea156422c0d8f9b581a0606",
+        "sampled_similarity_candidate": "0",
+        "site_group": "domain:weebly.com",
+        "source_file": "train-006.parquet"
+      },
+      "original_baseline_phishing_score": 0.7408762488455831,
+      "original_password_input_count": 0.0,
+      "review_category": "true_phish_controls"
+    }
+  ],
+  "status": "form_context_feature_extraction_complete",
+  "validation_sensitivity_counts": {
+    "benign": 27681,
+    "phish": 27681
+  }
+}

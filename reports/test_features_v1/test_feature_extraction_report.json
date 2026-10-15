@@ -1,0 +1,617 @@
+{
+  "base_feature_count": 86,
+  "cohort_membership_changed": false,
+  "context_feature_count": 20,
+  "coverage_percent_of_all_raw_rows": {
+    "balanced": 34.49244317505653,
+    "eligible": 38.725455194573364
+  },
+  "created_utc": "2026-10-08T21:59:33.437006+00:00",
+  "existing_dataset_or_model_modified": false,
+  "extracted_label_counts": {
+    "balanced": {
+      "benign": 28984,
+      "phish": 28984
+    },
+    "eligible": {
+      "benign": 28984,
+      "phish": 36098
+    }
+  },
+  "feature_count": 106,
+  "frozen_feature_schema_reused": true,
+  "inputs": {
+    "association_limits": {
+      "max_association_items": 20000,
+      "max_controls": 10000,
+      "max_open_elements": 512,
+      "max_text_hint_characters": 50000,
+      "max_text_per_association": 1024
+    },
+    "balanced_test_counts": {
+      "benign": 28984,
+      "phish": 28984
+    },
+    "base_extractor_sha256": "4c845262a0cb27c085a2fc80c4d37f427addad5405b7319ba20438f7e18ab7ef",
+    "checkpoint_every_pages": 100,
+    "code_sha256": "d49a768a44b90f9c79de83097f89fabcf96aa4117cd1ea218b6d72bc45cd9156",
+    "cohort_membership_policy": "Reuse script-26 membership; quality flags never remove or rebalance pages.",
+    "context_extractor_sha256": "62d468f83d124346cce3866894f85ae4bec4cdcd3163267b23625b61764d16eb",
+    "data_dir": "D:\\new dataset\\phreshphish_dataset\\data",
+    "duckdb_version": "1.5.6",
+    "eligible_test_counts": {
+      "benign": 28984,
+      "phish": 36098
+    },
+    "external_js_policy": "references_only_no_download",
+    "feature_count": 106,
+    "feature_names": [
+      "html_character_count",
+      "tag_count",
+      "text_character_count",
+      "title_character_count",
+      "form_count",
+      "form_post_count",
+      "form_get_count",
+      "form_empty_action_count",
+      "form_cross_site_action_count",
+      "form_https_to_http_action_count",
+      "form_non_http_action_count",
+      "form_invalid_action_count",
+      "form_onsubmit_count",
+      "form_autocomplete_off_count",
+      "password_form_count",
+      "password_form_cross_site_action_count",
+      "password_form_post_count",
+      "input_count",
+      "password_input_count",
+      "email_input_count",
+      "hidden_input_count",
+      "text_input_count",
+      "submit_input_count",
+      "required_input_count",
+      "credential_hint_input_count",
+      "inputs_without_resolved_form_count",
+      "formaction_override_count",
+      "formaction_cross_site_count",
+      "button_count",
+      "anchor_count",
+      "anchor_http_count",
+      "anchor_cross_site_count",
+      "anchor_fragment_or_empty_count",
+      "anchor_javascript_count",
+      "anchor_mailto_count",
+      "anchor_invalid_count",
+      "image_count",
+      "iframe_count",
+      "iframe_cross_site_count",
+      "iframe_hidden_hint_count",
+      "meta_refresh_count",
+      "meta_refresh_cross_site_count",
+      "script_count",
+      "script_external_count",
+      "script_cross_site_count",
+      "script_inline_executable_count",
+      "script_non_executable_data_count",
+      "script_async_count",
+      "script_defer_count",
+      "event_attribute_count",
+      "onsubmit_attribute_count",
+      "onclick_attribute_count",
+      "onload_attribute_count",
+      "hidden_style_element_count",
+      "password_input_ratio",
+      "hidden_input_ratio",
+      "form_post_ratio",
+      "form_cross_site_ratio",
+      "anchor_cross_site_ratio",
+      "script_cross_site_ratio",
+      "event_attributes_per_tag",
+      "js_eval_call_count",
+      "js_function_constructor_count",
+      "js_atob_call_count",
+      "js_decode_call_count",
+      "js_char_code_call_count",
+      "js_hex_unicode_escape_count",
+      "js_settimeout_call_count",
+      "js_setinterval_call_count",
+      "js_location_reference_count",
+      "js_location_assignment_count",
+      "js_location_navigation_call_count",
+      "js_window_open_call_count",
+      "js_fetch_call_count",
+      "js_xhr_constructor_count",
+      "js_sendbeacon_call_count",
+      "js_document_write_call_count",
+      "js_html_assignment_count",
+      "js_create_element_call_count",
+      "js_event_listener_call_count",
+      "js_prevent_default_call_count",
+      "js_form_submit_call_count",
+      "js_storage_reference_count",
+      "js_cookie_reference_count",
+      "js_password_hint_count",
+      "js_analysed_character_count",
+      "context_user_entry_control_count",
+      "context_passwordlike_control_count",
+      "context_plaintext_passwordlike_control_count",
+      "context_label_only_passwordlike_control_count",
+      "context_normalized_password_cue_control_count",
+      "context_identitylike_control_count",
+      "context_passwordlike_textarea_count",
+      "context_passwordlike_unowned_control_count",
+      "context_passwordlike_form_count",
+      "context_identity_password_pair_form_count",
+      "context_passwordlike_post_form_count",
+      "context_passwordlike_get_form_count",
+      "context_plaintext_passwordlike_post_form_count",
+      "context_passwordlike_cross_site_form_count",
+      "context_passwordlike_https_to_http_form_count",
+      "context_passwordlike_handler_form_count",
+      "context_passwordlike_control_ratio",
+      "context_identitylike_control_ratio",
+      "context_plaintext_passwordlike_fraction",
+      "context_identity_password_pair_form_ratio"
+    ],
+    "freeze_report_sha256": "ec6a97badebb0268dc25e864add0d2fdab115a2fc5db9a520ba0a9dda9ab24a9",
+    "frozen_specification_sha256": "0443c025950a2fcce451c80c8d657ba2e5a56fbcb25de1e3279748e987c9e1cc",
+    "metadata_columns": [
+      "record_id",
+      "label",
+      "site_group",
+      "source_file",
+      "sampled_similarity_candidate",
+      "in_validation_sensitivity_subset",
+      "source_row_number",
+      "in_balanced_test_cohort"
+    ],
+    "numeric_csv_policy": "Preserve extractor numeric values; the later frozen-model evaluator must load X as float32.",
+    "parameters": {
+      "max_html_characters": 4000000,
+      "max_js_characters": 500000
+    },
+    "preparer_code_sha256": "fe5d87805a0f8b5c7102b560747550f33820373c17a92cb4221132bb9021de5e",
+    "quality_columns_not_classifier_inputs": [
+      "html_analysis_truncated",
+      "js_analysis_truncated",
+      "html_parse_error",
+      "unclosed_rawtext_element",
+      "invalid_reference_count",
+      "context_parse_error",
+      "context_association_storage_cut",
+      "context_duplicate_element_id_seen",
+      "context_human_verification_hint_present",
+      "context_unavailable_page_hint_present",
+      "context_text_hint_scan_cut"
+    ],
+    "scan_sql_sha256": "8db13d8e67a23802bad81b7143541bd5f64a5f1ea313df74834743d4cf2de5d2",
+    "script_version": "1.0",
+    "source_file_snapshots": [
+      {
+        "name": "test-000.parquet",
+        "rows": 1000,
+        "sha256": "9ae7908b64cc75669e4be4cbd0fec884ac2b3f4984211eacfbf013a2ada12851"
+      },
+      {
+        "name": "test-001.parquet",
+        "rows": 5236,
+        "sha256": "bb122ccb309436b92e7edf11792d53efdbde46c4b5d2ad7d39a7d48b50d2b00f"
+      },
+      {
+        "name": "test-002.parquet",
+        "rows": 5759,
+        "sha256": "da3e9b1fb7e537ea951bb6e9ac68ae5a0c48e6590714f2b90ecf5dd96276d894"
+      },
+      {
+        "name": "test-003.parquet",
+        "rows": 6558,
+        "sha256": "c6157aeddfc5eff2728e88ccc61186464e4e6861bee0ae841a830be9ebc7cf17"
+      },
+      {
+        "name": "test-004.parquet",
+        "rows": 7098,
+        "sha256": "b20de434400f3030dd711a1e4f6e012397d1c2889d575b21aa747f8c5ae04df1"
+      },
+      {
+        "name": "test-005.parquet",
+        "rows": 7645,
+        "sha256": "19b0ecd6a657a11a3fb43dcb22e260eb5b5c8d7a0dcee880b4705a9ee2ef1c6f"
+      },
+      {
+        "name": "test-006.parquet",
+        "rows": 8111,
+        "sha256": "a34c4ad85cf863af950cad8251717cba3642ae0c0e7bd8ab245a29a63139d187"
+      },
+      {
+        "name": "test-007.parquet",
+        "rows": 8506,
+        "sha256": "f91281ac9a8bbf39fe9146e115be5e74cf3d59719c2f06bb38178fbaa9d6719b"
+      },
+      {
+        "name": "test-008.parquet",
+        "rows": 8767,
+        "sha256": "82e7216cef17bd78f83ee3339a980d0e09ef864c83f3e8222ef809b961821252"
+      },
+      {
+        "name": "test-009.parquet",
+        "rows": 9025,
+        "sha256": "a18e27d35f3a06983c1734f875093f45dbd041ea39e796f8d762f5712f800be6"
+      },
+      {
+        "name": "test-010.parquet",
+        "rows": 9175,
+        "sha256": "b5d9ca33207b70e2c22aeef6cdec1f294a7ce5f843c6033e208c6f520c85cfdd"
+      },
+      {
+        "name": "test-011.parquet",
+        "rows": 9154,
+        "sha256": "585cf9cfa0ddb54421bfccedb26590dd87426908e814f1290b1986c2e750f0e5"
+      },
+      {
+        "name": "test-012.parquet",
+        "rows": 9241,
+        "sha256": "3bbffccd4269ac723febeacc01905b2d52d1f98242f5bf18a82093cc4f4cdf97"
+      },
+      {
+        "name": "test-013.parquet",
+        "rows": 9239,
+        "sha256": "81daa4b68fca7b2df4d144145e80a09355d963e290d277c9976fb5a988b5e1f3"
+      },
+      {
+        "name": "test-014.parquet",
+        "rows": 9339,
+        "sha256": "8e30a3b2419604ce578f341392bd6e3878abdae38d7b3e38adb107bf2f557c03"
+      },
+      {
+        "name": "test-015.parquet",
+        "rows": 9517,
+        "sha256": "9d2589e528116c862aba4eed4ce0b4778172e8b82f2ac3c4157153666bb68adc"
+      },
+      {
+        "name": "test-016.parquet",
+        "rows": 9599,
+        "sha256": "3d9f97863ee0c88448487d4a13c4947951d62e65e571ed695e8bb69108995ba7"
+      },
+      {
+        "name": "test-017.parquet",
+        "rows": 9600,
+        "sha256": "66b916bc81a28f172ee807acedb497096993f64266459af8d785bc09d4d127d1"
+      },
+      {
+        "name": "test-018.parquet",
+        "rows": 9628,
+        "sha256": "aaa23d30b1c242b94000b5243dfb855f715f95fdbc0fd345f9ec4d30aeda36b1"
+      },
+      {
+        "name": "test-019.parquet",
+        "rows": 9480,
+        "sha256": "c7169aa4564a95e4950f05bc3281a66fe58f2b31eb1594b62a693de65da7508c"
+      },
+      {
+        "name": "test-020.parquet",
+        "rows": 6383,
+        "sha256": "77d312fe7dc92fc3b2ed208ab55b148b2032345091ad44d513b479241013d18e"
+      }
+    ],
+    "source_files": [
+      {
+        "bytes": 55340975,
+        "mtime_ns": 1790761002997384700,
+        "name": "test-000.parquet"
+      },
+      {
+        "bytes": 349640343,
+        "mtime_ns": 1790761636501540600,
+        "name": "test-001.parquet"
+      },
+      {
+        "bytes": 309443239,
+        "mtime_ns": 1790761346562468400,
+        "name": "test-002.parquet"
+      },
+      {
+        "bytes": 371223967,
+        "mtime_ns": 1790761648218868400,
+        "name": "test-003.parquet"
+      },
+      {
+        "bytes": 378348158,
+        "mtime_ns": 1790761923258996100,
+        "name": "test-004.parquet"
+      },
+      {
+        "bytes": 401642506,
+        "mtime_ns": 1790761971150859600,
+        "name": "test-005.parquet"
+      },
+      {
+        "bytes": 421478326,
+        "mtime_ns": 1790761769582139900,
+        "name": "test-006.parquet"
+      },
+      {
+        "bytes": 454488388,
+        "mtime_ns": 1790761593280143300,
+        "name": "test-007.parquet"
+      },
+      {
+        "bytes": 456990152,
+        "mtime_ns": 1790762055107934900,
+        "name": "test-008.parquet"
+      },
+      {
+        "bytes": 483918414,
+        "mtime_ns": 1790762362473268700,
+        "name": "test-009.parquet"
+      },
+      {
+        "bytes": 530323891,
+        "mtime_ns": 1790762678723451500,
+        "name": "test-010.parquet"
+      },
+      {
+        "bytes": 500273254,
+        "mtime_ns": 1790762950885203200,
+        "name": "test-011.parquet"
+      },
+      {
+        "bytes": 524605977,
+        "mtime_ns": 1790763289708366500,
+        "name": "test-012.parquet"
+      },
+      {
+        "bytes": 497270955,
+        "mtime_ns": 1790763589380067000,
+        "name": "test-013.parquet"
+      },
+      {
+        "bytes": 478593835,
+        "mtime_ns": 1790763864347770600,
+        "name": "test-014.parquet"
+      },
+      {
+        "bytes": 502425981,
+        "mtime_ns": 1790764170654213700,
+        "name": "test-015.parquet"
+      },
+      {
+        "bytes": 523758907,
+        "mtime_ns": 1790764468806033100,
+        "name": "test-016.parquet"
+      },
+      {
+        "bytes": 516672678,
+        "mtime_ns": 1790764745437965200,
+        "name": "test-017.parquet"
+      },
+      {
+        "bytes": 567766583,
+        "mtime_ns": 1790765040371754600,
+        "name": "test-018.parquet"
+      },
+      {
+        "bytes": 504129805,
+        "mtime_ns": 1790765352349082500,
+        "name": "test-019.parquet"
+      },
+      {
+        "bytes": 347423824,
+        "mtime_ns": 1790765553002002500,
+        "name": "test-020.parquet"
+      }
+    ],
+    "test_preparation_output_hashes": {
+      "balanced_test_manifest.csv": {
+        "rows": 57968,
+        "sha256": "1a8ed95f85c97dda6a0c789a4d4bd147601a41120d2ec5b450eba4b1ca9928c1"
+      },
+      "eligible_test_manifest.csv": {
+        "rows": 65082,
+        "sha256": "358c33f0baebd5383fd9223cdf8285a82e4917abc43c002d68e0820a9da69238"
+      },
+      "test_preparation_index.sqlite": {
+        "rows": 168060,
+        "sha256": "81284f7ca4b3f9bc87705cdaff60988625259bc5c12e0f2e5ce148bdda9695a7"
+      },
+      "test_selection_decisions.jsonl": {
+        "rows": 168060,
+        "sha256": "f8f329fff929922ddfd02ead223310b301f35b9b86006804074752a17fadd58c"
+      }
+    },
+    "test_preparation_report_sha256": "a7538e829850d0baeb94b3ceb08db395cf73f4b9f796422ccebcdc2d0fe68600",
+    "tldextract_version": "5.4.0"
+  },
+  "javascript_executed": false,
+  "labels_changed": false,
+  "last_run_memory_limit": "4GB",
+  "limitations": [
+    "These are feature outputs, not predictions or measured test accuracy.",
+    "The balanced and unbalanced cohorts are the filtered script-26 populations; report their exclusions and coverage with evaluation results.",
+    "The unbalanced cohort preserves this filtered population's class ratio, not real-world deployment prevalence.",
+    "Static HTML and inline-JS lexical cues do not establish live/delayed/obfuscated runtime behaviour. External JS remains references only.",
+    "Original HTML/JS caps and association limits remain. Quality flags are preserved and never used to remove or rebalance pages.",
+    "Metadata, labels, quality flags and cohort membership are outside the exact 106 classifier features. The later evaluator must use the frozen feature order and float32 X.",
+    "Full test-file checksums are verified before scanning; selected archive fingerprints/metadata are checked during extraction. Files are not held under a filesystem lock.",
+    "An interruption rolls back the active group of at most 100 pages; earlier committed groups resume with the unchanged code and inputs."
+  ],
+  "model_loaded": false,
+  "model_threshold_changed": false,
+  "model_trained": false,
+  "official_test_evaluated": false,
+  "official_test_features_extracted": true,
+  "official_test_files_opened": true,
+  "outputs": {
+    "balanced_test_static_features.csv": {
+      "rows": 57968,
+      "sha256": "a3b2afe16d30a5ed3e9ba254be5589870f689f72b3ed26e132eace982160e689"
+    },
+    "eligible_test_static_features.csv": {
+      "rows": 65082,
+      "sha256": "c94507a56289fcec36cadc0b77113667d8eb14f3c21a8efdfe9e95f905818685"
+    },
+    "static_feature_schema.json": {
+      "sha256": "0c2bf34b0d2a3488f7ca69696e1d8236c0234aead6585a406d6642353f3c24c7"
+    },
+    "test_feature_index.sqlite": {
+      "rows": 65082,
+      "sha256": "4498b03f4f0f629166e4d49a917bcd62b5ab3f8a1bab88e146e18b372993e36e"
+    }
+  },
+  "python_version": "3.12.10",
+  "quality_based_exclusions": 0,
+  "quality_summary_by_cohort_and_label": {
+    "balanced": {
+      "benign": {
+        "context_association_storage_cut_rows": 47,
+        "context_duplicate_element_id_seen_rows": 11826,
+        "context_human_verification_hint_present_rows": 56,
+        "context_identity_password_pair_form_count_present_rows": 3946,
+        "context_identity_password_pair_form_ratio_present_rows": 3946,
+        "context_identitylike_control_count_present_rows": 11002,
+        "context_identitylike_control_ratio_present_rows": 11002,
+        "context_label_only_passwordlike_control_count_present_rows": 26,
+        "context_normalized_password_cue_control_count_present_rows": 2,
+        "context_parse_error_rows": 0,
+        "context_passwordlike_control_count_present_rows": 4818,
+        "context_passwordlike_control_ratio_present_rows": 4818,
+        "context_passwordlike_cross_site_form_count_present_rows": 74,
+        "context_passwordlike_form_count_present_rows": 4431,
+        "context_passwordlike_get_form_count_present_rows": 824,
+        "context_passwordlike_handler_form_count_present_rows": 458,
+        "context_passwordlike_https_to_http_form_count_present_rows": 1,
+        "context_passwordlike_post_form_count_present_rows": 3660,
+        "context_passwordlike_textarea_count_present_rows": 110,
+        "context_passwordlike_unowned_control_count_present_rows": 437,
+        "context_plaintext_passwordlike_control_count_present_rows": 687,
+        "context_plaintext_passwordlike_fraction_present_rows": 687,
+        "context_plaintext_passwordlike_post_form_count_present_rows": 604,
+        "context_text_hint_scan_cut_rows": 2599,
+        "context_unavailable_page_hint_present_rows": 64,
+        "context_user_entry_control_count_present_rows": 22154,
+        "html_analysis_truncated_rows": 64,
+        "html_parse_error_rows": 0,
+        "inline_executable_script_present_rows": 27752,
+        "invalid_reference_count_rows": 100,
+        "js_analysis_truncated_rows": 365,
+        "password_input_present_rows": 4328,
+        "rows": 28984,
+        "unclosed_rawtext_element_rows": 31
+      },
+      "phish": {
+        "context_association_storage_cut_rows": 7,
+        "context_duplicate_element_id_seen_rows": 5874,
+        "context_human_verification_hint_present_rows": 419,
+        "context_identity_password_pair_form_count_present_rows": 2911,
+        "context_identity_password_pair_form_ratio_present_rows": 2911,
+        "context_identitylike_control_count_present_rows": 9008,
+        "context_identitylike_control_ratio_present_rows": 9008,
+        "context_label_only_passwordlike_control_count_present_rows": 26,
+        "context_normalized_password_cue_control_count_present_rows": 17,
+        "context_parse_error_rows": 0,
+        "context_passwordlike_control_count_present_rows": 3949,
+        "context_passwordlike_control_ratio_present_rows": 3949,
+        "context_passwordlike_cross_site_form_count_present_rows": 284,
+        "context_passwordlike_form_count_present_rows": 3245,
+        "context_passwordlike_get_form_count_present_rows": 1125,
+        "context_passwordlike_handler_form_count_present_rows": 209,
+        "context_passwordlike_https_to_http_form_count_present_rows": 7,
+        "context_passwordlike_post_form_count_present_rows": 2191,
+        "context_passwordlike_textarea_count_present_rows": 6,
+        "context_passwordlike_unowned_control_count_present_rows": 753,
+        "context_plaintext_passwordlike_control_count_present_rows": 260,
+        "context_plaintext_passwordlike_fraction_present_rows": 260,
+        "context_plaintext_passwordlike_post_form_count_present_rows": 58,
+        "context_text_hint_scan_cut_rows": 675,
+        "context_unavailable_page_hint_present_rows": 53,
+        "context_user_entry_control_count_present_rows": 14546,
+        "html_analysis_truncated_rows": 24,
+        "html_parse_error_rows": 0,
+        "inline_executable_script_present_rows": 22438,
+        "invalid_reference_count_rows": 17,
+        "js_analysis_truncated_rows": 152,
+        "password_input_present_rows": 3735,
+        "rows": 28984,
+        "unclosed_rawtext_element_rows": 9
+      }
+    },
+    "eligible": {
+      "benign": {
+        "context_association_storage_cut_rows": 47,
+        "context_duplicate_element_id_seen_rows": 11826,
+        "context_human_verification_hint_present_rows": 56,
+        "context_identity_password_pair_form_count_present_rows": 3946,
+        "context_identity_password_pair_form_ratio_present_rows": 3946,
+        "context_identitylike_control_count_present_rows": 11002,
+        "context_identitylike_control_ratio_present_rows": 11002,
+        "context_label_only_passwordlike_control_count_present_rows": 26,
+        "context_normalized_password_cue_control_count_present_rows": 2,
+        "context_parse_error_rows": 0,
+        "context_passwordlike_control_count_present_rows": 4818,
+        "context_passwordlike_control_ratio_present_rows": 4818,
+        "context_passwordlike_cross_site_form_count_present_rows": 74,
+        "context_passwordlike_form_count_present_rows": 4431,
+        "context_passwordlike_get_form_count_present_rows": 824,
+        "context_passwordlike_handler_form_count_present_rows": 458,
+        "context_passwordlike_https_to_http_form_count_present_rows": 1,
+        "context_passwordlike_post_form_count_present_rows": 3660,
+        "context_passwordlike_textarea_count_present_rows": 110,
+        "context_passwordlike_unowned_control_count_present_rows": 437,
+        "context_plaintext_passwordlike_control_count_present_rows": 687,
+        "context_plaintext_passwordlike_fraction_present_rows": 687,
+        "context_plaintext_passwordlike_post_form_count_present_rows": 604,
+        "context_text_hint_scan_cut_rows": 2599,
+        "context_unavailable_page_hint_present_rows": 64,
+        "context_user_entry_control_count_present_rows": 22154,
+        "html_analysis_truncated_rows": 64,
+        "html_parse_error_rows": 0,
+        "inline_executable_script_present_rows": 27752,
+        "invalid_reference_count_rows": 100,
+        "js_analysis_truncated_rows": 365,
+        "password_input_present_rows": 4328,
+        "rows": 28984,
+        "unclosed_rawtext_element_rows": 31
+      },
+      "phish": {
+        "context_association_storage_cut_rows": 12,
+        "context_duplicate_element_id_seen_rows": 7403,
+        "context_human_verification_hint_present_rows": 526,
+        "context_identity_password_pair_form_count_present_rows": 3626,
+        "context_identity_password_pair_form_ratio_present_rows": 3626,
+        "context_identitylike_control_count_present_rows": 11259,
+        "context_identitylike_control_ratio_present_rows": 11259,
+        "context_label_only_passwordlike_control_count_present_rows": 32,
+        "context_normalized_password_cue_control_count_present_rows": 18,
+        "context_parse_error_rows": 0,
+        "context_passwordlike_control_count_present_rows": 4918,
+        "context_passwordlike_control_ratio_present_rows": 4918,
+        "context_passwordlike_cross_site_form_count_present_rows": 344,
+        "context_passwordlike_form_count_present_rows": 4041,
+        "context_passwordlike_get_form_count_present_rows": 1420,
+        "context_passwordlike_handler_form_count_present_rows": 257,
+        "context_passwordlike_https_to_http_form_count_present_rows": 8,
+        "context_passwordlike_post_form_count_present_rows": 2702,
+        "context_passwordlike_textarea_count_present_rows": 7,
+        "context_passwordlike_unowned_control_count_present_rows": 938,
+        "context_plaintext_passwordlike_control_count_present_rows": 316,
+        "context_plaintext_passwordlike_fraction_present_rows": 316,
+        "context_plaintext_passwordlike_post_form_count_present_rows": 67,
+        "context_text_hint_scan_cut_rows": 834,
+        "context_unavailable_page_hint_present_rows": 69,
+        "context_user_entry_control_count_present_rows": 18236,
+        "html_analysis_truncated_rows": 30,
+        "html_parse_error_rows": 0,
+        "inline_executable_script_present_rows": 28006,
+        "invalid_reference_count_rows": 20,
+        "js_analysis_truncated_rows": 190,
+        "password_input_present_rows": 4658,
+        "rows": 36098,
+        "unclosed_rawtext_element_rows": 11
+      }
+    }
+  },
+  "script_version": "1.0",
+  "status": "static_test_feature_extraction_complete_not_evaluated",
+  "test_accuracy": null,
+  "threads": 1,
+  "websites_requested": false
+}

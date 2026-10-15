@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="detector-token" content="__CSRF_TOKEN__">
+  <title>HTML &amp; JS Phishing Detector</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><div class="brand-mark" aria-hidden="true">H</div><span>HTML &amp; JS Phishing Detector</span><span id="ready" class="ready">Connecting…</span></header>
+    <section class="intro"><span class="eyebrow">WEBPAGE ANALYSIS</span><h1>Inspect a page.<br>Understand the result.</h1><p>Watch page changes and analyze them with your trained phishing model.</p></section>
+    <div class="workspace">
+      <section class="card input-card" aria-labelledby="input-heading">
+        <h2 id="input-heading">Analyze a webpage</h2>
+        <div class="tabs" role="tablist" aria-label="Input type"><button id="url-tab" class="tab selected" role="tab" aria-selected="true" aria-controls="url-panel">Website URL</button><button id="html-tab" class="tab" role="tab" aria-selected="false" aria-controls="html-panel">Saved HTML</button><button id="demo-tab" class="tab" role="tab" aria-selected="false" aria-controls="demo-panel">Try a demo</button></div>
+        <form id="analysis-form">
+          <div id="url-panel" role="tabpanel" aria-labelledby="url-tab"><label for="url">Public website URL</label><input id="url" type="url" placeholder="https://example.com" spellcheck="false" maxlength="8192"><label for="analysis-type">Analysis method</label><select id="analysis-type"><option value="browser">Browser: watch changes after opening</option><option value="url">Source: read downloaded HTML only</option></select><p class="hint">Browser analysis watches the page for 6 seconds, then tests credential forms with blocked requests. Use an isolated research machine for suspected phishing pages.</p></div>
+          <div id="html-panel" role="tabpanel" aria-labelledby="html-tab" hidden><label for="page-url">Original or final page URL</label><input id="page-url" type="url" placeholder="https://example.com/login" spellcheck="false" maxlength="8192"><label for="basis">How was this HTML captured?</label><select id="basis"><option value="user_supplied_unknown">Capture method unknown</option><option value="browser_rendered">Browser-rendered DOM</option><option value="http_source">HTTP source</option></select><label for="html">Page HTML</label><textarea id="html" rows="7" placeholder="Paste the captured HTML here" spellcheck="false"></textarea><p class="hint">Provide the complete capture. HTML is analyzed as text.</p></div>
+          <div id="demo-panel" role="tabpanel" aria-labelledby="demo-tab" hidden><label for="demo-case">Offline research example</label><select id="demo-case"><option value="delayed_login">Login form appears after a delay</option><option value="encoded_login">Encoded script creates a login form</option><option value="external_login">External script creates a login form</option><option value="ordinary_sso">Ordinary login service</option><option value="contact_form">Ordinary contact form</option><option value="redirect_login">Page redirects to a login form</option></select><p class="hint">Built-in examples run through the browser and your real model. They visit no live website.</p></div>
+          <button id="analyze" class="primary" type="submit">Analyze page <span aria-hidden="true">↗</span></button>
+        </form>
+        <div class="method-note"><span class="note-dot"></span><p>Each result records the capture method and quality flags. A failed capture stays inconclusive.</p></div>
+      </section>
+      <section id="result" class="card result-card" aria-live="polite" aria-busy="false">
+        <div class="result-top"><span class="eyebrow">ANALYSIS RESULT</span><span id="result-tag" class="tag">Awaiting a page</span></div>
+        <div id="empty"><div class="empty-symbol" aria-hidden="true">⌕</div><h2>Your result will appear here</h2><p>Enter a URL or paste saved HTML to begin.</p></div>
+        <div id="output" hidden><h2 id="result-title"></h2><p id="result-url" class="url-text"></p><div id="score-panel" class="score-panel"><div><span class="score-label">Model score</span><strong id="score"></strong></div><div class="meter"><div id="score-bar"></div><span class="threshold-mark"></span></div><p>Comparison threshold: 0.50 · Score is not calibrated confidence</p></div><dl id="facts"></dl><section id="behavior-panel" hidden><h3>What changed while the page was open?</h3><ul id="behavior-findings"></ul><p id="source-score" class="hint"></p></section><div id="flags-panel"><h3>Capture notes</h3><ul id="flags"></ul></div><p id="error" class="error" hidden></p><p id="result-note" class="result-note"></p><button id="download" class="secondary" type="button">Download analysis report</button></div>
+      </section>
+    </div>
+    <footer><span>Research detector · Browser observation + 106-feature model</span><span>Browser detection accuracy needs a separate evaluation.</span></footer>
+  </main>
+</body>
+</html>

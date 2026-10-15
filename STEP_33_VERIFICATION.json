@@ -1,0 +1,30 @@
+{
+  "tests_passed": 22,
+  "tested_original_project_python": "3.12.10",
+  "report_generation_python": "3.12.14",
+  "real_saved_run_checked": true,
+  "original_evaluation_files_unchanged": true,
+  "original_report_and_metrics_retained": true,
+  "csv_rows": 100,
+  "misclassified_csv_rows": [
+    2,
+    6,
+    18,
+    25,
+    65,
+    84
+  ],
+  "source_copy_files_checked": 13,
+  "original_inputs_sha256": {
+    "frozen_input.csv": "7fe9cce0eec07f4acf41c431010b734426d54872a62e00b60aec041f3d449a34",
+    "evaluation_protocol.json": "99b655ea1e37d36e6c2c231a70dfc465654c3db38ea9a0ff10deaf8f62d39b55",
+    "checkpoint.sqlite3": "f0ac91c016a76a70e07b83b59783da6f6d9590530c4d31a4093a78f756df9f07",
+    "live_evaluation_report.json": "7de5a39be3ceb656f16a3e2a48cb824a9b4b95f6047113e3059f9c817a4e74a1",
+    "live_evaluation_predictions.csv": "1f8faeecf89374ba182eab302493f7706bd827f7aca238b67c1480b708041819"
+  },
+  "add_on_files_sha256": {
+    "33_review_live_errors.py": "728d45e5e24d43f9d0749ed64cf9fcc861c08299012680c842a56372a04f5720",
+    "tests/test_live_error_review.py": "af26c724c1086fb9c36690dfc96dbd96ffe7c891b401643a1598ebdc35271363",
+    "STEP_33_READ_ME.md": "a285b88aeb6a25bc3f860b8751d5609deef4f79a8ab41234b596531f75658f1f"
+  }
+}

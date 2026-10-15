@@ -1,0 +1,131 @@
+{
+  "created_utc": "2026-10-06T15:59:37.171515+00:00",
+  "script_version": "1.0",
+  "python_version": "3.12.10",
+  "duckdb_version": "1.5.6",
+  "tldextract_version": "5.4.0",
+  "data_dir": "D:\\new dataset\\phreshphish_dataset\\data",
+  "training_file_count": 56,
+  "test_file_count": 21,
+  "training_rows": 498255,
+  "training_label_counts": {
+    "benign": 276729,
+    "phish": 221526
+  },
+  "training_domain_status_counts": {
+    "registered_domain": 428988,
+    "private_suffix_site": 68206,
+    "ip_address": 542,
+    "hostname_fallback": 518,
+    "invalid_url": 1
+  },
+  "training_unique_site_groups": 192814,
+  "training_groups_with_multiple_rows": 40538,
+  "training_groups_with_both_labels": 310,
+  "training_missing_hash_rows": 0,
+  "training_repeated_supplied_hash_rows": 0,
+  "largest_training_groups": [
+    {
+      "site_group": "domain:gitbook.io",
+      "rows": 19738,
+      "labels": {
+        "phish": 19738
+      }
+    },
+    {
+      "site_group": "domain:google.com",
+      "rows": 13157,
+      "labels": {
+        "phish": 12278,
+        "benign": 879
+      }
+    },
+    {
+      "site_group": "domain:wikipedia.org",
+      "rows": 10787,
+      "labels": {
+        "benign": 10787
+      }
+    },
+    {
+      "site_group": "domain:weeblysite.com",
+      "rows": 8472,
+      "labels": {
+        "phish": 8472
+      }
+    },
+    {
+      "site_group": "domain:weebly.com",
+      "rows": 7684,
+      "labels": {
+        "phish": 7674,
+        "benign": 10
+      }
+    },
+    {
+      "site_group": "domain:reddit.com",
+      "rows": 3293,
+      "labels": {
+        "benign": 3293
+      }
+    },
+    {
+      "site_group": "domain:facebook.com",
+      "rows": 3153,
+      "labels": {
+        "benign": 3128,
+        "phish": 25
+      }
+    },
+    {
+      "site_group": "domain:2mdn.net",
+      "rows": 2595,
+      "labels": {
+        "benign": 2595
+      }
+    },
+    {
+      "site_group": "domain:amazon.com",
+      "rows": 2492,
+      "labels": {
+        "benign": 2492
+      }
+    },
+    {
+      "site_group": "domain:imdb.com",
+      "rows": 1570,
+      "labels": {
+        "benign": 1570
+      }
+    }
+  ],
+  "test_metadata_rows": 168060,
+  "test_domain_status_counts": {
+    "registered_domain": 153925,
+    "private_suffix_site": 13779,
+    "ip_address": 254,
+    "hostname_fallback": 102
+  },
+  "test_unique_site_groups": 78407,
+  "train_test_metadata_overlap": {
+    "check_performed": true,
+    "shared_site_groups": 17393,
+    "training_rows_in_shared_site_groups": 236284,
+    "test_rows_in_shared_site_groups": 82648,
+    "test_rows_in_shared_site_groups_percent": 49.18,
+    "shared_supplied_hashes": 0,
+    "test_rows_with_training_hash": 0
+  },
+  "grouping_method": "Normalized IDNA hostname; Public Suffix List including private suffixes; exact IP or hostname fallback.",
+  "psl_source": "Bundled snapshot; cache and HTTP updates disabled. tldextract version recorded.",
+  "limitations": [
+    "Test URL/hash metadata were used only to inspect evaluation overlap. Test labels and HTML were not read.",
+    "Shared domains do not automatically mean duplicate pages or invalid labels.",
+    "A group with both labels can be legitimate, e.g. compromised or multi-tenant hosting.",
+    "URL/domain groups do not identify identical owners, campaigns, or templates on different domains.",
+    "Supplied hashes are compared as provided; HTML hashes were not recomputed.",
+    "Unknown suffixes use the exact hostname and need review before splitting.",
+    "No train/validation split, filtering decision, feature extraction, or model training is done here.",
+    "This is not an audit of near-duplicate HTML or runtime JavaScript behavior."
+  ]
+}

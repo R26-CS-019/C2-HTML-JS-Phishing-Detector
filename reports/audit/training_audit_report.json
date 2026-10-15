@@ -1,0 +1,96 @@
+{
+  "created_utc": "2026-10-06T00:03:22.811878+00:00",
+  "python_version": "3.12.10",
+  "duckdb_version": "1.5.6",
+  "script_version": "1.1",
+  "duckdb_memory_limit": "4GB",
+  "duckdb_threads": 1,
+  "data_dir": "D:\\new dataset\\phreshphish_dataset\\data",
+  "training_files": 56,
+  "test_file_names_count_only": 21,
+  "training_metadata": [
+    {
+      "label": "benign",
+      "rows": 276729,
+      "missing_hash": 0,
+      "missing_url": 0,
+      "earliest_date": "2024-07-31",
+      "latest_date": "2025-09-08"
+    },
+    {
+      "label": "phish",
+      "rows": 221526,
+      "missing_hash": 0,
+      "missing_url": 0,
+      "earliest_date": "2024-07-02",
+      "latest_date": "2025-09-08"
+    }
+  ],
+  "supplied_hash_audit": {
+    "repeated_hash_groups": 0,
+    "extra_rows_with_repeated_hash": 0,
+    "hash_groups_with_conflicting_labels": 0
+  },
+  "html_sample_method": "Lowest MD5(sha256 || seed) per class, unique supplied hash/label pairs; one source file per pair.",
+  "seed": 42,
+  "requested_samples_per_class": 250,
+  "selected_pairs": 500,
+  "inspected_pairs": 500,
+  "training_html_sample": {
+    "benign": {
+      "samples": 250,
+      "page_counts": {
+        "samples": 250,
+        "empty_html_present": 0,
+        "parse_error_present": 0,
+        "form_count_present": 183,
+        "password_input_count_present": 42,
+        "inline_js_block_count_present": 239,
+        "external_js_reference_count_present": 248,
+        "event_attribute_count_present": 110
+      },
+      "page_percentages": {
+        "empty_html_present": 0.0,
+        "parse_error_present": 0.0,
+        "form_count_present": 73.2,
+        "password_input_count_present": 16.8,
+        "inline_js_block_count_present": 95.6,
+        "external_js_reference_count_present": 99.2,
+        "event_attribute_count_present": 44.0
+      },
+      "mean_html_characters": 399051.1
+    },
+    "phish": {
+      "samples": 250,
+      "page_counts": {
+        "samples": 250,
+        "empty_html_present": 0,
+        "parse_error_present": 0,
+        "form_count_present": 112,
+        "password_input_count_present": 48,
+        "inline_js_block_count_present": 208,
+        "external_js_reference_count_present": 218,
+        "event_attribute_count_present": 52
+      },
+      "page_percentages": {
+        "empty_html_present": 0.0,
+        "parse_error_present": 0.0,
+        "form_count_present": 44.8,
+        "password_input_count_present": 19.2,
+        "inline_js_block_count_present": 83.2,
+        "external_js_reference_count_present": 87.2,
+        "event_attribute_count_present": 20.8
+      },
+      "mean_html_characters": 140202.3
+    }
+  },
+  "limitations": [
+    "Metadata counts cover all training rows; HTML measurements cover the sample only.",
+    "The balanced sample does not represent natural phishing prevalence.",
+    "Supplied hashes were not recomputed; near-duplicates and domain overlap are not audited here.",
+    "HTML parser indicators are structural observations, not phishing labels or verified runtime behavior.",
+    "Script references do not establish availability of external JavaScript content.",
+    "No links were visited and no HTML or JavaScript was executed. Test contents were not read.",
+    "Results are a data audit, not model performance or proof of content quality."
+  ]
+}
